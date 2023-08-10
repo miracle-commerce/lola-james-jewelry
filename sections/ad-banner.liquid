@@ -1,0 +1,83 @@
+<div class="w2 section">
+  <div class="container">
+    <div class="title text-center mb-2">
+      {% if section.settings.heading != blank %}
+        <h2>{{ section.settings.heading }}</h2>
+      {% endif %}
+    </div>
+    <div class="row">
+      {% for block in section.blocks %}
+      <div class="col-md-6 mt-4">
+        <a href="{{ block.settings.ad_url }}" class="d-block">
+          <span>{{ block.settings.ad_label }}</span>
+          <div class="embed-responsive embed-responsive-16by9">
+            <div class="full-img">
+              <img
+                   src="{{ block.settings.image | img_url: 'master'  }}"
+                   alt="{{ block.settings.image.alt | escape }}"
+                   >
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>  
+
+{% schema %}
+  {
+    "name": "Ad banner",
+	"max_blocks": 4,
+    "settings": [
+		 {
+      "type": "header",
+      "content": "Ad Banner"
+    },
+{
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+		"default": "EXPLORE OUR MOST COVETED"
+      }
+	],
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add Button",
+      "settings": [
+        {
+          "id": "image",
+          "type": "image_picker",
+       	  "label": "Ad image"
+        },
+        {
+          "type": "url",
+          "id": "ad_url",
+          "label": "Ad Url"
+        },
+{
+        "type": "text",
+        "id": "ad_label",
+        "label": "Ad Label",
+		"default": "New Arrival"
+      }
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ad Banner",
+      "category": "Image" 
+    }
+  ]
+  }
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

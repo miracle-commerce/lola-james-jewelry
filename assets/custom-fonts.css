@@ -1,0 +1,86 @@
+
+@font-face {
+  font-family: SCRIPT ONE;
+  src: url(Cream_Cake.otf);
+}
+
+@font-face {
+  font-family: SCRIPT TWO;
+  src: url(Signatra.ttf);
+}
+
+@font-face {
+  font-family: SCRIPT THREE;
+  src: url(Golden_Hills.otf);
+}
+
+@font-face {
+  font-family: SCRIPT FOUR;
+  src: url(Intro_Script.woff);
+}
+
+@font-face {
+  font-family: SCRIPT FIVE;
+  src: url(marchila.ttf);
+}
+
+@font-face {
+  font-family: BLOCK ONE;
+  src: url(coolvetica_rg.otf);
+}
+
+
+@font-face {
+  font-family: Pirata One;
+  src: url(PirataOne-Regular.ttf);
+}
+
+
+@font-face {
+  font-family: FLUTED;
+  src: url(Prisma.otf);
+  font-weight : normal !important;
+}
+
+
+@font-face {
+  font-family: GOTHIC;
+  src: url(Enchanted_Land.otf);
+}
+
+@font-face {
+  font-family: MINI;
+  src: url(CooperBlack.woff);
+}
+
+/* New Fonts */
+
+@font-face {
+  font-family: BLOCK TWO;
+  src: url(arial.tff);
+}
+
+@font-face {
+  font-family: Bubble;
+  src: url(Bubblegum.ttf);
+}
+
+@font-face {
+  font-family: BLOCK THREE;
+  src: url(KeepCalm-Meedium.ttf);
+}
+
+@font-face {
+  font-family: SCRIPT SIX;
+  src: url(Nickainly-Normal.ttf);
+}
+
+/* Shopify changed uploading of files */
+@font-face {
+  font-family: SCRIPT SEVEN;
+  src: url('https://cdn.shopify.com/s/files/1/2283/3973/files/Pacifico.ttf'); 
+}
+
+
+
+

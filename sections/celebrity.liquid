@@ -1,0 +1,57 @@
+{% for block in section.blocks %}
+	<div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+        <div class="inner product-item  wow fadeIn">
+        	<div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                      {% if block.settings.link != blank %}<a href="{{block.settings.link}}" class="product-grid-image" style="display:block;">{% endif %}
+                      <div class="embed-responsive embed-responsive-1by1">
+                      	<div class="full-img"><img src="{{block.settings.image | img_url: '450x' }}" alt="{{block.settings.image.alt | default: block.settings.name}}"></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  {% if block.settings.link != blank %}
+                  	<a class="product-title" href="{{block.settings.link}}">{{block.settings.name}}</a>
+                  {% else %}
+                  	{{block.settings.name}}
+                  {% endif %}
+                  
+                </div>
+            </div>
+    	</div>
+    </div>
+{% endfor %}
+{% schema %}
+  {
+    "name": "Celebrity",
+    "class": "product-collection products-grid row",
+    "settings": [],
+		"blocks": [
+      {
+        "type": "celebrity",
+        "name": "Celebrity",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Name"
+          },
+		  {
+            "type": "url",
+            "id": "link",
+            "label": "Link",
+            "info": "Optional"
+          }
+		]
+	  }
+	]
+
+  }
+{% endschema %}

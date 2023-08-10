@@ -1,0 +1,474 @@
+<div class="container">
+
+  <div class="section-block page-header">
+    <h1>{{ 'cart.general.title' | t }}</h1>
+  </div>
+
+
+  <div class="section-block">
+
+    {% if cart.item_count > 0 %}
+
+    <form action="/cart" method="post" novalidate>
+
+      <div class="row">
+        <div class="col-lg-8">
+
+          <h2 class="h4">Cart review</h2>
+          {% if section.settings.show_subtitle %}
+          <p class="text-muted">{{ 'cart.general.subtitle_html' | t }}</p>
+          {% endif %}
+
+          <ul class="list-unstyled">
+            {% for item in cart.items %}
+            <li  data-hulkapps-lineitem id="cart-item-{{ item.key | replace: ":", "_" }}" class="d-flex py-4 border-bottom">
+
+              {% if item.image != blank %}
+              {% assign image_size = section.settings.image_width | append: 'x' | append: section.settings.image_height %}
+              <a href="{{ item.url | within: collections.all }}" class="flex-shrink-0">
+                <img class="img-fluid mr-3 {% if section.settings.image_border %}img-thumbnail{% endif %}" src="{{ item.image | img_url: image_size, crop: 'center'  }}" alt="{{ item.image.alt | escape }}" width="{{ section.settings.image_width }}" height="{{ section.settings.image_height }}">
+              </a>
+              {% endif %}
+
+              <div class="flex-grow-1 mt-2">
+                <h6><a href="{{ item.url }}" class="theme-link-color">{{ item.product.title }}</a></h6>
+
+                <div class="cart-item-{{ item.key | replace: ":", "_" }}-price mt-1 mb-1 d-md-none"
+                     style="{{ settings.color_price | prepend: 'color: ' }}"
+                     aria-live="polite"
+                     aria-atomic="true"
+                     >
+                  <span  data-hulkapps-line-price data-key='{{item.key}}' class='' data-key='{{item.key}}'>{{ item.line_price | money }}</span>
+                </div>
+
+                {% unless item.product.has_only_default_variant %}<p>{{ item.variant.title }}</p>{% endunless %}
+
+                {% if section.settings.show_vendor %}<p class="text-muted">{{ item.vendor }}</p>{% endif %}
+
+                {%- assign property_size = item.properties | size -%}
+
+                {% if property_size > 0 %}
+                <ul>
+                	{%- comment -%}
+                  		{% for p in item.properties %}
+                			{% unless p.last == blank %}
+                				{{ p.first }}: {% if p.last contains '/uploads/' %}<a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>{% else %}{{ p.last }}{% endif %}
+                			{% endunless %}
+                		{% endfor %}
+                  	{%- endcomment -%}
+                	{%- for p in item.properties -%}
+            		{%- unless p.last == blank -%}
+                      <li class="product-details__item product-details__item--property{%if property_size == 0%} hide{% endif %}" data-cart-item-property>
+                        <span class="product-details__item-label" data-cart-item-property-name>{{ p.first }}: </span>
+
+                        {%- comment -%}
+                          Check if there was an uploaded file associated
+                        {%- endcomment -%}
+                        <span data-cart-item-property-value>
+                          {%- if p.last contains "uploads" -%}
+                            <a href="{{ p.last }}">Uploaded File</a>
+                          {%- else -%}
+                            {{ p.last }}
+                          {%- endif -%}
+                        </span>
+                      </li>
+                    {%- endunless -%}
+                  	{%- endfor -%}
+                </ul>
+            <button type="button" class="edit_cart_option btn btn--primary button" data-product_id="{{item.product_id}}" data-key="{{item.key}}" data-variant_id="{{item.variant_id}}" data-quantity="{{item.quantity}}">Edit Options</button>
+                {% endif %}
+
+                {% if section.settings.show_quantity %}
+                <div class="input-group mt-3 mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <label class="mb-0 text-muted small" for="updates_{{ item.key }}">
+                        {{ 'cart.label.qty' | t }}
+                      </label>
+                    </div>
+                  </div>
+                  <input
+                         class="form-control mr-2"
+                         size="10"
+                         type="number"
+                         name="updates[]"
+                         data-key="{{ item.key }}"
+                         value="{{ item.quantity }}"
+                         min="1"
+                         style="max-width: 60px"
+                         aria-label="{{ 'cart.label.quantity' | t }}"
+                         >
+                </div>
+                {% endif %}
+
+                <a id="cart-item-{{ item.key | replace: ":", "_" }}-remove" class="small text-danger text-decoration-underline" href="/cart/change?line={{ forloop.index }}&amp;quantity=0">
+                  <i class="fas fa-times mr-2"></i>{{ 'cart.general.remove' | t }}
+                </a>
+
+              </div>
+
+              <div
+                   class="cart-item-{{ item.key | replace: ":", "_" }}-price mt-2 d-none d-md-block"
+                   style="{{ settings.color_price | prepend: 'color: ' }}"
+                   aria-live="polite"
+                   aria-atomic="true"
+                   >
+                <span  data-hulkapps-line-price data-key='{{item.key}}' class='' data-key='{{item.key}}'>{{ item.line_price | money }}</span>
+              </div>
+
+            </li>
+            {% endfor %}
+          </ul>
+         <div>
+          {% comment %}
+          <div>
+              	<b>Is this an international order?</b> &nbsp; 
+            	<label><input type="radio" name="international" value="Yes" /> Yes </label> &nbsp; 
+            	<label><input type="radio" name="international" value="No" /> No</label>
+              </div>
+            {% endcomment %}
+            <p class="agrInt small"><input type="checkbox" name="agreeInternational" id="agreeInt" value="Yes" /> By checking this box I agree to the following: NO repairs, NO exchanges, NO returns will be allowed.  NO EXCEPTIONS.  If your item arrives and needs a repair you are responsible for it and the cost to repair it.  We are not responsible for lost packages, invalid addresses, or any shipping costs. Duties and import fees must be paid for by the customer.  If you refuse a shipment from us, you are responsible for the original shipping charges, any duties/import fees that are incurred on the package, and the cost of returning the package to Lola James. This amount will be deducted from your merchandise credit.  We are not responsible for any delayed deliveries due to import issues. ALL SALES ARE FINAL.</p>
+          </div> 
+        </div>
+
+        <div class="col-lg-4">
+
+          <div class="cart-summary mt-4 bg-light border rounded p-3 {% if section.settings.sticky_summary %}sticky-cart-summary{% endif %}">
+            <h2 class="h4 mb-3">ORDER COMMENTS/GIFT MESSAGE</h2>
+
+            {% if section.settings.note %}
+            <textarea rows="3" class="form-control mb-3" name="note" placeholder="">{{ cart.note }}</textarea>
+            {% endif %}
+
+            <p class="d-flex justify-content-between my-5">
+              <span>{{ 'cart.general.subtotal' | t }}</span>
+              <strong  data-hulkapps-cart-total id="cart-subtotal"><span class=''>{{ cart.total_price | money }}</span></strong>
+            </p>
+
+            {% if cart.total_discounts > 0 %}
+            <p>{{ 'cart.general.savings' | t }} {{ cart.total_discounts | money }}</p>
+            {% endif %}
+
+            <hr>
+
+            <p class="text-muted text-center font-italic">{{ 'cart.general.shipping_at_checkout' | t }}</p>
+			
+            <p class="cart-attribute__field">
+              <input type="hidden" name="attributes[Gift Receipt]" value="No">
+              <input type="checkbox" name="attributes[Gift Receipt]" value="Yes"{% if cart.attributes["Gift Receipt"] == "Yes" %} checked{% endif %}>
+              <label><b>Include Gift Receipt</b></label>
+            </p>
+            {% if section.settings.holiday %}
+              <!--p class="cart-attribute__field">
+                <label><b>Are the Items in your cart a Holiday Gift?</b></label><br />
+                <input type="checkbox" class="holidayCheck" name="attributes[Holiday Gift]" value="No"> No
+                <input type="checkbox" class="holidayCheck" name="attributes[Holiday Gift]" value="Yes"{% if cart.attributes["Holiday Gift"] == "Yes" %} checked{% endif %}> Yes
+              </p-->
+              <p class="cart-attribute__field">
+                    <label><input type="checkbox" class="holidayCheck" name="attributes[Holiday]" value="Yes">
+                    <b>IMPORTANT:</b> We will be closed Monday, June 26th - Tuesday, July 4th.  All in stock and ready to ship items ordered during this time will ship on Wednesday, July 5th.  All personalized and custom orders will continue to be processed during the dates we are closed.  No extra production time will be needed.  If you have any questions, please allow up to 48 hours for a response.</label>
+              </p>
+			{% endif %}
+            
+            <div class="returnpolicy">
+              <b class="spb-productdescfont spb-productdesctextcolor">Return Policy and Personalized Shipping Guidelines</b>
+              <div class="returnpolicytext" style="font-size:12px; margin-bottom:10px;">By checking the "I Accept the Terms of Use" box below and completing the checkout process, you are agreeing to our <a target="_blank" href="/pages/returns-and-exchanges">Return Policy</a> and understand that all custom, personalized, special order and sale products are FINAL SALE.  For all other styles, we offer exchange or store credit within 7 days of shipment date.  We do not provide refunds.  No exceptions. You are also agreeing to the lead times listed for each product. </div>
+		
+              <span>
+               <fieldset data-required="true">
+              		<input type="hidden" name="properties[infinite_options_1]">
+                 	<label style="margin-bottom:25px;">
+                      <input type="checkbox" value="I accept the Terms of Use." id="agree" class="spb-productoptiontextcolor spb-productoptionbackground"> <b>I accept the Terms of Use.</b></label>
+              </fieldset>
+              </span>
+            </div>
+    		
+            <div class="discount_code_box">
+
+  <div class='hulkapps_discount_hide'>
+
+      <input placeholder="Discount code" class="hulkapps_discount_code" 
+
+      autocomplete="off" aria-required="true" size="30" type="text" name="checkout_discount">
+
+      <button type="button" class="hulkapps_discount_button btn btn--primary button">Apply</button>
+
+  </div>
+
+</div>
+            <a id="check" class="btn btn-primary btn-block">Checkout</a>
+            <input style="display:none;" type="submit" disabled name="checkout" id="cartCheckout" class="btn btn-primary btn-block" value="{{ 'cart.general.checkout' | t }}">
+            
+              <input class="btn btn-link btn-block mt-2" type="submit" name="update" value="{{ 'cart.general.update' | t }}">
+            
+            
+            <p style="font-size:12px; margin-bottom:10px; margin-top:10px;"><b>Please Note:</b> We currently do not ship to P.O. boxes with FedEx and orders with P.O box addresses will automatically be changed to ship with USPS.
+</p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </form>
+
+    {% else %}
+    <div class="text-center">
+      <h5><i class="far fa-surprise mr-2"></i>Cart empty!</h5>
+      <p class="lead">No item in cart</p>
+      <a class="btn btn-primary" href="{{ shop.url }}" role="button">{{ 'customer.register.cancel' | t }}<i class="fas fa-share ml-2"></i></a>
+    </div>
+    {% endif %}
+
+  </div>
+  
+</div>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    jQuery(document).ready(function ($) {
+      
+      $("input[name$='international']").click(function(){
+          var val = $(this).val();
+        if(val == "Yes"){
+          $(".agrInt").show();
+        }else{
+          $(".agrInt").hide();
+        }
+      });
+
+      
+      console.log(localStorage['agreeKey']);
+      var agreeVar = localStorage['agreeKey'];
+      if(agreeVar === 'Checked') {
+        $('#agree').prop('checked',true);
+      }
+      else {
+        $('#agree').prop('checked',false);
+      }
+      $('#agree').on('click',function(e) {
+        if(document.querySelector('#agree:checked') != null) {
+          localStorage['agreeKey'] = 'Checked'; // only strings
+        }
+        else {
+          localStorage['agreeKey'] = 'Not Checked'; // only strings
+        }
+      });
+     $("#check").on("click", function(e){
+       {% if section.settings.holiday %}
+      	if($('.holidayCheck:checked').length == 0) {
+          	alert("Please check - We will be closed Monday, June 26th - Tuesday, July 4th.");
+            return
+        }
+       {% endif %}
+
+       //if(!$("input[name='international']:checked").val()){
+         //alert("You must Select Is this an international order?");
+       if(document.querySelector('#agreeInt:checked') == null && $("input[name='international']:checked").val() == 'Yes'){
+          alert("You must agree with the international order to check out.");
+        } else if(document.querySelector('#agree:checked') == null) {
+          alert("You must agree with the terms and conditions of sales to check out.");
+        } else {
+          var giftReceipt = $('input[name="attributes[Gift Receipt]"]:checked').val();
+          if (typeof giftReceipt === 'undefined') {
+           giftReceipt = 'No'; 
+        }
+          
+        console.log(giftReceipt);
+        var HolidayGift = $('input[name="attributes[Holiday Gift]"]:checked').val();
+        console.log(HolidayGift);
+         jQuery.ajax({
+            url:'/cart/update.js',
+            type: 'post',
+            dataType: 'json',
+            data: { attributes:{'Gift Receipt':giftReceipt,'Holiday Gift':HolidayGift} },
+            success: function (response) { 
+                 jQuery.getJSON('/cart.js', function(cart) {
+             // now have access to Shopify cart object
+             console.log(cart);
+                   localStorage['agreeKey'] = 'Not Checked';
+                   $('#cartCheckout').click(); 
+              });
+            }
+          });
+       }
+      });
+      
+      $('.reveal').click(function() {
+        if ($(this).html() === 'Apply Discount <i class="fa fa-chevron-up" aria-hidden="true"></i>') {
+             $(this).html('Apply Discount <i class="fa fa-chevron-down" aria-hidden="true"></i>');
+          $('.cart-promo').slideUp( "slow", function() {
+      });
+        }
+        else {
+            $(this).html('Apply Discount <i class="fa fa-chevron-up" aria-hidden="true"></i>');
+                $('.cart-promo').slideDown( "slow", function() {
+      });
+        }
+    });
+      $('#redemDevPromo').on('click', function(event){
+      //disable the button event
+      event.preventDefault();
+      //write the url format
+      var theUrl = '/checkout?discount=';
+      //grab the discount code from the input
+      var theDiscount = $('#devPromo').val();
+      //full url to redirect to checkout with promo code
+      var toRedirect = theUrl+theDiscount;
+      //redirect
+       var checkBoxAgree = document.getElementById("agree");
+      if (checkBoxAgree.checked == true) {
+ var giftReceipt = $('input[name="attributes[Gift Receipt]"]:checked').val();
+          if (typeof giftReceipt === 'undefined') {
+           giftReceipt = 'No'; 
+          }
+        console.log(giftReceipt);
+        var HolidayGift = $('input[name="attributes[Holiday Gift]"]:checked').val();
+        console.log(HolidayGift);
+                            jQuery.ajax({
+  url:'/cart/update.js',
+  type: 'post',
+  dataType: 'json',
+  data: { attributes:{'Gift Receipt':giftReceipt,'Holiday Gift':HolidayGift} },
+  success: function (response) { 
+       jQuery.getJSON('/cart.js', function(cart) {
+   // now have access to Shopify cart object
+   console.log(cart);
+   window.location.href = toRedirect;
+    });
+  }
+});
+      } else {
+      	alert("You must agree with the terms and conditions of sales to check out.");
+      }
+    });
+      
+      
+      // Update quantity for line items
+      $("input[name='updates[]']").on("keyup click", function() {
+        const qty = $(this).val()
+        const key = $(this).data('key')
+
+        // if (qty == 0) {
+        //   let result = confirm("Remove product from cart?")
+        //   if (!result) {
+        //     $("input[name='updates[]']").val(1)
+        //     return;
+        //   }
+        // }
+
+        jQuery.post('/cart/change.js', { quantity: qty, id: key }, function(data) {
+          console.log(data)
+
+          const subTotalPrice = data.items_subtotal_price
+          let itemPrice
+
+          if (subTotalPrice == 0)
+            location.reload()
+
+          data.items.forEach((item, i) => {
+            if (item.key == key)
+              itemPrice = item.final_line_price
+          });
+
+          $(`.cart-item-${key.replace(':', '_')}-price`).text(Shopify.formatMoney(itemPrice, ""))
+          $('#cart-subtotal').text(Shopify.formatMoney(subTotalPrice, ""))
+
+        }, 'json')
+      });
+    })
+  })
+</script>
+
+{% javascript %}
+jQuery(document).ready(function ($) {
+
+  // Sticky summary
+  let header = $('#shopify-section-header')
+  let top = 20
+
+  if($(header).css('position') == 'sticky') {
+    top += header.outerHeight()
+  }
+
+  $('.sticky-cart-summary').css({
+    'position': 'sticky',
+    'top': top,
+    'z-index': 1019
+  })
+
+})
+{% endjavascript %}
+
+{% schema %}
+  {
+    "name": "Cart",
+	"tag": "div",
+	"class": "section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "General settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_subtitle",
+        "label": "Show subtitle",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "note",
+        "label": "Show note field",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show vendor",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_quantity",
+        "label": "Show quanity",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "sticky_summary",
+        "label": "Sticky summary",
+        "info": "Fix summary details when page scrolls. Not applicable on mobile view",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "holiday",
+        "label": "Show Holiday Gift",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Product image settings"
+      },
+      {
+        "type": "text",
+        "id": "image_width",
+        "label": "Image width (px)",
+        "default": "160"
+      },
+      {
+        "type": "text",
+        "id": "image_height",
+        "label": "Image height (px)",
+        "default": "160"
+      },
+      {
+        "type": "checkbox",
+        "id": "image_border",
+        "label": "Border",
+        "default": true
+      }
+    ]
+  }
+{% endschema %}

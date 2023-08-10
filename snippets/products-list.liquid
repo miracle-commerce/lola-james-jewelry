@@ -1,0 +1,98 @@
+
+
+<div class="row">
+  {% for product in products_list limit: section.settings.limit %}
+{% assign product-tags = '' %}
+  {% if product.featured_image != blank %}
+  <div class="col-sm-6 col-6 col-md-4 mb-4">
+    <div class="product-box coleql_height">
+      {% if product.metafields.my_fields.international %}
+      	<div class="intIco"><img src="{{'airline.png' | asset_img_url: 'master'}}" /></div>
+      {% endif %}
+      {% capture the_snippet_fave_icon %}{% render 'ssw-widget-faveicon' with product.id %}{% endcapture %}
+      {% unless the_snippet_fave_icon contains 'Liquid error' %}
+      {{ the_snippet_fave_icon }}
+      {% endunless %}  
+      {% include 'product_badges' %}
+      <div class="embed-responsive embed-responsive-1by1">
+        <a href="{{ product.url }}">
+        <img src="{{ product.featured_image | img_url: 'master'  }}" alt="{{ product.featured_image.alt | escape }}">
+
+        {% if section.settings.show_discount_badge and product.compare_at_price > product.price %}
+        <small class="product-discount-badge badge-right" style="{{ settings.color_on_sale | prepend: 'background-color: ' }}">
+          {{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | money_without_currency | times: 100 | remove: '.0' | prepend: '-' | append: '%' }}
+        </small>
+        {% endif %}
+        </a>
+      </div>
+      <div class="pt-4">
+        {% if section.settings.show_product_title %}
+        <p style="min-height:49px;"><a href="{{ product.url }}">{{ product.title | escape }}</a></p>
+        {% for tag in product.tags %}
+        {%assign product-tags = tag | append:product-tags %}
+{% endfor %}
+        {%comment%}
+        <p style="display: block;
+    word-break: break-word;">{{product-tags}}</p>
+{%endcomment%}
+        {% endif %}
+
+        {% if section.settings.show_price %}
+        <span>
+          {% if product.compare_at_price > product.price %}
+          <s class="text-muted opacity-75 mr-1">{{ product.compare_at_price | money }}</s>
+          {% if product.price_varies or product-tags contains 'from' %}
+          {%- assign sale_price = product.price | money -%}
+          {{ 'product.on_sale_from_html' | t: price: sale_price }}
+          {% else %}
+          {{ 'product.on_sale' | t }}
+          {{ product.price | money }}
+          {% endif %}
+          {% else %}
+          {% if product.price_varies or product-tags contains 'from' %}
+          {%- assign price = product.price | money -%}
+          {{ 'product.from_text_html' | t: price: price }}
+          {% else %}
+          {%if product.handle == 'add-on'%}from $110.00{%elsif product.handle == 'repair'%}from $20.00{%else%}
+          {{ product.price | money }}
+          {%endif%}
+          {% endif %}
+          {% endif %}
+        </span>
+        {% endif %}
+        {%comment%}
+        {% form 'product', product, class: 'mb-3' %}
+        {%include 'hulkcode_common'%}
+        
+ <div id="hulkapps_custom_options_{{ product.id }}"> </div>
+        {% endform %}
+        {%endcomment%}
+                           {% unless product.available %}
+  <a style="margin-top:1em;"  class="BIS_trigger btn btn-primary" data-product-data="{{ product | json | escape }}">
+    JOIN WAITLIST
+  </a>
+{% endunless %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% else %}
+
+  {% for i in (1..section.settings.limit) %}
+  <div class="col-md-4 mb-4">
+    <a href="#" class="theme-link-color text-decoration-none">
+      <div class="overflow-hidden mb-3 img-thumbnail">
+        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+        {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg bg-light' }}
+      </div>
+      <h6>
+        {{ 'onboarding.product_title' | t }}
+      </h6>
+      <p class="mb-3" style="{{ settings.color_price | prepend: 'color: ' }}">{{ 1999 | money }}</p>
+    </a>
+  </div>
+  {% endfor %}
+
+  {% endfor %}
+</div>

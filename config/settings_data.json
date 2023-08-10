@@ -1,0 +1,2089 @@
+{
+  "current": {
+    "social_icon_1": "<i class=\"fab fa-facebook-f\"><\/i>",
+    "social_link_1": "https:\/\/www.facebook.com\/lolajamesjewelry",
+    "social_icon_2": "<i class=\"fab fa-twitter\"><\/i>",
+    "social_link_2": "https:\/\/twitter.com\/iluvlolajames",
+    "social_icon_3": "<i class=\"fab fa-instagram\"><\/i>",
+    "social_link_3": "https:\/\/instagram.com\/lolajamesjewelry\/",
+    "social_icon_4": "<i class=\"fab fa-pinterest-p\"><\/i>",
+    "social_link_4": "https:\/\/www.pinterest.com\/LJJewelry\/",
+    "favicon": "shopify:\/\/shop_images\/LLJ_-_Favicon.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo_black.jpg",
+    "checkout_logo_position": "center",
+    "checkout_sidebar_background_color": "#ffe6f1",
+    "checkout_accent_color": "#000000",
+    "checkout_button_color": "#000000",
+    "sections": {
+      "carousel": {
+        "type": "carousel",
+        "blocks": {
+          "carousel-0": {
+            "type": "image",
+            "settings": {
+              "caption_heading": "First slide title",
+              "caption_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
+              "button_text": "Learn more",
+              "caption_backdrop": true,
+              "caption_heading_size": "h4",
+              "button_style": "btn-primary"
+            }
+          },
+          "carousel-1": {
+            "type": "image",
+            "settings": {
+              "caption_heading": "Second slide title",
+              "caption_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
+              "button_text": "Learn more",
+              "caption_backdrop": true,
+              "caption_heading_size": "h4",
+              "button_style": "btn-primary"
+            }
+          },
+          "carousel-2": {
+            "type": "image",
+            "settings": {
+              "caption_heading": "Third slide title",
+              "caption_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
+              "button_text": "Learn more",
+              "caption_backdrop": true,
+              "caption_heading_size": "h4",
+              "button_style": "btn-primary"
+            }
+          }
+        },
+        "block_order": [
+          "carousel-0",
+          "carousel-1",
+          "carousel-2"
+        ],
+        "settings": {
+          "heading": "",
+          "heading_size": "h2",
+          "heading_alignment": "text-center",
+          "controls": true,
+          "indicators": true,
+          "container": false,
+          "image_height_aspect_ratio": 0.4,
+          "img_min_height": "280",
+          "transition": "slide carousel-fade",
+          "zoom_effect": true,
+          "interval": 5,
+          "progress_bar": true,
+          "pause_hover": true,
+          "margin_top": 0,
+          "margin_bottom": 8,
+          "full_height": false
+        }
+      },
+      "featured-collection": {
+        "type": "featured-collection",
+        "settings": {
+          "heading": "Our most wanted pieces",
+          "subheading": "",
+          "collection": "best-sellers",
+          "limit": 15
+        }
+      },
+      "collection-list": {
+        "type": "collection-list",
+        "blocks": {
+          "collection-list-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "build-a-charm-necklace"
+            }
+          },
+          "493ec9ac-168c-40aa-9f3b-508493b2b577": {
+            "type": "collection",
+            "settings": {
+              "collection": "protection"
+            }
+          },
+          "429d3217-6433-4fd0-8a00-f19a65698a73": {
+            "type": "collection",
+            "settings": {
+              "collection": "mama-mommy"
+            }
+          },
+          "f4b65a3f-bee5-4e6b-8828-067dafdcf74c": {
+            "type": "collection",
+            "settings": {
+              "collection": "cuban-link"
+            }
+          }
+        },
+        "block_order": [
+          "collection-list-0",
+          "493ec9ac-168c-40aa-9f3b-508493b2b577",
+          "429d3217-6433-4fd0-8a00-f19a65698a73",
+          "f4b65a3f-bee5-4e6b-8828-067dafdcf74c"
+        ],
+        "settings": {
+          "heading": "SHOP COLLECTIONS",
+          "subheading": ""
+        }
+      },
+      "featured-product": {
+        "type": "featured-product",
+        "settings": {
+          "product": "",
+          "show_product_title": true,
+          "product_title_size": "h2",
+          "show_product_desc": true,
+          "product_desc_truncate": "175",
+          "show_product_price": true,
+          "show_discount_badge": true,
+          "show_add_to_cart": true,
+          "show_share_buttons": true,
+          "image_alignment": "flex-row",
+          "image_width": "600",
+          "image_height": "600",
+          "image_border": true,
+          "image_circle": false,
+          "image_hover_effect": "image-hover-shine",
+          "show_image_gallery": true,
+          "breakpoint": "-md",
+          "margin_top": 0,
+          "margin_bottom": 6
+        }
+      },
+      "blog-posts": {
+        "type": "blog-posts",
+        "settings": {
+          "heading": "Blog posts",
+          "subheading": "<p>Write something catchy here<\/p>",
+          "blog": "",
+          "limit": 4,
+          "row": 2,
+          "row_sm": 2,
+          "row_md": 3,
+          "row_lg": 4,
+          "row_xl": 4,
+          "heading_size": "h2",
+          "heading_alignment": "text-left",
+          "container": true,
+          "show_post_title": true,
+          "post_title_size": "h5",
+          "blog_post_author": true,
+          "show_post_date": true,
+          "show_comments_number": true,
+          "show_post_excerpt": true,
+          "post_excerpt_truncate": "200",
+          "show_post_readmore_button": true,
+          "post_readmore_button_style": "btn-outline-primary",
+          "image_width": "320",
+          "image_height": "320",
+          "image_border": true,
+          "image_circle": false,
+          "image_hover_effect": "image-hover-fade-out",
+          "margin_top": 0,
+          "margin_bottom": 6,
+          "gutter_horizontal": 3,
+          "gutter_vertical": 3
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "heading": "Newsletter subscribe",
+          "subheading": "<p>Be the first to get notified about our latest offers.<\/p>",
+          "note": "<p>We usually send once a week<\/p>",
+          "bg_color": "bg-light border-top border-bottom",
+          "heading_size": "h2",
+          "align_center": true,
+          "button_style": "btn-outline-primary",
+          "padding_top": 6,
+          "padding_bottom": 6,
+          "margin_top": 0,
+          "margin_bottom": 6
+        }
+      },
+      "image-with-text": {
+        "type": "image-with-text",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Facetune_12-04-2023-17-06-42_926eca3c-3d7d-45aa-bdb0-95b88ef80988.jpg",
+          "heading": "Shop Our Best Selling Retro Fluted Collection!",
+          "content": "<p>Create a stunning look with our array of beautiful options! Shop Now!<\/p>",
+          "button_label": "SHOP NOW!",
+          "button_link": "shopify:\/\/collections\/build-a-charm-necklace"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "announcement_enabled": true,
+          "announcement_homepage": false,
+          "announcement_text": "New Styles Added To The Sale Section!",
+          "logo": "shopify:\/\/shop_images\/logo_1.png",
+          "logo_height": "30",
+          "menu": "2021-menu"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/logo_1.png",
+          "menu": "2021-footer-menu",
+          "heading": "Sign up to get 10% off of your first online purchase!",
+          "subheading": ""
+        }
+      },
+      "16135618122a614c51": {
+        "type": "image-block",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Screenshot_2023-07-27_at_8.22.11_AM.png",
+          "image_link": "shopify:\/\/collections\/personalized-necklaces"
+        }
+      },
+      "1613568042ad80ec84": {
+        "type": "ad-banner",
+        "blocks": {
+          "c423e300-ed72-41c2-ba28-5c01a1be44cb": {
+            "type": "select",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B3A1678A_41851417-712e-4954-8e4a-bef3645c2cea.png",
+              "ad_url": "shopify:\/\/collections\/bracelets",
+              "ad_label": "Arm Party Favorites"
+            }
+          },
+          "5fac519f-afc7-4819-b3d2-92ce39387b85": {
+            "type": "select",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B3A2138.jpg",
+              "ad_url": "shopify:\/\/collections\/diamond-names",
+              "ad_label": "Lovely Layers"
+            }
+          }
+        },
+        "block_order": [
+          "c423e300-ed72-41c2-ba28-5c01a1be44cb",
+          "5fac519f-afc7-4819-b3d2-92ce39387b85"
+        ],
+        "settings": {
+          "heading": "EXPLORE OUR FAVORITE STYLES"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "clmenu": "2021-side-bar",
+          "container": true,
+          "show_tags": true,
+          "results_per_page": 10,
+          "show_collection_image": false,
+          "collection_image_alignment": "flex-row-reverse",
+          "collection_image_width": "600",
+          "collection_image_height": "600",
+          "collection_image_border": true,
+          "row": 2,
+          "row_sm": 2,
+          "row_md": 3,
+          "row_lg": 4,
+          "row_xl": 4,
+          "align_center": true,
+          "show_product_title": true,
+          "show_price": true,
+          "show_discount_badge": true,
+          "show_quick_view_button": true,
+          "product_title_size": "h6",
+          "quick_view_button_style": "btn-outline-primary",
+          "quick_view_transition": "fade zoom-in",
+          "quick_view_heading_size": "h3",
+          "quick_view_desc_truncate": "200",
+          "quick_view_show_view_product_button": true,
+          "quick_view_view_product_button_style": "btn-outline-primary",
+          "quick_view_show_share_buttons": true,
+          "image_width": "360",
+          "image_height": "360",
+          "quick_view_image_width": "480",
+          "quick_view_image_height": "480",
+          "image_border": true,
+          "image_circle": false,
+          "image_hover_effect": "image-hover-shine",
+          "gutter_horizontal": 2,
+          "gutter_vertical": 3
+        }
+      },
+      "search-template": {
+        "type": "search-template",
+        "settings": {
+          "search_form_size": "lg",
+          "search_form_button_style": "btn-outline-primary",
+          "enable_search_types": false,
+          "container": true,
+          "results_per_page": 20,
+          "row": 2,
+          "row_sm": 2,
+          "row_md": 3,
+          "row_lg": 4,
+          "row_xl": 4,
+          "align_center": true,
+          "show_product_title": true,
+          "show_price": true,
+          "show_discount_badge": true,
+          "show_quick_view_button": true,
+          "product_title_size": "h6",
+          "quick_view_button_style": "btn-outline-primary",
+          "quick_view_transition": "fade zoom-in",
+          "quick_view_heading_size": "h3",
+          "quick_view_desc_truncate": "200",
+          "quick_view_show_view_product_button": true,
+          "quick_view_view_product_button_style": "btn-outline-primary",
+          "quick_view_show_share_buttons": true,
+          "image_width": "360",
+          "image_height": "360",
+          "quick_view_image_width": "480",
+          "quick_view_image_height": "480",
+          "image_border": true,
+          "image_circle": false,
+          "image_hover_effect": "image-hover-shine",
+          "show_image": true,
+          "show_post_title": true,
+          "post_title_size": "h5",
+          "blog_post_author": true,
+          "show_post_date": true,
+          "show_comments_number": true,
+          "show_post_excerpt": true,
+          "post_excerpt_truncate": "200",
+          "show_post_readmore_button": true,
+          "post_readmore_button_style": "btn-outline-primary",
+          "article_image_width": "600",
+          "artcle_image_height": "600",
+          "article_image_border": true,
+          "article_image_circle": false,
+          "article_image_hover_effect": "image-hover-fade-out",
+          "page_title_size": "h5",
+          "show_page_content": true,
+          "page_content_truncate": "200",
+          "gutter_horizontal": 2,
+          "gutter_vertical": 3
+        }
+      },
+      "1616011562282176a7": {
+        "type": "instafeed",
+        "settings": {
+          "heading_size": 30,
+          "feed_width": 100,
+          "html_area": ""
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "blocks": {
+          "f3d3ab96-2805-4fc5-92ec-52c669800bfb": {
+            "type": "descriptions",
+            "settings": {
+              "title": "DESCRIPTION"
+            }
+          },
+          "9723db39-802c-4a67-8f94-6cd60db292ff": {
+            "type": "metafields",
+            "settings": {
+              "title": "LEAD TIME",
+              "key": "lead-time",
+              "content": "<p>Please allow up to 6 weeks for delivery of this style. \n<\/p>"
+            }
+          },
+          "6dd00d44-46b2-48c9-a3b6-456fe7819bbc": {
+            "type": "custom",
+            "settings": {
+              "title": "SHIPPING GUIDELINES",
+              "content": "<p>All personalized and custom orders can take up to 6-8 weeks to ship. All pieces have their lead time listed on the product page.  <\/p><p>At this time we do not offer rush orders.  \nIn stock items will ship within 1-2 business days. <\/p><p>\n<\/p><p>Lead time for custom\/personalized styles is NOT a guarantee. Rarely, but sometimes it can take longer than 6-8 weeks. Once you place your order, you are agreeing to the lead time and understand it could be longer than listed. <\/p>\nOrders placed on Friday after 1pm EST. will begin processing on the following Monday.  Once your item has shipped, we will email you with the tracking information.  Delivery time does not include Saturdays, Sundays or Holidays. <p>\n<\/p><p>For personalized\/custom orders, please note that the shipping method selected does NOT expedite your order's production time.  Shipping time and production time are completely separate from one another.  <\/p>\n<p>\nLola James Jewelry will contact you with a follow-up email if the merchandise you have selected is not currently in stock. <\/p>\n<p>\nThe font generator is not 100% accurate. It is just to give you an idea of what the personalized text will look like. Most of our jewelry is handmade and there can be some slight variations. <\/p>"
+            }
+          },
+          "dbee957f-7730-4aa4-835f-2048abc9f4e7": {
+            "type": "custom",
+            "settings": {
+              "title": "FINAL SALE POLICY",
+              "content": "<h5>ALL PURCHASES ARE FINAL<\/h5>\n<p>We offer exchange or STORE CREDIT within 7 days of shipment date.  We do not provide refunds. Store credit will be issued, provided that the jewelry has not been damaged, worn, or altered. If you need to cancel an in stock item, store credit will be issued.  <\/p><p>\nAll custom, personalized, special order and sale products (including single initials and custom sizes) are FINAL SALE and cannot be exchanged or returned for store credit. No exceptions. <\/p><p>\nItems that are marked final sale cannot be returned or exchanged. <\/p><p> \nCancellations are not allowed on personalized styles as they are made to order. Please ensure correct size\/chain length is selected. Charges will be applied to resize.<\/p><p>\nYour items must be returned in the original packaging, including any pouches or boxes that the jewelry was shipped in. Shipping and handling charges are non-refundable. Gift Card purchases cannot be refunded.<\/p><p>\nAll of our personalized jewelry is hand made. The font, text or engraving might not be perfect. Slight imperfections can occur during the manufacturing process.<\/p><p> Please make sure to read the descriptions for exact measurements. Some of our images are zoomed in to show as much detail as possible. Items may appear larger from the image.\n<\/p><p>Make sure to double check and read the measurements! If you have any questions about the measurements, please contact us BEFORE placing your order!\n<\/p><p>\n<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "f3d3ab96-2805-4fc5-92ec-52c669800bfb",
+          "9723db39-802c-4a67-8f94-6cd60db292ff",
+          "6dd00d44-46b2-48c9-a3b6-456fe7819bbc",
+          "dbee957f-7730-4aa4-835f-2048abc9f4e7"
+        ],
+        "settings": {
+          "container": true,
+          "show_discount_badge": true,
+          "show_vendor": false,
+          "show_share_buttons": true,
+          "image_width": "600",
+          "image_height": "600",
+          "gallery_image_width": "120",
+          "gallery_image_height": "120",
+          "gallery_row_cols": 4,
+          "images_alignment": "flex-row",
+          "image_border": true,
+          "image_circle": false,
+          "image_hover_effect": "image-hover-shine",
+          "modal_transition": "fade zoom-in",
+          "modal_center": true,
+          "modal_image_width": "2048",
+          "modal_image_height": "2048",
+          "modal_carousel_transition": "slide",
+          "modal_carousel_show_caption": true,
+          "interval": 5,
+          "breakpoint": "-sm",
+          "holidayMsg": "<!-- <b><u>Click here<\/u> for Mother's Day shipping guidelines and cutoff dates<\/b> -->",
+          "holidayUrl": "shopify:\/\/pages\/holiday-shipping-guidelines-1",
+          "holidaym-clr": "#e7428b"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "enable_product_reccomendations": true,
+          "heading": "You may also like",
+          "subheading": "<p>Write something catchy here.<\/p>",
+          "limit": 4,
+          "row": 2,
+          "row_sm": 2,
+          "row_md": 3,
+          "row_lg": 4,
+          "row_xl": 4,
+          "heading_size": "h2",
+          "heading_alignment": "text-center",
+          "container": true,
+          "align_center": true,
+          "show_product_title": true,
+          "show_price": true,
+          "show_discount_badge": true,
+          "show_quick_view_button": true,
+          "product_title_size": "h6",
+          "quick_view_button_style": "btn-outline-primary",
+          "quick_view_transition": "fade zoom-in",
+          "quick_view_heading_size": "h3",
+          "quick_view_desc_truncate": "200",
+          "quick_view_show_view_product_button": true,
+          "quick_view_view_product_button_style": "btn-outline-primary",
+          "quick_view_show_share_buttons": true,
+          "image_width": "360",
+          "image_height": "360",
+          "quick_view_image_width": "480",
+          "quick_view_image_height": "480",
+          "image_border": true,
+          "image_circle": false,
+          "image_hover_effect": "image-hover-shine",
+          "margin_top": 6,
+          "margin_bottom": 6,
+          "gutter_horizontal": 2,
+          "gutter_vertical": 3
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "heading": "Collections",
+          "subheading": "<p>Write something catchy here<\/p>",
+          "heading_size": "h1",
+          "heading_alignment": "text-left",
+          "container": true,
+          "results_per_page": 20,
+          "removed_collections": "frontpage",
+          "row": 2,
+          "row_sm": 2,
+          "row_md": 3,
+          "row_lg": 4,
+          "row_xl": 4,
+          "align_center": true,
+          "show_collection_title": true,
+          "collection_title_size": "h6",
+          "show_collection_count": true,
+          "show_collection_desc": false,
+          "collection_desc_truncate": "200",
+          "image_width": "320",
+          "image_height": "320",
+          "image_border": false,
+          "image_circle": true,
+          "image_hover_effect": "image-hover-flashing",
+          "gutter_horizontal": 3,
+          "gutter_vertical": 3
+        }
+      },
+      "16168189909d1f85db": {
+        "type": "collection-list",
+        "blocks": {
+          "72f57a08-7c5e-4771-8ec1-d7c7ddc1e4e1": {
+            "type": "collection",
+            "settings": {
+              "collection": "necklaces"
+            }
+          },
+          "3ca892dc-4c8d-4fbf-b7f3-23cc65c7ad8b": {
+            "type": "collection",
+            "settings": {
+              "collection": "bracelets"
+            }
+          },
+          "fc820af6-28f8-4ea8-9adb-d388c00f8d94": {
+            "type": "collection",
+            "settings": {
+              "collection": "earrings"
+            }
+          },
+          "97994e29-05aa-498f-8edd-e4a5a91724f5": {
+            "type": "collection",
+            "settings": {
+              "collection": "rings"
+            }
+          }
+        },
+        "block_order": [
+          "72f57a08-7c5e-4771-8ec1-d7c7ddc1e4e1",
+          "3ca892dc-4c8d-4fbf-b7f3-23cc65c7ad8b",
+          "fc820af6-28f8-4ea8-9adb-d388c00f8d94",
+          "97994e29-05aa-498f-8edd-e4a5a91724f5"
+        ],
+        "settings": {
+          "heading": "SHOP CATEGORIES",
+          "subheading": "<p><\/p>"
+        }
+      },
+      "1617075174df6639e7": {
+        "type": "featured-collection",
+        "disabled": true,
+        "settings": {
+          "heading": "SHOP COLLECTION",
+          "subheading": "<p><\/p>",
+          "collection": "necklaces",
+          "limit": 5
+        }
+      },
+      "press-celebrity": {
+        "type": "press-celebrity",
+        "blocks": {
+          "1866f5e7-5dce-42c0-be1c-74dda463c2b3": {
+            "type": "photo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/motherdaygiftguide_9a0456d5-932e-4311-815f-72c9f162e9b2.jpg",
+              "name": ""
+            }
+          }
+        },
+        "block_order": [
+          "1866f5e7-5dce-42c0-be1c-74dda463c2b3"
+        ],
+        "settings": {
+        }
+      },
+      "press-editorial": {
+        "type": "press-editorial",
+        "settings": {
+        }
+      },
+      "brands": {
+        "type": "brands",
+        "settings": {
+          "display_brands_slider": true
+        }
+      },
+      "faq-template": {
+        "type": "faq-template",
+        "blocks": {
+          "876408db-f29f-4e42-b0b8-b1b9f44ca1f1": {
+            "type": "faqsection",
+            "settings": {
+              "title": "My Order"
+            }
+          },
+          "7e72701c-12c3-4df9-9f41-7c2f6ecb1193": {
+            "type": "faqs",
+            "settings": {
+              "title": "HOW DO I KNOW IF MY ORDER HAS SHIPPED?",
+              "answer": "<p>Once your order has been successfully transmitted, you will receive an order confirmation. In addition, a shipping confirmation e-mail will be sent to you once your order has been shipped. This confirmation will include the tracking number for your package. This tracking number can be used to check the status on www.fedex.com. Please allow up to 24 hours for the tracking information to be updated in the system. Please be sure to check your SPAM folder as these emails may be re-directed there.<\/p>"
+            }
+          },
+          "b25a00bb-ebf7-4376-8511-afc392948f4c": {
+            "type": "faqs",
+            "settings": {
+              "title": "HOW CAN I MODIFY MY ORDER?",
+              "answer": "<p>Please be advised that once an order has been placed we are unable to make any modifications to the order including cancellations.<\/p>"
+            }
+          },
+          "c6512b3c-f26a-4bf0-b79a-198ed29808f8": {
+            "type": "faqs",
+            "settings": {
+              "title": "ITEM AVAILABILITY ?",
+              "answer": "<p>Although we make every effort to keep sufficient stock of items listed on our site, occasionally we do sell out of certain products. If we are out of stock on an item that you've ordered, we will notify you via e-mail.<\/p>"
+            }
+          },
+          "46dc1793-3288-4845-870a-fa3f352385cf": {
+            "type": "faqs",
+            "settings": {
+              "title": "Is the font generator accurate?",
+              "answer": "The font generator is not 100% accurate.  It is just to give you an idea of what the personalized text will look like.  Most of our jewelry is handmade and there can be some slight variations."
+            }
+          },
+          "0bdad238-ded7-49a7-97bb-4ef4e1318859": {
+            "type": "faqs",
+            "settings": {
+              "title": "I ORDERED PERSONALIZED AND NON-PERSONALIZED ITEMS IN ONE ORDER. DO THEY SHIP TOGETHER OR SEPARATELY?",
+              "answer": "<p>If you order other items in addition to a personalized item, they will all ship <strong>together<\/strong>.<\/p>"
+            }
+          },
+          "c79b2450-f85b-4044-899f-d7becf87ecfe": {
+            "type": "faqs",
+            "settings": {
+              "title": "CAN I ADD A NAME\/LETTER\/SYMBOL\/DIAMOND TO A NECKLACE I ALREADY OWN FROM LOLA JAMES JEWELRY?",
+              "answer": "<p>Yes! Please click <a href=\"https:\/\/lolajamesjewelry.com\/collections\/add-to-an-existing-necklace-or-bracelet\" title=\"https:\/\/lolajamesjewelry.com\/collections\/add-to-an-existing-necklace-or-bracelet\"><b>here<\/b> and follow the directions listed to add to an existing necklace.<\/a><\/p>\n<p>International orders are excluded from add on's.<\/p>\n<p>Discount codes cannot be used on add on's.<\/p>"
+            }
+          },
+          "cf9156e6-f3a4-4879-89a5-3dfcf9cc4c48": {
+            "type": "faqs",
+            "settings": {
+              "title": "CAN I PLACE MY ORDER OVER THE PHONE?",
+              "answer": "All orders must be placed on our website to avoid any confusion that may occur.  Personalized pieces require a lot of details and it is best to order online."
+            }
+          },
+          "aaabe754-b76b-4a9f-94c2-addbea239612": {
+            "type": "faqsection",
+            "settings": {
+              "title": "Shipping Guidelines"
+            }
+          },
+          "5cba87f3-b446-44b7-93b5-53c482b6a283": {
+            "type": "faqs",
+            "settings": {
+              "title": "WHAT ARE YOUR SHIPPING GUIDELINES?",
+              "answer": "<p>Orders placed Monday-Friday before 1 PM EST will begin processing that day, excluding holidays, and will ship within 1-2 business days pending availability and credit verification. All orders placed after 1 PM EST will begin processing the next business day, and ship within 1-2 business days. Orders placed on Friday after 1 PM EST will begin processing on the following Monday. All personalized orders can take up to 6-8 weeks to ship. Lola James Jewelry will contact you with a follow-up email if the merchandise you have selected is not currently in stock or if we need additional identification provided for credit verification. Delivery time does not include Saturdays, Sundays or Holidays.<\/p>\n\n<p>ALERT: FEDEX is experiencing delays due to the impacts of COVID-19. Most packages are arriving on time, but some are delayed.  We are so sorry for any inconvenience. <\/p>"
+            }
+          },
+          "6d608f1f-7d5d-40d7-9689-2faf05b33ddf": {
+            "type": "faqs",
+            "settings": {
+              "title": "HOW LONG WILL IT TAKE TO RECEIVE MY PERSONALIZED ORDER?",
+              "answer": "<p>Each style has a different shipping time frame. You can find the lead time on the page of the item you are ordering. Please note that expedited shipping will only speed up your shipping time, not the making of the item. <strong>All personalized items can take up to 6-10 weeks to ship even if 2-day delivery is selected.<\/strong> We try our best to get everything out as fast as we can!<\/p>"
+            }
+          },
+          "c9216a08-2c56-483d-aa61-1fd92072b170": {
+            "type": "faqs",
+            "settings": {
+              "title": "CAN I RUSH ORDER A PERSONALIZED ITEM?",
+              "answer": "<p>At this time we do NOT offer RUSH orders on personalized items.<\/p>"
+            }
+          },
+          "6512de48-a312-4858-925d-165558f3edaf": {
+            "type": "faqs",
+            "settings": {
+              "title": "MY GIFT IS NOT GOING TO ARRIVE ON TIME - WHAT CAN I DO?",
+              "answer": "Gift arriving late? We've got you covered!\nPrint our <b><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2283\/3973\/files\/LolaJames-Missing.pdf?v=1628702035\">something special card<\/a><\/b> to let your recipient know that their Lola James gift is on its way!"
+            }
+          },
+          "2047e291-9a55-426a-b3b8-c984fb7d258f": {
+            "type": "faqs",
+            "settings": {
+              "title": "HOW MUCH IS SHIPPING AND HANDLING?",
+              "answer": "<p><\/p><ul>\n<p>  <\/p>\n<li>FedEx 2 Day is $12.<\/li>\n<p>  <\/p>\n<li>FedEx 2 Day with signature confirmation is $16.<\/li>\n<p>  <\/p>\n<li>USA orders over $150 ship for free via FedEx 2-3 Day. If you would like to add a signature confirmation it is $4.<\/li>\n<p>  <\/p>\n<p>  <\/p>\n<p>  <\/p>\n<li>ALL ORDERS OVER $1,000 WILL AUTOMATICALLY BE SHIPPED WITH A SIGNATURE REQUIRED. <\/li>\n<p>  <\/p>\n<li><strong>WE ONLY SHIP WITHIN THE US. <\/strong><\/li>\n<p>  <\/p>\n<li><strong>WE DO NOT SHIP TO PO BOXES. <\/strong><\/li>\n<p><\/p>\n<\/ul>"
+            }
+          },
+          "9d4f9c90-6d50-4866-b56e-2a7504c5afae": {
+            "type": "faqs",
+            "settings": {
+              "title": "DELIVERY ISSUES?",
+              "answer": "<p>Once items have been fulfilled and shipped by us, it is the responsibility of FedEx to get your items to you on time. The delivery confirmation serves as official notice that our merchandise has successfully reached its destination. After receiving official word from FedEx that the item has been delivered, Lola James Jewelry is <strong>NOT<\/strong> responsible for lost or stolen items.<\/p>\n<p>We are not responsible for packages that are lost or not delivered due to an insufficient or incorrect address or a full mailbox. If the package is returned to us you are responsible for the shipping cost to reship the merchandise.<\/p>\n<p>If you select signature required and are not there to sign for it and the package gets returned to us, you are responsible for the shipping cost to reship the merchandise.<\/p>\n<p>If the package is not showing up as having been delivered, we, the shipper, will file a claim with FedEx and come to a resolution. When filing a report with FedEx, it can take up to 14 business days for the claim to be completed. We are unable to replace the lost or stolen item until the claim is completed with FedEx.<\/p>"
+            }
+          },
+          "bebdd636-7fa6-4a5d-ae4c-8705610a5ee2": {
+            "type": "faqsection",
+            "settings": {
+              "title": "Returns and Exchanges"
+            }
+          },
+          "a7475829-d939-4508-b41c-abd3841cb2ca": {
+            "type": "faqs",
+            "settings": {
+              "title": "WHAT IS YOUR RETURN POLICY?",
+              "answer": "<p>We offer exchange or <strong>STORE CREDIT <\/strong>within 7 days of shipment date.  We do not provide refunds. <\/p>\n\n<p>All custom, personalized, special order and sale products (including single initials and custom sizes) are <strong>FINAL SALE <\/strong> and cannot be exchanged or returned for store credit. No exceptions. <\/p>\n\n<p>Items that are marked final sale cannot be returned or exchanged. <\/p> \n\n<p>Cancellations, changes, or returns are not allowed on personalized styles as they are made to order and are FINAL SALE. <\/p>\n\n<p>Store credit will be issued, provided that the jewelry has not been damaged, worn, or altered.<\/p>\n\n<p>Your items must be returned in the original packaging, including any pouches or boxes that the jewelry was shipped in. <\/p>\n\n<p>Shipping and handling charges are non-refundable.    <\/p>"
+            }
+          },
+          "66eea499-47ea-4f19-9d5a-ca13440ea559": {
+            "type": "faqs",
+            "settings": {
+              "title": "HOW DO I SEND AN ITEM BACK?",
+              "answer": "<ul>\n<li>STEP 1: Please contact info@lolajamesjewelry.com to receive a return authorization number.  Please include your order number in the email. We will not accept any returns without an authorized RA number.<\/li>\n<\/ul>\n  <ul>\n<li>STEP 2: Before you send the return, please ensure the item is in the <strong><span>original<\/span><\/strong> packaging and in a shipping box to avoid further damage. Sending in an envelope may damage the item further.<\/li>\n<\/ul>\n<ul>\n<li>STEP 3: Ship the item to the below address via an insured mail service, such as FedEx, UPS, or USPS, and insure the package for the cost of the item. If using USPS, packages must have delivery confirmation to enable detailed tracking information.<\/li>\n<\/ul>\n<p>If we do not receive your return package as described above we reserve the right to refuse your return. Lola James Jewelry is not responsible for return items lost or damaged in the mail.<br><br><span><strong>RETURN ADDRESS:<\/strong><\/span><br>Lola James<br>Attn: Office <br>3722 NE 200th Sreet<br>Aventura, FL 33180<\/p>"
+            }
+          },
+          "7a3b5e0a-67e1-4774-8bf1-2c301646dc6f": {
+            "type": "faqsection",
+            "settings": {
+              "title": "International Shipping"
+            }
+          },
+          "3c6826ec-8645-4c2e-a4fd-bb3199ce4f6c": {
+            "type": "faqs",
+            "settings": {
+              "title": "Do you ship internationally?",
+              "answer": "Not at this time."
+            }
+          },
+          "3a2f2de9-d188-456c-b15d-f32e11f5a43b": {
+            "type": "faqs",
+            "settings": {
+              "title": "Important information regarding international shipping:",
+              "answer": "<p>For previous international orders - NO repairs, NO exchanges, NO returns will be allowed.  NO EXCEPTIONS.  If your item arrives and needs a repair you are responsible for it and the cost to repair it.  We are not responsible for lost packages, invalid addresses, or any shipping costs. <\/p>\n\n<p>Duties and import fees must be paid for by the customer.  <\/p>\n\n<p>If you refuse a shipment from us, you are responsible for the original shipping charges, any duties\/import fees that are incurred on the package, and the cost of returning the package to Lola James. This amount will be deducted from your merchandise credit.  <\/p>\n\n<p>We are not responsible for any delayed deliveries due to import issues. <\/p>\n\n<p><b>ALL SALES ARE FINAL.<\/b> <\/p>"
+            }
+          },
+          "34a0c218-0650-4f13-b607-81896d52696c": {
+            "type": "faqsection",
+            "settings": {
+              "title": "Technical Issues"
+            }
+          },
+          "1348aeb9-3ed1-467e-bf80-d5b6ab08449a": {
+            "type": "faqs",
+            "settings": {
+              "title": "HELP! IT LOOKS LIKE I WAS CHARGED SEVERAL TIMES?",
+              "answer": "<p>Unless you received an order confirmation, we did not charge your card. If your credit card was declined, you may see pending transactions for each attempt to submit payment. Depending on your bank the pending transaction will clear up within a few business days and will never turn into a charge. You will always get an email confirmation when an order is successfully placed on our site. Please check your billing address before submitting the order again.<\/p>"
+            }
+          },
+          "4732d235-4274-4b01-8c4d-0a6c306a0e68": {
+            "type": "faqsection",
+            "settings": {
+              "title": "Jewelry Care"
+            }
+          },
+          "44cd2f3c-77d6-4c16-b180-5fafa592e790": {
+            "type": "faqs",
+            "settings": {
+              "title": "HOW DO I CARE FOR MY JEWELRY?",
+              "answer": "<p>Please keep all jewelry away from moisture (no water, lotions or perfumes). Many beauty products can cause tarnishing of metals. We recommend taking off your jewelry to shower. Please do not sleep in your jewelry and when not in use jewelry should be neatly stored. We recommend giving your pieces a day off to limit wear and tear.<\/p>\n<p>Sterling silver jewelry tends to naturally oxidize over time.  We recommend cleaning it with a polishing cloth.<\/p>\n<p>To clean your 14K Gold and diamond jewelry we recommend using a gentle dish soap with warm water. <\/p>"
+            }
+          },
+          "e995ebca-dc82-4ce5-af0f-9f62b2c37c0f": {
+            "type": "faqsection",
+            "settings": {
+              "title": "Repair Policy"
+            }
+          },
+          "48135e0c-0919-4be3-85da-121cd474e7fa": {
+            "type": "faqs",
+            "settings": {
+              "title": "WHAT IS YOUR REPAIR POLICY?",
+              "answer": "We offer complimentary repairs within the first 30 days of purchase.  <br><br>We only accept repairs for up to 6 months after the date of purchase. <br><br>We will repair only designs purchased through lolajamesjewelry.com.  \n<br><br>\nAll repairs require prior authorization. To submit a repair, please fill out this <a href=\"https:\/\/lolajamesjewelry.com\/pages\/repairs\"><b>form<\/b>.<\/a> <br><br>\nAfter receiving authorization, please click the following link to make the payment for the repair needed <a href=\"https:\/\/lolajamesjewelry.com\/products\/repair\"><b>here<\/b>.<\/a> <br><br>\nPlease note that any repair after 30 days will incur a fee based on the type of repair necessary.  Repairs typically start at $30. If we believe the items are intentionally damaged or misused, we reserve the right to refuse any repair requests.<br>\n<br>The customer is responsible to ship the item to us.  Lola James is not responsible if the package gets damaged, lost or stolen before it arrives to us. <br>\n<br>Please allow 4-6 weeks for all repairs.  All repairs are subject to shipping. We ship all repairs back via USPS mail. <br>\n<br> We do not accept repairs or responsibility for items that have been changed or worked on by any other jeweler. <br>\n<br>"
+            }
+          },
+          "774d1451-a1df-41d4-bcdd-edd5b7b12458": {
+            "type": "faqsection",
+            "settings": {
+              "title": "General Questions"
+            }
+          },
+          "4f555785-8097-4537-883e-6956fb624a6b": {
+            "type": "faqs",
+            "settings": {
+              "title": "WHAT IS YOUR MOST POPULAR CHAIN LENGTH?",
+              "answer": "Our best selling necklace length is  16\".   All necks are different and our necklaces may fit differently depending on the person.  To figure out which size will fit you best, we recommend you measure your favorite necklace and order that length."
+            }
+          },
+          "d7e140c5-3860-45e0-a681-a138dce6ce0d": {
+            "type": "faqs",
+            "settings": {
+              "title": "DO YOU OFFER GIFT CARDS?",
+              "answer": "Yes! You can order a gift card <a href=\"https:\/\/lolajamesjewelry.com\/products\/gift-card\"><b>here<\/b>.<\/a> Gift cards expire within 1 year of the purchase date."
+            }
+          },
+          "dae7a791-a0ea-4dc4-8b9a-43dfbea1aaf8": {
+            "type": "faqs",
+            "settings": {
+              "title": "MY NECKLACE I ORDERED IS TOO SHORT - WHAT ARE MY OPTIONS?",
+              "answer": "We suggest purchasing an add on extender <a href=\"https:\/\/lolajamesjewelry.com\/products\/chain-extender?_pos=1&_sid=461b26381&_ss=r\"><b>here<\/b>.<\/a>"
+            }
+          },
+          "dfdef429-de28-45ff-a74e-f3e6f20b6f92": {
+            "type": "faqs",
+            "settings": {
+              "title": "DO YOU HAVE A BRACELET SIZER?",
+              "answer": "Yes! Please click<a href=\"https:\/\/lolajamesjewelry.com\/pages\/bracelet-sizing-guide\"><b> here<\/b><\/a>  for our bracelet sizer.  Make sure to follow the directions to print the sizer correctly.  Please note it is not 100% accurate. It is to be used as a guide."
+            }
+          },
+          "68f153fd-398e-4158-a0f0-871842ac0ec3": {
+            "type": "faqsection",
+            "settings": {
+              "title": ""
+            }
+          }
+        },
+        "block_order": [
+          "876408db-f29f-4e42-b0b8-b1b9f44ca1f1",
+          "7e72701c-12c3-4df9-9f41-7c2f6ecb1193",
+          "b25a00bb-ebf7-4376-8511-afc392948f4c",
+          "c6512b3c-f26a-4bf0-b79a-198ed29808f8",
+          "46dc1793-3288-4845-870a-fa3f352385cf",
+          "0bdad238-ded7-49a7-97bb-4ef4e1318859",
+          "c79b2450-f85b-4044-899f-d7becf87ecfe",
+          "cf9156e6-f3a4-4879-89a5-3dfcf9cc4c48",
+          "aaabe754-b76b-4a9f-94c2-addbea239612",
+          "5cba87f3-b446-44b7-93b5-53c482b6a283",
+          "6d608f1f-7d5d-40d7-9689-2faf05b33ddf",
+          "c9216a08-2c56-483d-aa61-1fd92072b170",
+          "6512de48-a312-4858-925d-165558f3edaf",
+          "2047e291-9a55-426a-b3b8-c984fb7d258f",
+          "9d4f9c90-6d50-4866-b56e-2a7504c5afae",
+          "bebdd636-7fa6-4a5d-ae4c-8705610a5ee2",
+          "a7475829-d939-4508-b41c-abd3841cb2ca",
+          "66eea499-47ea-4f19-9d5a-ca13440ea559",
+          "7a3b5e0a-67e1-4774-8bf1-2c301646dc6f",
+          "3c6826ec-8645-4c2e-a4fd-bb3199ce4f6c",
+          "3a2f2de9-d188-456c-b15d-f32e11f5a43b",
+          "34a0c218-0650-4f13-b607-81896d52696c",
+          "1348aeb9-3ed1-467e-bf80-d5b6ab08449a",
+          "4732d235-4274-4b01-8c4d-0a6c306a0e68",
+          "44cd2f3c-77d6-4c16-b180-5fafa592e790",
+          "e995ebca-dc82-4ce5-af0f-9f62b2c37c0f",
+          "48135e0c-0919-4be3-85da-121cd474e7fa",
+          "774d1451-a1df-41d4-bcdd-edd5b7b12458",
+          "4f555785-8097-4537-883e-6956fb624a6b",
+          "d7e140c5-3860-45e0-a681-a138dce6ce0d",
+          "dae7a791-a0ea-4dc4-8b9a-43dfbea1aaf8",
+          "dfdef429-de28-45ff-a74e-f3e6f20b6f92",
+          "68f153fd-398e-4158-a0f0-871842ac0ec3"
+        ],
+        "settings": {
+          "sec-title-bg": "#333333",
+          "sec-title": "#eeeeee"
+        }
+      },
+      "16199346117e17cf4b": {
+        "type": "collection-slider",
+        "blocks": {
+          "62d5723d-ea80-4a95-8e71-bbff71d6b951": {
+            "type": "collection",
+            "settings": {
+              "collection": "mini-me"
+            }
+          },
+          "b114f59b-02cb-49e9-9a27-cc2880a573c8": {
+            "type": "collection",
+            "settings": {
+              "collection": "enamel"
+            }
+          },
+          "a2260201-f5fd-44cc-8e68-2e25fe351834": {
+            "type": "collection",
+            "settings": {
+              "collection": "cuban-link"
+            }
+          },
+          "01406aa9-6416-4146-aeaf-f8dc1b99cb10": {
+            "type": "collection",
+            "settings": {
+              "collection": "squad-goals"
+            }
+          },
+          "b4285a68-2dae-4c27-93a0-dbae3b3de5de": {
+            "type": "collection",
+            "settings": {
+              "collection": "protection"
+            }
+          }
+        },
+        "block_order": [
+          "62d5723d-ea80-4a95-8e71-bbff71d6b951",
+          "b114f59b-02cb-49e9-9a27-cc2880a573c8",
+          "a2260201-f5fd-44cc-8e68-2e25fe351834",
+          "01406aa9-6416-4146-aeaf-f8dc1b99cb10",
+          "b4285a68-2dae-4c27-93a0-dbae3b3de5de"
+        ],
+        "settings": {
+          "heading": "Shop Collections",
+          "subheading": "<p>Write something catchy here<\/p>"
+        }
+      },
+      "sswinstagram": {
+        "type": "sswinstagram",
+        "disabled": true,
+        "settings": {
+          "option_galleries_id": "data-gallery_id=\"2\" data-widget=\"0\""
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "show_subtitle": true,
+          "note": true,
+          "show_vendor": true,
+          "show_quantity": true,
+          "sticky_summary": true,
+          "holiday": false,
+          "image_width": "160",
+          "image_height": "160",
+          "image_border": true
+        }
+      },
+      "celebrity": {
+        "type": "celebrity",
+        "blocks": {
+          "eefd6a3e-3004-46a7-8b80-b360659573c9": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Facetune_30-04-2018-13-52-40_copy.jpg",
+              "name": "BLAKE LIVELY",
+              "link": "shopify:\/\/products\/squad-goals-14k"
+            }
+          },
+          "ee566eb4-d0cb-45cb-b94f-f0289530efd6": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/whitneyport_a75119c7-6fb3-4502-91c9-b54bc5eb57c3.jpg",
+              "name": "Whitney Port",
+              "link": "shopify:\/\/products\/squad-goals-14k"
+            }
+          },
+          "ffd5aabb-4222-4816-962c-d9e0981a4be0": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/KhloeSqaudGoals_1.jpg",
+              "name": "KHLOE KARDASHIAN"
+            }
+          },
+          "dc7caa87-b917-435d-9793-1ccf6ca1e070": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BellaHadid.JPG",
+              "name": "Bella Hadid"
+            }
+          },
+          "ce42df77-9024-44c3-806c-3e12fbf81d1f": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_5E1D338DDA2F-1.jpeg",
+              "name": "Jessie James Decker",
+              "link": "shopify:\/\/products\/mini-me-14k-1"
+            }
+          },
+          "9c24c301-8407-4e73-9461-c05f73147b6d": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/GigiHadid_e78c6561-2f4f-4ff8-ae47-79c8d5329080.jpg",
+              "name": "Gigi Hadid"
+            }
+          },
+          "946a4761-d4ee-4741-82a9-f385017a7f91": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/WSQUADGOALS1C_fc223cae-9cac-4b13-98de-a99e86646531.jpg",
+              "name": "Lucy Hale",
+              "link": "shopify:\/\/products\/mini-squad-goals-heart-or-star-14k"
+            }
+          },
+          "7b5cd0fd-4268-44f3-8e1f-07ebea24d299": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AshleyBenson.jpg",
+              "name": "Ashley Benson"
+            }
+          },
+          "b6e65a16-f8ef-44cd-af34-2a9e4d7b5fad": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Brittney_Aldean.jpg",
+              "name": "Brittany Aldean",
+              "link": "shopify:\/\/collections\/squad-goals"
+            }
+          },
+          "7cdf83c2-88e2-4847-8e14-e4b8fe594590": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Kendall_Jenner_5c6c76dd-0af7-4d54-b34e-2e4b5c0febf4.jpg",
+              "name": "Kendal Jenner",
+              "link": "shopify:\/\/products\/mini-me-friendship"
+            }
+          },
+          "07331ebd-2154-4248-98ba-f9f569a81dd7": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/GigiHadidKendallJenner_3f3a7cbd-d070-4c3c-9b80-f3c477c2d3a9.jpg",
+              "name": "Gigi Hadid\/Kendal Jenner"
+            }
+          },
+          "9706048d-4f88-4ebc-a696-c076e8a03c02": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Lauren_Conrad_dd85f98a-62c9-4d04-81e3-ed08d238f610.jpg",
+              "name": "Lauren Conrad",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "46462fcb-a379-48bd-89ac-29a8698f259e": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LucyHale.jpg",
+              "name": "Lucy Hale"
+            }
+          },
+          "995d1a7d-0eba-4af9-a7f0-785836d49d92": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/GigiHadid2_7dc29e1e-d840-4f6b-8b3a-85997f761b7b.jpg",
+              "name": "Gigi Hadid"
+            }
+          },
+          "3fd5b1b8-0a04-4c60-9631-1b2f953ba425": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ashley_Benson-2.jpg",
+              "name": "Ashley Benson"
+            }
+          },
+          "4692818b-fcd9-435e-90ab-bbe24d9a4d73": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Whitney_Port_06a3a104-4d41-4931-8e8a-3cfdfc3bce32.jpg",
+              "name": "Whitney Port",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/squad-goals-14k?ose=false"
+            }
+          },
+          "4bd44cd4-2e33-4add-aa57-c80d1dc8233e": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LJ_Gigi_Hadid_51f6fc6c-b02c-4055-99c3-85f4471f9731.jpg",
+              "name": "Gigi Hadid"
+            }
+          },
+          "6bbbdc4c-c8fc-4924-8fc2-8a6e99f155ad": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Shay_Mitchell_b3076211-e77a-4d59-affa-4baf44e3c88d.jpg",
+              "name": "Shay Mitchell"
+            }
+          },
+          "0ea05e74-6c5b-437a-8f9e-0a9f4f9efe8b": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/KateHudson2_c1907c65-bc58-4f04-a492-3422d853754c.jpg",
+              "name": "Kate Hudson"
+            }
+          },
+          "7f5d097c-f810-4a5f-9b81-ed50880eee1b": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LaurenConrad_f5ca3ab4-8ce8-4b3f-8826-9fa50773fcd6.jpg",
+              "name": "Lauren Conrad",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "ecefed65-6f35-4cf3-9404-dae9857ec5bd": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ShayMitchell2_1fc8cf31-84e5-4714-9a59-99900e150b87.jpg",
+              "name": "Shay Mitchell",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "36d7cfb2-1e52-47f7-87ca-7a094e7e3766": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rocky_Barnes_2f3a35fa-3115-499c-b959-dde9e818b3ac.jpg",
+              "name": "Rocky Barnes",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "11e2cd29-2e09-4198-a9ec-1c5d65a1f66f": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_MINI_ME_-_SHAY_MITCHELL_-_14K_GOLD_97c9e301-9717-4959-a9ec-c1c19d1a33ed.jpg",
+              "name": "Shay Mitchell",
+              "link": "shopify:\/\/products\/mini-me-friendship"
+            }
+          },
+          "9c21525e-050d-46b3-aae6-4ec2b6acd107": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EmilyRatajkowski2_c76dd1e7-d3a7-4828-8516-d9e3508064f4.jpg",
+              "name": "Emily Ratajkowski"
+            }
+          },
+          "25fba247-6ac7-4e3e-9560-4135b93a2930": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LaurenConrad_9e91d371-c527-41d7-b2ed-4675fc02a15d.jpg",
+              "name": "Lauren Conrad",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "a3d5e9d7-7555-4b4f-9cee-4f74508e8dec": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AshleyBenson2_bc419333-1937-4cea-92b7-0c0d5beb2853.jpg",
+              "name": "Ashley Benson",
+              "link": "shopify:\/\/products\/squad-goals-14k"
+            }
+          },
+          "949f756f-5c95-40f0-b519-41b4a7436df7": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LJ_Jenna_Dewan-Tatum_9281fe21-e207-4706-9f6c-fad93fe5d2a1.jpg",
+              "name": "Jenna Dewan-Tatum",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "a4bc4e52-ccd9-487d-b6d5-f4642d3ae940": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Emily_Ratajkowski_39e20a9f-44a2-4d6e-ade7-e1f7b0db28ce.jpg",
+              "name": "Emily Ratajkowski",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "d1f32505-c6d5-427e-b460-599fa86a2335": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/KateHudson1_7c8937af-08e4-4c9d-b83d-b4ebf4889591.jpg",
+              "name": "Kate Hudson",
+              "link": "shopify:\/\/products\/copy-of-mini-me-tags"
+            }
+          },
+          "e146596d-a668-404b-a90b-fd59e57346dd": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AmyAdams_c62670ca-1fde-4bb1-b28d-6ffc7dd5e0af.jpg",
+              "name": "Amy Adams",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "d19333e2-9ef4-437a-8a58-69397980ab47": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/OliviaMunn_75b4e2e3-2920-466f-8817-16bab73bdcf6.jpg",
+              "name": "Olivia Munn",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "8f466438-c5bb-43db-85e0-1d43fa034398": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LucyHaleInstagram_a5da89eb-f906-414d-a736-48d37175b1f2.jpg",
+              "name": "Lucy Hale"
+            }
+          },
+          "18d43dee-e1d9-476f-89ff-842858fddcc5": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LJ_Rachel_Bilson_61767978-1a70-4a6b-9038-b66a53763fdd.jpg",
+              "name": "Rachel Bilson",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "c6f0e825-a93a-4409-a5b9-d07dd06981e6": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/KateHudson3_3f48a403-067d-429c-bdd1-7f2312f2322f.jpg",
+              "name": "Kate Hudson",
+              "link": "shopify:\/\/products\/copy-of-mini-me-tags"
+            }
+          },
+          "106e5a35-bb00-4433-b88d-1c7d82bf5442": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EmilyRatajkowski3_1dc7a41a-c773-45a6-933f-dbb3aa56a89a.jpg",
+              "name": "Emily Ratajkowski",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "82ae9596-078e-4e8a-991c-df17ff3b1b17": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Shaymitchell3_e709801e-18bd-4147-8d67-8d4568327a16.jpg",
+              "name": "Shay Mitchell",
+              "link": "shopify:\/\/products\/mini-me-friendship"
+            }
+          },
+          "6cf2ad9a-8140-4d7b-a728-fbbdee2b4913": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/MariaMenounos_6b49fa88-8ffd-4d78-9eb7-9ab4d277372b.jpg",
+              "name": "Maria Menounos",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "7a2ef9fa-bc54-4c6c-a71e-65e35e5c7a4e": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Jessica_Alba_af3d1753-68b1-473b-ab0e-806ea3519d87.jpg",
+              "name": "Jessica Alba",
+              "link": "shopify:\/\/collections\/rings"
+            }
+          },
+          "bfe783a0-a34d-47f1-83bd-14e0d42702ef": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_MINI_ME_R_HEART_J_-_OLIVIA_MUNN_-_1A_3f299765-0f69-46d6-917c-c60fef3bf452.jpg",
+              "name": "Olivia Munn",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "f35fa5f2-640c-45a1-9b48-f550a78e1c64": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LJ_Emily_Blunt_e300684e-0793-4849-977a-b7d5bbbb9b18.jpg",
+              "name": "Emily Blunt",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "782b593f-2c5e-42d7-a8f1-cac390701084": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AlessandraAmbrosio_1e9ce63f-47c7-4be7-86ab-11996931f6be.jpg",
+              "name": "Alessandra Ambrosia"
+            }
+          },
+          "7004be93-ff21-4b62-840c-aa3c7863e1b8": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rashidajones_4b5d3dcf-cfdc-43e4-b4d4-435e8e1b9049.jpg",
+              "name": "Rashida Jones",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "08a0ab23-bffb-4b1c-b40a-e32fc19735ef": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Britney_Spears_8a293b80-bfea-49bd-9ab3-4bfb3fed8758.jpg",
+              "name": "Britney Spears"
+            }
+          },
+          "551604d7-183e-43c4-87da-1917e37f1c97": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LJ_Kaley_Cuoco_06ea1c75-c32d-4196-ab28-a390eb230a15.jpg",
+              "name": "Kaley Cuoco",
+              "link": "shopify:\/\/products\/fireworks-2"
+            }
+          },
+          "5205c71b-7c6f-4480-b577-13ef3f7d289e": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/NikkiReedAlerEgo4_e7726337-7584-4a28-adf0-f61ca6dd277a.jpg",
+              "name": "Nikki Reed",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "45fd2db6-6632-4fc3-9567-2b698d3095e2": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/JennaElfman_26ddadc7-6f2c-4ad9-a477-8d0bc9f90249.jpg",
+              "name": "Jenna Elfman",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "24926e48-fd4e-446c-bfb7-3bc1dbee143d": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/NickyHilton_eb63e891-28c8-48fa-b019-6659419da9ed.jpg",
+              "name": "Nicky Hilton",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "6a18b631-a72a-4fe6-90fe-0bf129a9c6e8": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_ALTER_EGO_-_G_-_DOUTZEN_b0098d36-ae27-4d09-bd6f-f16c2f96b8e4.jpg",
+              "name": "Doutzen Kroes",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "5fe9e20d-9a57-4338-93d5-822c28f4a6d3": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EmmaRoberts.jpg",
+              "name": "Emma Roberts",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "a0b38b1e-51c2-4943-bafd-9515d811284c": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/KaleyCuoco_4799dd50-d77f-43b9-9b43-e02b73ab0ad3.jpg",
+              "name": "Kaley Cuoco",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "97f4808c-c527-4d9c-8019-e86d7b5bfff7": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/NikkiReed.jpg",
+              "name": "Nikki Reed",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "74a8c63e-2951-436a-a382-4e916c6c5d54": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/JennaDewan-Tatum_copy_a1bc905d-77d1-46ee-94cc-93dbb8d36d1e.jpg",
+              "name": "Jenna Dewan-Tatum"
+            }
+          },
+          "4134f4ed-cae0-41c6-abe1-d65c273b7e30": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AngieHarmon_9d0ffcb2-425b-4d29-bb4f-1443c22480b3.jpg",
+              "name": "Angie Harmon"
+            }
+          },
+          "12d73515-c2c3-4517-aca5-18e2a421fd3f": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/JessicaAlbaBracelet_495915ed-1f96-4b18-8429-6ba53f34a17d.jpg",
+              "name": "Jessica Alba"
+            }
+          },
+          "8fe4271a-db56-4d5a-90d7-81c32a7afff9": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AshleyGreene_02333ddb-4418-4293-9bf3-e6190529fe0d.jpg",
+              "name": "Ashley Greene",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "ad11fa4e-82a3-4e68-a730-3b93691bde9d": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ashleygreene2_0aecf70e-1bb5-4aef-b3c4-8c526f742579.jpg",
+              "name": "Ashley Greene",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "6fdce71c-6485-4af9-a66f-97262a17e8e9": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EmilyBluntalterego_56588d9e-bccd-453d-a556-eada2fee4441.jpg",
+              "name": "Emily Blunt",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "88a426b8-351f-49e2-8f86-b8b9fcdce80c": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EmilyBluntalterego2_18b55ac8-bb1e-47fc-9908-492d5417b5bf.jpg",
+              "name": "Emily Blunt",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "93f37750-8799-4a8b-9b34-7da3a34545b6": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EmilyBlunt_copy_755e0219-f2eb-4753-8243-3c1713400585.jpg",
+              "name": "Emily Blunt",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "3ce03f36-7191-4d3f-8c4c-e051cbd89f10": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EvaLongoria_2147e4ac-4b0f-42f8-8a1f-d4d3c89b9a94.jpg",
+              "name": "Eva Longoria",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "4db1a491-7996-493f-868b-3ec143fc74a2": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/MariaMenounos_copy_962f8204-35fc-4cce-aadf-78081a60f0e5.jpg",
+              "name": "Maria Menounos",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "0b4e655e-5db8-4b46-9b6b-d27f42a2610f": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Stacykeibler_9a321e21-100a-4d08-b273-625ed0768a56.jpg",
+              "name": "Stacy Keibler",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "e6d2d316-4f8f-486c-8f51-6d6b746de586": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/RashidaJones_c5d5e154-2c5b-4eea-bfb4-1f0d8e892d5b.jpg",
+              "name": "Rashida Jones",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "b6298b79-4157-4654-b55e-f056bd4f8497": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/KaleyCuocoInstagram_a6c113ec-5ef2-426f-add8-6a815deb6ea2.jpg",
+              "name": "Kaley Cuoco"
+            }
+          },
+          "f5c09870-87a0-47f6-8dd1-5746b92369c8": {
+            "type": "celebrity",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/GiulianaRancic_65ab0159-8efd-4f9a-8aba-0bfa246f3efa.jpg",
+              "name": "Giuliana Rancic",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          }
+        },
+        "block_order": [
+          "eefd6a3e-3004-46a7-8b80-b360659573c9",
+          "ee566eb4-d0cb-45cb-b94f-f0289530efd6",
+          "ffd5aabb-4222-4816-962c-d9e0981a4be0",
+          "dc7caa87-b917-435d-9793-1ccf6ca1e070",
+          "ce42df77-9024-44c3-806c-3e12fbf81d1f",
+          "9c24c301-8407-4e73-9461-c05f73147b6d",
+          "946a4761-d4ee-4741-82a9-f385017a7f91",
+          "7b5cd0fd-4268-44f3-8e1f-07ebea24d299",
+          "b6e65a16-f8ef-44cd-af34-2a9e4d7b5fad",
+          "7cdf83c2-88e2-4847-8e14-e4b8fe594590",
+          "07331ebd-2154-4248-98ba-f9f569a81dd7",
+          "9706048d-4f88-4ebc-a696-c076e8a03c02",
+          "46462fcb-a379-48bd-89ac-29a8698f259e",
+          "995d1a7d-0eba-4af9-a7f0-785836d49d92",
+          "3fd5b1b8-0a04-4c60-9631-1b2f953ba425",
+          "4692818b-fcd9-435e-90ab-bbe24d9a4d73",
+          "4bd44cd4-2e33-4add-aa57-c80d1dc8233e",
+          "6bbbdc4c-c8fc-4924-8fc2-8a6e99f155ad",
+          "0ea05e74-6c5b-437a-8f9e-0a9f4f9efe8b",
+          "7f5d097c-f810-4a5f-9b81-ed50880eee1b",
+          "ecefed65-6f35-4cf3-9404-dae9857ec5bd",
+          "36d7cfb2-1e52-47f7-87ca-7a094e7e3766",
+          "11e2cd29-2e09-4198-a9ec-1c5d65a1f66f",
+          "9c21525e-050d-46b3-aae6-4ec2b6acd107",
+          "25fba247-6ac7-4e3e-9560-4135b93a2930",
+          "a3d5e9d7-7555-4b4f-9cee-4f74508e8dec",
+          "949f756f-5c95-40f0-b519-41b4a7436df7",
+          "a4bc4e52-ccd9-487d-b6d5-f4642d3ae940",
+          "d1f32505-c6d5-427e-b460-599fa86a2335",
+          "e146596d-a668-404b-a90b-fd59e57346dd",
+          "d19333e2-9ef4-437a-8a58-69397980ab47",
+          "8f466438-c5bb-43db-85e0-1d43fa034398",
+          "18d43dee-e1d9-476f-89ff-842858fddcc5",
+          "c6f0e825-a93a-4409-a5b9-d07dd06981e6",
+          "106e5a35-bb00-4433-b88d-1c7d82bf5442",
+          "82ae9596-078e-4e8a-991c-df17ff3b1b17",
+          "6cf2ad9a-8140-4d7b-a728-fbbdee2b4913",
+          "7a2ef9fa-bc54-4c6c-a71e-65e35e5c7a4e",
+          "bfe783a0-a34d-47f1-83bd-14e0d42702ef",
+          "f35fa5f2-640c-45a1-9b48-f550a78e1c64",
+          "782b593f-2c5e-42d7-a8f1-cac390701084",
+          "7004be93-ff21-4b62-840c-aa3c7863e1b8",
+          "08a0ab23-bffb-4b1c-b40a-e32fc19735ef",
+          "551604d7-183e-43c4-87da-1917e37f1c97",
+          "5205c71b-7c6f-4480-b577-13ef3f7d289e",
+          "45fd2db6-6632-4fc3-9567-2b698d3095e2",
+          "24926e48-fd4e-446c-bfb7-3bc1dbee143d",
+          "6a18b631-a72a-4fe6-90fe-0bf129a9c6e8",
+          "5fe9e20d-9a57-4338-93d5-822c28f4a6d3",
+          "a0b38b1e-51c2-4943-bafd-9515d811284c",
+          "97f4808c-c527-4d9c-8019-e86d7b5bfff7",
+          "74a8c63e-2951-436a-a382-4e916c6c5d54",
+          "4134f4ed-cae0-41c6-abe1-d65c273b7e30",
+          "12d73515-c2c3-4517-aca5-18e2a421fd3f",
+          "8fe4271a-db56-4d5a-90d7-81c32a7afff9",
+          "ad11fa4e-82a3-4e68-a730-3b93691bde9d",
+          "6fdce71c-6485-4af9-a66f-97262a17e8e9",
+          "88a426b8-351f-49e2-8f86-b8b9fcdce80c",
+          "93f37750-8799-4a8b-9b34-7da3a34545b6",
+          "3ce03f36-7191-4d3f-8c4c-e051cbd89f10",
+          "4db1a491-7996-493f-868b-3ec143fc74a2",
+          "0b4e655e-5db8-4b46-9b6b-d27f42a2610f",
+          "e6d2d316-4f8f-486c-8f51-6d6b746de586",
+          "b6298b79-4157-4654-b55e-f056bd4f8497",
+          "f5c09870-87a0-47f6-8dd1-5746b92369c8"
+        ],
+        "settings": {
+        }
+      },
+      "editorial": {
+        "type": "editorial",
+        "blocks": {
+          "46341065-af2d-49eb-8d70-dd0424035702": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_5373_copy.jpg",
+              "name": "Blake Lively",
+              "link": "shopify:\/\/products\/squad-goals-14k"
+            }
+          },
+          "9f325e6a-0798-47ed-9ce4-09b36aef72d6": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LaurenConrad.com9.29.17_1.jpg",
+              "name": "LAURENCONRAD.COM",
+              "link": "shopify:\/\/products\/squad-goals-14k"
+            }
+          },
+          "882b9b94-20f2-41ad-98d5-89a9fb93bb0c": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/4_8d1a01f0-119f-4b06-9fac-ea4b8b0318e9.jpg",
+              "name": "People StyleWatch",
+              "link": "shopify:\/\/products\/my-squad"
+            }
+          },
+          "5f3401fa-886b-4d06-b352-de2065f5eb15": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/8.jpg",
+              "name": "People Magazine",
+              "link": "\/collections\/shop\/products\/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538"
+            }
+          },
+          "c8fa6572-75ba-4559-bd53-6dc1a9a417cd": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BellaHadidIRLM_1_f9ca69bb-c66a-4838-a65d-d8e7df3d13de.jpg",
+              "name": "PEOPLE MAGAZINE",
+              "link": "shopify:\/\/products\/my-squad"
+            }
+          },
+          "4c94445a-7e73-43ad-9d37-3d28c11f5125": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/12.jpg",
+              "name": "Glamour - Kendall Jenner + GiGi Hadid",
+              "link": "\/products\/mini-me-friendship"
+            }
+          },
+          "568f5a79-0d97-441b-9cec-ee3b0377051a": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/VogueBellaHadidFinal_1_b445bd07-808d-42cc-ba45-5a55627f080c.jpg",
+              "name": "Vogue Magazine",
+              "link": "shopify:\/\/products\/my-squad"
+            }
+          },
+          "66b05271-3faf-4be3-bb67-73338ae9e484": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/GigiHadidPress.jpg",
+              "name": "People StyleWatch",
+              "link": "shopify:\/\/products\/my-squad"
+            }
+          },
+          "f8b5c628-b908-47a9-bb95-4d6e608e8d15": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Instyle.jpg",
+              "name": "InStyle - Kendall Jenner + Gigi Hadid",
+              "link": "shopify:\/\/products\/mini-me-friendship"
+            }
+          },
+          "65be1f71-fd81-454c-974e-922d0eeb8a26": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Elle.jpg",
+              "name": "Elle",
+              "link": "shopify:\/\/products\/my-squad"
+            }
+          },
+          "47131ee0-8e6f-46f7-af6a-f40da7c0de35": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PeopleMag.jpg",
+              "name": "People Magazine",
+              "link": "shopify:\/\/products\/mini-me-friendship"
+            }
+          },
+          "7445c252-c2f3-4ecf-86dc-35b5d7b6cb9f": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PeopleStyleWatch.jpg",
+              "name": "People StyleWatch - Kendall Jenner + GiGi Hadid",
+              "link": "shopify:\/\/products\/mini-me-friendship"
+            }
+          },
+          "c4b7f969-ed62-4a7e-af12-698bd75656f6": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/DailyMail.jpg",
+              "name": "Kendall Jenner and Cara Delevingne wearing our \"Mini Me\" necklace!",
+              "link": "shopify:\/\/products\/mini-me-friendship"
+            }
+          },
+          "87f764e2-7d70-43a8-89fe-8d390dd5fe8e": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/US_Magazine.jpg",
+              "name": "US Magazine",
+              "link": "shopify:\/\/products\/my-squad"
+            }
+          },
+          "783032ba-02db-4411-a83e-d3a066534dc0": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/WomensHealthMag.jpg",
+              "name": "Women's Health Magazine Cover",
+              "link": "shopify:\/\/products\/my-squad"
+            }
+          },
+          "4110097b-7803-49a6-87de-a7b437f23b9c": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/InstyleMagazine.jpg",
+              "name": "InStyle Magazine"
+            }
+          },
+          "f29ec6ed-7f64-41be-9944-77c771eac993": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Instyle_6adb74f8-fdc2-43ef-a60a-d2f2412d8bdb.jpg",
+              "name": "InStyle Magazine"
+            }
+          },
+          "6d71a864-03cc-4dd4-bc00-df72e5b6dc41": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ZoeReport.jpg",
+              "name": "The Zoe Report",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "5942d777-4aa6-4ffd-ac38-662d361c8433": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PopSugar.jpg",
+              "name": "Pop Sugar",
+              "link": "shopify:\/\/products\/mini-me-date"
+            }
+          },
+          "9f23f4d7-6bcb-4168-bf32-b94793ed888e": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ZoeReport2.jpg",
+              "name": "The Zoe Report"
+            }
+          },
+          "5cbb7a94-00f2-49f8-ae0c-7f5d7e28e5b4": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Cosmopolitan.jpg",
+              "name": "Cosmopolitan"
+            }
+          },
+          "a1aba413-9128-4102-a625-1cf90dc22c2a": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ok_Magazine.jpg",
+              "name": "OK! Magazine",
+              "link": "shopify:\/\/products\/lock-it-up"
+            }
+          },
+          "b1be53f0-3cec-479f-bc41-df65f392755f": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/New_York_Magazine.jpg",
+              "name": "New York Magazine",
+              "link": "shopify:\/\/products\/my-squad"
+            }
+          },
+          "f1ca8a1f-c11b-40b9-a51d-d36bfe8e0329": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/USMagazine3.jpg",
+              "name": "US Magazine",
+              "link": "shopify:\/\/products\/my-squad"
+            }
+          },
+          "5a7454d7-95b3-4eff-b7e0-904698b5d24f": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/USMagazine4.jpg",
+              "name": "US Magazine",
+              "link": "shopify:\/\/products\/my-squad"
+            }
+          },
+          "f18c6eac-d033-4ee9-a3b4-d7bfa98e3fc1": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Instyle_Magazine3.jpg",
+              "name": "InStyle Magazine",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "987e5f7a-ba0a-419e-ac91-890cd240a65e": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/OliviaMunnPeople_1a65f00c-f215-4bda-bd53-0ce4a743f8a8.jpg",
+              "name": "People Magazine",
+              "link": "https:\/\/lolajamesjewelry.com\/products\/mini-me-14k-1?ose=false"
+            }
+          },
+          "ca86409a-9926-4df6-8b38-2ce9d540f432": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BellaHadidIRLM_copy_d4a839fd-2890-4249-992d-f62c3287aceb.jpg",
+              "name": "People Magazine",
+              "link": "shopify:\/\/products\/my-squad"
+            }
+          },
+          "a26c28d2-d755-4817-be2b-62230ce1d207": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_ALTER_EGO_PEOPLE_3091561f-d07d-4aed-aed5-d10cc51e0ec8.jpg",
+              "name": "People Magazine",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "1331855c-90d7-4773-9f3a-1196e06437d6": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_MINI_ALTER_EGO_RG_-_1D_d63454c8-57a6-4d6f-aef7-1decebd4f1a9.jpg",
+              "name": "US Magazine",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "c2aa5c59-1af8-4341-8b4d-08d185cd7cc1": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_EAR_CRAWLERS_089c7922-297b-4210-a3cc-e99964e15f09.jpg",
+              "name": "People Style Watch"
+            }
+          },
+          "f6206005-d003-44f7-877f-7dd1f97450a5": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_FIRE_AND_ICE_e5a9bc51-4abc-4b57-a642-0f68a96ea80d.jpg",
+              "name": "InStyle Magazine"
+            }
+          },
+          "184e681d-4f32-4350-84ab-5b2539ad2751": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_MINI_IN_STAR_954f53d3-0bcf-4b33-b150-0cec9199a128.jpg",
+              "name": "Star Magazine",
+              "link": "shopify:\/\/products\/my-squad"
+            }
+          },
+          "4bc07a38-7052-4e10-9805-d887ee598c49": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_NATURAL_HEALTH_347bd94b-e658-48a4-9308-501539c39aab.jpg",
+              "name": "Natural Health Magazine"
+            }
+          },
+          "0f641ae6-e027-490c-8e2f-b52064c27a3c": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_OCEAN_MAGAZINE_0238e4a1-1fd8-4c15-b8c8-be9212f67dc0.jpg",
+              "name": "Ocean Magazine"
+            }
+          },
+          "fb541faa-64c2-49b4-92f3-8200bdfaddef": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_OK_MAGAIZNE_YE_c45bbad2-4377-476f-bedd-4186bdcbb225.jpg",
+              "name": "OK! STYLE WEEK"
+            }
+          },
+          "ae66d1bf-c65d-4e2b-a9d0-1cd6ed809f51": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_OK_MAGAZINE_db62834d-05e3-4bb0-a091-b7819d6ada16.jpg",
+              "name": "OK! MAGAZINE",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "f1240b58-96a1-4502-bbad-8c25693389ea": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_PSW_AGAIN_5729a1e0-2ce5-4831-955b-6855c3666339.jpg",
+              "name": "People Style Watch"
+            }
+          },
+          "ef3fb7c3-963b-424f-b510-25880da92211": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_PSW_JESSICA_ALBA_36f9f764-4238-4ff8-9a6c-4ed32faaf22e.jpg",
+              "name": "People Style Watch"
+            }
+          },
+          "897baab7-596d-46f9-a24c-2bd6274a8585": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_PSW_NECKLACE_0aaf4e1d-9a98-467a-a72f-8b08e2efdc96.jpg",
+              "name": "People Style Watch"
+            }
+          },
+          "5e8d6181-708b-457c-b8b6-6d6e4c27dcb0": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_PSW_NECKLACES_ef634bbd-c048-421b-acc2-b79ccf0758e7.jpg",
+              "name": "People Style Watch",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "f4338e33-71a2-4d61-8618-5cd295c1f3e0": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_PSW_NIKKI_REED_c88dda13-747c-45ba-ae9d-9c690f08aa62.jpg",
+              "name": "People Style Watch"
+            }
+          },
+          "65818ec4-def1-4891-a4ed-1524ebe412e7": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_STAR_MAGAZINE_0d13a019-adce-4ad8-a899-4244b8a5f454.jpg",
+              "name": "Star Magazine",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "a7cb374d-96c7-446f-83d5-db15d0822652": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_US_MAGAIZNE_220726a1-a82a-4160-8a00-5bd2f5846bff.jpg",
+              "name": "US Weekly",
+              "link": "https:\/\/lolajamesjewelry.com\/collections\/shop\/products\/mini-me-14k-1?_pos=5&_sid=669d83d28&_ss=r&ose=false"
+            }
+          },
+          "48847989-679a-4633-b44a-c6207a769b01": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_US_MAGAZINE_-_CHARMS_aca9031d-f144-4338-88fc-bb68f1c2ae63.jpg",
+              "name": "US Weekly"
+            }
+          },
+          "317341bc-d1aa-42c7-92ad-2b05c8ee578d": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_VOGUE_0eb9e4ce-8ffe-41a0-a4db-a65c38fb810f.jpg",
+              "name": "Vogue Magazine",
+              "link": "https:\/\/lolajamesjewelry.com\/collections\/shop\/products\/mini-me-14k-1?_pos=5&_sid=669d83d28&_ss=r&ose=false"
+            }
+          },
+          "f99eb342-edd1-4e72-a31c-9123ff660885": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_ZOE_REPORT_ICE_BOX_15d4133f-a73a-4abb-a006-ab6b74bb52db.jpg",
+              "name": "The Zoe Report",
+              "link": "shopify:\/\/products\/copy-of-alter-ego-14k"
+            }
+          },
+          "500c708c-9f97-4027-8ed3-8a0013dc0d9c": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/W_PRESS_-_KOURTNEY_69772a18-eaca-4f86-82d5-c11bb7d50d47.jpg",
+              "name": "US Magazine"
+            }
+          },
+          "4a64b7c0-fc0a-416f-a7c9-3f20bfd1351e": {
+            "type": "editorial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/DailyMailBellaHadidSelfieNecklace_1_74eef58c-e7a9-4544-a361-6156478aa39a.jpg",
+              "name": "Daily Mail",
+              "link": "shopify:\/\/products\/my-squad"
+            }
+          }
+        },
+        "block_order": [
+          "46341065-af2d-49eb-8d70-dd0424035702",
+          "9f325e6a-0798-47ed-9ce4-09b36aef72d6",
+          "882b9b94-20f2-41ad-98d5-89a9fb93bb0c",
+          "5f3401fa-886b-4d06-b352-de2065f5eb15",
+          "c8fa6572-75ba-4559-bd53-6dc1a9a417cd",
+          "4c94445a-7e73-43ad-9d37-3d28c11f5125",
+          "568f5a79-0d97-441b-9cec-ee3b0377051a",
+          "66b05271-3faf-4be3-bb67-73338ae9e484",
+          "f8b5c628-b908-47a9-bb95-4d6e608e8d15",
+          "65be1f71-fd81-454c-974e-922d0eeb8a26",
+          "47131ee0-8e6f-46f7-af6a-f40da7c0de35",
+          "7445c252-c2f3-4ecf-86dc-35b5d7b6cb9f",
+          "c4b7f969-ed62-4a7e-af12-698bd75656f6",
+          "87f764e2-7d70-43a8-89fe-8d390dd5fe8e",
+          "783032ba-02db-4411-a83e-d3a066534dc0",
+          "4110097b-7803-49a6-87de-a7b437f23b9c",
+          "f29ec6ed-7f64-41be-9944-77c771eac993",
+          "6d71a864-03cc-4dd4-bc00-df72e5b6dc41",
+          "5942d777-4aa6-4ffd-ac38-662d361c8433",
+          "9f23f4d7-6bcb-4168-bf32-b94793ed888e",
+          "5cbb7a94-00f2-49f8-ae0c-7f5d7e28e5b4",
+          "a1aba413-9128-4102-a625-1cf90dc22c2a",
+          "b1be53f0-3cec-479f-bc41-df65f392755f",
+          "f1ca8a1f-c11b-40b9-a51d-d36bfe8e0329",
+          "5a7454d7-95b3-4eff-b7e0-904698b5d24f",
+          "f18c6eac-d033-4ee9-a3b4-d7bfa98e3fc1",
+          "987e5f7a-ba0a-419e-ac91-890cd240a65e",
+          "ca86409a-9926-4df6-8b38-2ce9d540f432",
+          "a26c28d2-d755-4817-be2b-62230ce1d207",
+          "1331855c-90d7-4773-9f3a-1196e06437d6",
+          "c2aa5c59-1af8-4341-8b4d-08d185cd7cc1",
+          "f6206005-d003-44f7-877f-7dd1f97450a5",
+          "184e681d-4f32-4350-84ab-5b2539ad2751",
+          "4bc07a38-7052-4e10-9805-d887ee598c49",
+          "0f641ae6-e027-490c-8e2f-b52064c27a3c",
+          "fb541faa-64c2-49b4-92f3-8200bdfaddef",
+          "ae66d1bf-c65d-4e2b-a9d0-1cd6ed809f51",
+          "f1240b58-96a1-4502-bbad-8c25693389ea",
+          "ef3fb7c3-963b-424f-b510-25880da92211",
+          "897baab7-596d-46f9-a24c-2bd6274a8585",
+          "5e8d6181-708b-457c-b8b6-6d6e4c27dcb0",
+          "f4338e33-71a2-4d61-8618-5cd295c1f3e0",
+          "65818ec4-def1-4891-a4ed-1524ebe412e7",
+          "a7cb374d-96c7-446f-83d5-db15d0822652",
+          "48847989-679a-4633-b44a-c6207a769b01",
+          "317341bc-d1aa-42c7-92ad-2b05c8ee578d",
+          "f99eb342-edd1-4e72-a31c-9123ff660885",
+          "500c708c-9f97-4027-8ed3-8a0013dc0d9c",
+          "4a64b7c0-fc0a-416f-a7c9-3f20bfd1351e"
+        ],
+        "settings": {
+        }
+      },
+      "1655240941487e879a": {
+        "type": "rich-text",
+        "disabled": true,
+        "settings": {
+          "heading": "Talk about your brand",
+          "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "button_label": "",
+          "button_link": "",
+          "container": true,
+          "heading_size": "h2",
+          "button_style": "btn-outline-primary",
+          "margin_top": 0,
+          "margin_bottom": 6
+        }
+      }
+    },
+    "content_for_index": [
+      "16135618122a614c51",
+      "featured-collection",
+      "16168189909d1f85db",
+      "1613568042ad80ec84",
+      "16199346117e17cf4b",
+      "1617075174df6639e7",
+      "image-with-text",
+      "1655240941487e879a",
+      "1616011562282176a7",
+      "sswinstagram"
+    ],
+    "blocks": {
+      "558381514691908246": {
+        "type": "shopify:\/\/apps\/volumeboost-volume-discount\/blocks\/app-embed\/25745434-52e7-4378-88f1-890df18a0110",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "10042746950867549768": {
+        "type": "shopify:\/\/apps\/hulk-product-options\/blocks\/app-embed\/380168ef-9475-4244-a291-f66b189208b5",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "carousel": {
+          "type": "carousel",
+          "blocks": {
+            "carousel-0": {
+              "type": "image",
+              "settings": {
+                "caption_heading": "First slide title",
+                "caption_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>"
+              }
+            },
+            "carousel-1": {
+              "type": "image",
+              "settings": {
+                "caption_heading": "Second slide title",
+                "caption_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>"
+              }
+            },
+            "carousel-2": {
+              "type": "image",
+              "settings": {
+                "caption_heading": "Third slide title",
+                "caption_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "carousel-0",
+            "carousel-1",
+            "carousel-2"
+          ],
+          "settings": {
+          }
+        },
+        "featured-collection": {
+          "type": "featured-collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-list-0": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "collection-list-1": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "collection-list-2": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "collection-list-3": {
+              "type": "collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "collection-list-0",
+            "collection-list-1",
+            "collection-list-2",
+            "collection-list-3"
+          ],
+          "settings": {
+          }
+        },
+        "separator-1": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+          }
+        },
+        "separator-2": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "settings": {
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+          }
+        },
+        "image-with-text": {
+          "type": "image-with-text",
+          "settings": {
+          }
+        }
+      },
+      "content_for_index": [
+        "carousel",
+        "featured-collection",
+        "collection-list",
+        "separator-1",
+        "featured-product",
+        "separator-2",
+        "blog-posts",
+        "newsletter",
+        "image-with-text"
+      ]
+    }
+  }
+}

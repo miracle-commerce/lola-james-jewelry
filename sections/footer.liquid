@@ -1,0 +1,145 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-block">
+      <div class="footer-logo">
+         <a href="{{ routes.root_url }}">
+            <img
+                 src="{{ section.settings.image | img_url: 'master'  }}"
+                 alt="{{ section.settings.image.alt | escape }}"
+                 >
+          </a>
+      </div>
+    </div>
+    <div class="footer-block">
+      <div class="row">
+        <div class="col-lg-8 col-xl-7">
+          <ul class="menu">
+            {% for link in linklists[section.settings.menu].links %}
+              	<li><a href="{{ link.url }}">{{ link.title }}</a></li>
+              {% endfor %}
+          </ul>
+        </div>
+        <div class="col-lg-4 col-xl-5 ml-auto">
+          {% if section.settings.heading != blank %}
+      		<h6 align="center">{{ section.settings.heading | escape }}</h6>
+          {% endif %}
+       	{% include 'footer-newsletter' %}
+
+          <ul class="social">
+            <li>Follow Us</li>
+             {% for i in (1..4) %}
+              {% capture social_link %}social_link_{{ i }}{% endcapture %}
+              {% capture social_icon %}social_icon_{{ i }}{% endcapture %}
+              <li><a href="{{ settings[social_link] }}">{{ settings[social_icon] }}</a></li>
+              {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-block">
+      {{ '' | asset_url | img_tag }}
+    </div>
+    <div class="footer-block text-center">
+      Copyright © {{ 'now' | date: "%Y" }} {{ shop.name }}. All Rights Reserved.
+      {% if linklists['footer'].links.size > 0 %}
+      	{% for link in linklists['footer'].links %} | <a href="{{ link.url }}">{{ link.title }}</a>{% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "header",
+        "content": "General settings"
+      },
+		{
+          "type": "image_picker",
+          "id": "image",
+          "label": "Footer Logo"
+        },
+      {
+        "type": "header",
+        "content": "Footer menu"
+      },
+      {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Menu",
+        "default": "footer"
+      },
+	{
+        "type": "header",
+        "content": "Newsletter"
+      },
+	{
+      "type": "text",
+      "id": "heading",
+      "label": "Heading text",
+      "default": "Newsletter subscribe"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading text",
+      "default": "<p>Be the first to get notified about our latest offers.</p>",
+      "info": "Leave empty to disable"
+    }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Footer block",
+        "settings": [
+		{
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },	
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content"
+          }
+        ]
+      }
+    ],
+    "default": {
+      "blocks": [
+        {
+          "type": "image",
+          "settings": {
+			"image": "shopify:\/\/shop_images\/banner.jpg",
+            "title": "Free delivery",
+            "content": "<p>Free delivery for all orders over $100.</p>"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+			"image": "shopify:\/\/shop_images\/banner.jpg",
+            "title": "Satisfaction guarantee",
+            "content": "<p>100% satisfied or full refund within 14 days.</p>"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+			"image": "shopify:\/\/shop_images\/banner.jpg",
+            "title": "We are available 24/7",
+            "content": "<p>Contact us any time via email or phone</p>"
+          }
+        }
+      ]
+    }
+  }
+
+{% endschema %}

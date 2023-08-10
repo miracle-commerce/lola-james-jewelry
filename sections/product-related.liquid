@@ -1,0 +1,76 @@
+<div class="row">
+  {% for product in products_list limit: section.settings.limit %}
+
+  {% if product.featured_image != blank %}
+  <div class="col-md-3 mb-4">
+    <div class="product-box">
+      <div class="embed-responsive embed-responsive-1by1"><a href="{{ product.url }}">
+        <img
+             src="{{ product.featured_image | img_url: 'master'  }}"
+             alt="{{ product.featured_image.alt | escape }}"
+             >
+
+        {% if section.settings.show_discount_badge and product.compare_at_price > product.price %}
+        <small class="product-discount-badge badge-right" style="{{ settings.color_on_sale | prepend: 'background-color: ' }}">
+          {{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | money_without_currency | times: 100 | remove: '.0' | prepend: '-' | append: '%' }}
+        </small>
+        {% endif %}
+        </a>
+      </div>
+      <div class="pt-4">
+        {% if section.settings.show_product_title %}
+        <p><a href="{{ product.url }}">{{ product.title | escape }}</a></p>
+        {% endif %}
+
+        {% if section.settings.show_price %}
+        <span>
+          {% if product.compare_at_price > product.price %}
+          <s class="text-muted opacity-75 mr-1">{{ product.compare_at_price | money }}</s>
+          {% if product.price_varies %}
+          {%- assign sale_price = product.price | money -%}
+          {{ 'product.on_sale_from_html' | t: price: sale_price }}
+          {% else %}
+          {{ 'product.on_sale' | t }}
+          {{ product.price | money }}
+          {% endif %}
+          {% else %}
+          {% if product.price_varies %}
+          {%- assign price = product.price | money -%}
+          {{ 'product.from_text_html' | t: price: price }}
+          {% else %}
+          {{ product.price | money }}
+          {% endif %}
+          {% endif %}
+        </span>
+        {% endif %}
+      </div>
+      {%comment%}
+              {% form 'product', product, class: 'mb-3' %}
+        {%include 'hulkcode_common'%}
+        <script src='https://ha-product-option.nyc3.digitaloceanspaces.com/assets/api/v2/hulkcode.js' defer='defer'></script>
+ <div id="hulkapps_custom_options_{{ product.id }}"> </div>
+        {% endform %}
+      {%endcomment%}
+    </div>
+  </div>
+  {% endif %}
+
+  {% else %}
+
+  {% for i in (1..section.settings.limit) %}
+  <div class="col-md-4 mb-4">
+    <a href="#" class="theme-link-color text-decoration-none">
+      <div class="overflow-hidden mb-3 img-thumbnail">
+        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+        {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg bg-light' }}
+      </div>
+      <h6>
+        {{ 'onboarding.product_title' | t }}
+      </h6>
+      <p class="mb-3" style="{{ settings.color_price | prepend: 'color: ' }}">{{ 1999 | money }}</p>
+    </a>
+  </div>
+  {% endfor %}
+
+  {% endfor %}
+</div>

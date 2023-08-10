@@ -1,0 +1,81 @@
+<div class="faq-{% if section.settings.pagestyle == "style2" or template contains 'faq-style2' %}style2{% else %}style1{% endif %}">
+  <div id="faq-">        	            
+    <div>
+    {% for block in section.blocks limit: section.blocks.size%}                 
+        {% if block.type == 'faqsection' and block.settings.title != blank %}
+  			</div>
+			<h3>{{block.settings.title}}</h3>
+    		<div class="accordion mb-4" id="faq-{{block.id}}">
+              {% assign blockid = block.id %}
+        {% endif %}    
+    
+      {% if block.type == 'faqs' %} 
+      <div class="card">
+        <div class="card-header" id="heading-{{block.id}}"><a href=""  class="btn btn-block text-left" data-toggle="collapse" data-target="#collapse-{{ block.id }}" aria-expanded="false" aria-controls="collapse-{{ block.id }}">{{ block.settings.title}}</a></div>
+        <div id="collapse-{{block.id}}" class="collapse" aria-labelledby="heading-{{block.id}}" data-parent="#faq-{{blockid}}">
+          <div class="card-body">{{ block.settings.answer}}</div>
+        </div>
+      </div>
+      {% endif %}
+    
+    {% endfor %}
+  </div>
+</div>  
+
+{% schema %}
+  {
+    "name": "FAQ Page",
+	"max_blocks":50,
+    "settings": [
+	  {
+        "type": "paragraph",
+       	"content":"Add more content on this page from pages => Faqs page"
+      },
+	 {
+        "type": "header",
+        "content": "Style2"
+      },
+	  {
+        "type": "color",
+        "id": "sec-title-bg",
+        "label": "Section Title Background",
+        "default": "#333"
+      },
+      {
+        "type": "color",
+        "id": "sec-title",
+        "label": "Section Title",
+        "default": "#eee"
+      }
+	],
+   "blocks":[
+     {
+        "type": "faqsection",
+        "name": "Section Title",
+		"settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Section Title"
+          }
+		]
+      },
+	  {
+	    "type":"faqs",
+		"name":"FAQs",
+		"settings":[			
+			{
+			"type":"text",
+			"id":"title",
+			"label":"Question"
+			},
+			{
+			"type":"textarea",
+			"id":"answer",
+			"label":"Answer"
+			}
+		 ]
+      }
+	]
+ }
+{% endschema %}

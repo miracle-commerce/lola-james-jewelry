@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="section-block banner full-img">
+    <a href="{{ section.settings.image_link }}">
+      <img
+           src="{{ section.settings.image.src | img_url: 'master' }}"
+           alt="{{ section.settings.image.alt | escape }}"
+           >
+    </a>
+  </div>
+</div>
+      
+{% schema %}
+  {
+    "name": "Image Block",
+	"tag": "div",
+	"class": "section",
+    "settings": [
+		{
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "url",
+        "id": "image_link",
+        "label": "Image link"
+      }
+
+	],
+    "presets": [
+      {
+        "name": "Image Block",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

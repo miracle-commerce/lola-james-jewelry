@@ -1,0 +1,2136 @@
+{% comment %}
+  Regular page content goes here.
+{% endcomment %}
+
+{% if settings.enable_multilang %}
+<div class="rte lang1">{{ page.content | split: '[lang2]' | first }}</div>
+<div class="rte lang2">{{ page.content | split: '[lang2]' | last }}</div>
+{% else %}
+<div class="rte">{{ page.content | split: '[lang2]' | first }}</div>
+{% endif %}
+
+
+<div class="section"><div class="container">
+	<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      
+    <li class="nav-item" role="presentation"><a class="nav-link active" id="celebrity-tab" data-toggle="tab" href="#celebrity" role="tab" aria-controls="celebrity" aria-selected="true">Celebrity</a></li>
+    <li class="nav-item" role="presentation"><a class="nav-link" id="editorial-tab" data-toggle="tab" href="#editorial" role="tab" aria-controls="editorial" aria-selected="false">Editorial</a></li>
+	</ul>
+  
+<div class="tab-content">
+	<div class="tab-pane active" id="celebrity" role="tabpanel" aria-labelledby="celebrity-tab" id="celebrity">{% section 'celebrity' %}</div>
+  	<div class="tab-pane" id="editorial" role="tabpanel" aria-labelledby="editorial-tab">{% section 'editorial' %}</div>
+</div>
+
+<div class="tab-content">
+<!--div class="tab-pane active" id="celebrity" role="tabpanel" aria-labelledby="celebrity-tab" id="celebrity">
+<div class="product-collection products-grid row">
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/squad-goals-14k" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Facetune_30-04-2018-13-52-40_copy.jpg?v=1525111904" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">BLAKE LIVELY</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/squad-goals-14k" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/whitneyport_a75119c7-6fb3-4502-91c9-b54bc5eb57c3.jpg?v=1518137776" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Whitney Port</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img"> <img src="//cdn.shopify.com/s/files/1/2283/3973/files/KhloeSqaudGoals_1.jpg?v=1510085500" alt=""></div></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/squad-goals-14k">KHLOE KARDASHIAN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/selfie" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/BellaHadid.JPG?v=1509402448" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Bella Hadid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-me-14k-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/IMG_5E1D338DDA2F-1.jpeg?v=1540326537" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Jessie James Decker</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/selfie" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/GigiHadid.JPG?v=1509402629" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Gigi Hadid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-squad-goals-heart-or-star-14k" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/WSQUADGOALS1C_9604eeea-72bf-494c-a1b0-e5c750f7591a.jpg?v=1510003716" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Lucy Hale</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/squad-goals-with-star-or-heart-accent" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/IMG_23D9726D3CB1-1.jpeg?v=1540326533" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Ashley Benson</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/collections/squad-goals" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/IMG_FC3326D919D6-1.jpeg?v=1518137904" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Brittany Aldean</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-me-friendship" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Kendall_Jenner.jpg?v=1509402523" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Kendall Jenner</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img"> <img src="//cdn.shopify.com/s/files/1/2283/3973/files/GigiHadidKendallJenner_08988edc-660f-45d2-a968-bd3ffe6327a2.jpg?v=1510074409" alt=""></div></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">GIGI HADID/KENDALL JENNER</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-me-14k-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Lauren_Conrad.jpg?v=1509402559" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Lauren Conrad</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img"> <img src="//cdn.shopify.com/s/files/1/2283/3973/files/IMG_0104.jpg?v=1510087212" alt=""></div></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/squad-goals-14k">LUCY HALE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/selfie" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/GigiHadid2_b6bc444a-f9d3-484c-b4d1-bd5c90f158bb.jpg?v=1510074381" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/mini-me-friendship?_pos=1&_sid=81cf1d706&_ss=r">GIGI HADID</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/selfie" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Ashley_Benson.jpg?v=1509402434" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Ashley Benson</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/squad-goals-14k" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Whitney_Port.jpg?v=1509402544" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Whitney Port</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/selfie" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/LJ_Gigi_Hadid.JPG?v=1509722905" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Gigi Hadid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/more-to-love" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Shay_Mitchell.jpg?v=1509402573" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Shay Mitchell</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-me-tags-2" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/KateHudson2_11c6123b-8228-4a71-ad48-7c7cc1b27944.jpg?v=1510003170" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Kate Hudson</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-me-14k-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/LaurenConrad_5d774299-ce9c-47e8-becc-3939cf2fdd14.jpg?v=1510003027" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Lauren Conrad</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-me-14k-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/ShayMitchell2_9a215b76-1a37-4c8f-82ab-3d876b3c92a5.jpg?v=1510074766" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">SHAY MITCHELL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-me-14k-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Rocky_Barnes.jpg?v=1509402588" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Rocky Barnes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-me-friendship" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_MINI_ME_-_SHAY_MITCHELL_-_14K_GOLD.jpg?v=1510003665" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Shay Mitchell</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/mini-me-14k-1?_pos=5&_sid=bda662893&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/EmilyRatajkowski2_945fcebb-d314-41e5-8471-f65a35de7d48.jpg?v=1510074268" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/mini-me-14k-1?_pos=5&_sid=bda662893&_ss=r">EMILY RATAJKOWSKI</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/mini-me-14k-1?_pos=5&_sid=bda662893&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_MINI_ME_-_MRS._TELL_-_14K_GOLD_-_LAUREN_PIC_f9449b47-7834-4d15-bd2a-1c12c2eb9615.jpg?v=1510003757" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/mini-me-14k-1?_pos=5&_sid=bda662893&_ss=r">Lauren Conrad</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/squad-goals-14k" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/AshleyBenson2_b7ce360c-b855-4701-b6ab-d86801f87a4d.jpg?v=1510073904" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/squad-goals-14k">ASHLEY BENSON</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/mini-me-14k-1?_pos=5&_sid=bda662893&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/LJ_Jenna_Dewan-Tatum.jpg?v=1509723848" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/mini-me-14k-1?_pos=5&_sid=bda662893&_ss=r">Jenna Dewan-Tatum</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-me-14k-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Emily_Ratajkowski.jpg?v=1509402613" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Emily Ratajkowski</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/mini-me-tags-3?_pos=1&_sid=997b55db4&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/KateHudson1_0bf29053-7005-449d-bcfc-14448df0b0e4.jpg?v=1510074551" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/mini-me-tags-3?_pos=1&_sid=997b55db4&_ss=r">KATE HUDSON</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-me-14k-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/AmyAdams.jpg?v=1509402421" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Amy Adams</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/copy-of-alter-ego-14k" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/OliviaMunn_93bf3fc1-ca68-40bf-8bfe-345dd0bc9e3e.jpg?v=1510003921" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Olivia Munn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img"> <img src="//cdn.shopify.com/s/files/1/2283/3973/files/LucyHaleInstagram_3eadb65a-33a6-4bd7-8e51-dcb114312004.jpg?v=1510074629" alt=""></div></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">LUCY HALE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/mini-me-14k-1?_pos=5&_sid=bda662893&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/LJ_Rachel_Bilson.jpg?v=1509724023" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/mini-me-14k-1?_pos=5&_sid=bda662893&_ss=r">Rachel Bilson</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/mini-me-tags-3?_pos=1&_sid=997b55db4&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/KateHudson3_9121b5ec-f151-4af5-83d9-506da30031c4.jpg?v=1510074587" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/mini-me-tags-3?_pos=1&_sid=997b55db4&_ss=r">KATE HUDSON</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/mini-me-14k-1?_pos=5&_sid=bda662893&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/EmilyRatajkowski3_f6f108b3-9767-4eb2-875b-32ac68bcac6f.jpg?v=1510074322" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/mini-me-14k-1?_pos=5&_sid=bda662893&_ss=r">EMILY RATAJKOWSKI</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-me-friendship" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Shaymitchell3_c26fbf42-823f-4944-a136-ab29345b00a7.jpg?v=1510003977" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Shay Mitchell</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/alter-ego-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/MariaMenounos_a6187538-2a95-4c41-9f2c-e878b54a5319.jpg?v=1509658485" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Maria Menounos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img"> <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Jessica_Alba.jpg?v=1509402648" alt=""></div></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Jessica Alba</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-me-14k-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_MINI_ME_R_HEART_J_-_OLIVIA_MUNN_-_1A_2c35241b-bd43-4d14-bb17-029069691eaf.jpg?v=1509657984" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Olivia Munn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/alter-ego-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/LJ_Emily_Blunt.jpg?v=1509723645" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Emily Blunt</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img"> <img src="//cdn.shopify.com/s/files/1/2283/3973/files/AlessandraAmbrosio_65901d84-4cfe-453e-aa40-8c7e9f7507cc.JPG?v=1509657881" alt=""></div></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Alessandra Ambrosio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/mini-me-14k-1?_pos=5&_sid=bda662893&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Rashidajones_ab393bfa-3e2a-4e4f-9158-bdf09bdc1fe9.jpg?v=1509658860" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/mini-me-14k-1?_pos=5&_sid=bda662893&_ss=r">Rashida Jones</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img"> <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Britney_Spears.JPG?v=1509402463" alt=""></div></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Britney Spears</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/fireworks" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/LJ_Kaley_Cuoco.jpg?v=1509723727" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Kaley Cuoco</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/NikkiReedAlerEgo4_bbb7a588-2952-4e8f-bdea-406765a46708.JPG?v=1510003099" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r">Nikki Reed</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/copy-of-alter-ego-14k" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/JennaElfman_ce6f11e8-7683-4f16-95ff-e787a458c813.JPG?v=1510003231" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Jenna Elfman</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/NickyHilton_c7dd453d-e277-48cb-92b2-3ae997543fee.JPG?v=1510003365" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r">Nikki Hilton</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_ALTER_EGO_-_G_-_DOUTZEN_cb5575aa-53ce-4b01-b019-2458269e586e.jpg?v=1510003428" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r">Doutzen Kroes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/alter-ego-2" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_ALTER_EGO_RG_-_1H_4ba27eaa-0b18-4667-b3af-29b08ce00381.jpg?v=1510003533" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Emma Roberts</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/alter-ego-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_ALTER_EGO_-_G_-_KALEY_83b75bad-6a08-4b8f-b69e-5d2bd37c7434.jpg?v=1510003827" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Kaley Cuoco</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_ALTER_EGO_-_G_NIKKI_7c0697d1-5ca0-4434-98ed-917cf4d7a45c.jpg?v=1510003871" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r">Nikki Reed</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img"> <img src="//cdn.shopify.com/s/files/1/2283/3973/files/JennaDewan-Tatum_copy_2b498f3e-ce06-4646-9ba2-de12e0551ef4.jpg?v=1510074508" alt=""></div></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">JENNA DEWAN-TATUM</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img"> <img src="//cdn.shopify.com/s/files/1/2283/3973/files/AngieHarmon_9d0ffcb2-425b-4d29-bb4f-1443c22480b3.jpeg?v=1510073822" alt=""></div></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">ANGIE HARMON</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img"> <img src="//cdn.shopify.com/s/files/1/2283/3973/files/JessicaAlbaBracelet_41a64f77-a922-472c-ba48-c2f960efa5f6.JPG?v=1510004014" alt=""></div></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">Jessica Alba</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/AshleyGreene_b0c40ad5-d273-409c-8b49-940822593aea.jpg?v=1510073985" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r">ASHLEY GREENE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/alter-ego" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Ashleygreene2_ad46af7a-9a21-4e73-b0c9-b77bb9600da1.jpg?v=1510074062" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">ASHLEY GREENE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/EmilyBlunt_copy_94bb768e-632b-4e09-af7d-4932f44f7306.jpg?v=1510074119" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r">EMILY BLUNT</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/EmilyBluntalterego_e2eb1021-cbe8-4964-a0ad-9ac7fed00e7d.jpg?v=1510074179" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r">EMILY BLUNT</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/mini-me-friendship?_pos=1&_sid=81cf1d706&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/GigiHadidKendallJenner_08988edc-660f-45d2-a968-bd3ffe6327a2.jpg?v=1510074409" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/mini-me-friendship?_pos=1&_sid=81cf1d706&_ss=r">GIGI HADID/KENDALL JENNER</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/EmilyBluntalterego2_45cc3387-35f9-4ab1-9adb-a56f26b263cd.jpg?v=1510074207" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r">EMILY BLUNT</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img"> <img src="//cdn.shopify.com/s/files/1/2283/3973/files/EvaLongoria_db06dffd-89a0-4c79-9d40-57b002425671.JPG?v=1510074358" alt=""></div></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">EVA LONGORIA</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/MariaMenounos_copy_59769ae1-77d4-4f17-b93f-e2c2a6ab5577.JPG?v=1510074676" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r">MARIA MENOUNOS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/mini-me-14k-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/Stacykeibler_b09882fa-cfba-4d07-828f-37010bfda5ea.jpg?v=1510074786" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/mini-me-14k-1">STACY KEIBLER</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="/products/mini-me-14k-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_MINI_ME_GOLD_PLATED_-_RASHIDA_JONES_d81cbea3-6778-490a-abf9-94ab42df93ef.jpg?v=1510074889" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="/collections/new-arrivals/products/my-squad">RASHIDA JONES</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img"> <img src="//cdn.shopify.com/s/files/1/2283/3973/files/KaleyCuocoInstagram_8cfe49c0-39f1-4faf-9ee1-be2ad1634970.jpg?v=1510078132" alt=""></div></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/copy-of-alter-ego-14k?_pos=1&_sid=71791ba85&_ss=r">KALEY CUOCO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+            <div class="inner product-item  wow fadeIn">
+              <div class="inner-top">
+                <div class="product-top">
+                  <div class="product-image mb-3">
+                    <a href="https://lolajamesjewelry.com/products/mini-me-14k-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+                      <img src="//cdn.shopify.com/s/files/1/2283/3973/files/GiulianaRancic_32f35725-1236-4350-aae2-d33199b4213f.jpg?v=1510078197" alt=""></div></div>
+                      
+                    </a>
+                  </div>
+                </div>
+                <div class="product-bottom">
+                  <a class="product-title" href="https://lolajamesjewelry.com/products/mini-me-14k-1">GIULIANA RANCIC</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+</div-->
+
+<div class="tab-pane" id="editorial" role="tabpanel" aria-labelledby="editorial-tab">
+
+<div class="product-collection products-grid row">
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/squad-goals-14k" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/IMG_5373_copy.jpg?v=1525732799" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">Blake Lively</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/squad-goals-14k" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/LaurenConrad.com9.29.17_1.jpg?v=1510085570" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">LAURENCONRAD.COM</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/collections/new-arrivals/products/my-squad" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/4_8d1a01f0-119f-4b06-9fac-ea4b8b0318e9.jpg?v=1509399834" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">People StyleWatch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/8.jpg?v=1509400031" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538">People Magazine</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/collections/new-arrivals/products/my-squad" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/BellaHadidIRLM_1_f9ca69bb-c66a-4838-a65d-d8e7df3d13de.jpg?v=1510085882" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">PEOPLE MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/mini-me-friendship" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/12.jpg?v=1509400521" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">Glamour - Kendall Jenner + GiGi Hadid</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/collections/new-arrivals/products/my-squad" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/VogueBellaHadidFinal_1.jpg?v=1510085618" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">VOGUE MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/collections/new-arrivals/products/my-squad" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/2_d15344f9-6bcd-45b7-8518-6bcb4fa2c700.jpg?v=1509398645" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">People StyleWatch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/mini-me-friendship" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/11.jpg?v=1509400485" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">InStyle - Kendall Jenner + GiGi Hadid</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/collections/new-arrivals/products/my-squad" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/3_2f4dbbd0-46d0-4010-8489-aea8306695df.jpg?v=1509399812" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">Elle</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/mini-me-friendship" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/CakePeople.jpg?v=1510075053" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">PEOPLE MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/mini-me-friendship" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/7.jpg?v=1509400009" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">People StyleWatch - Kendall Jenner + GiGi Hadid</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/mini-me-friendship" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/16.jpg?v=1509400635" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">Kendall Jenner and Cara Delevingne wearing our "Mini Me" necklace!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/collections/new-arrivals/products/my-squad" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/1_e0c75be8-d20a-4a43-83e0-0f17c35adfc9.jpg?v=1509398624" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">US Magazine</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/collections/new-arrivals/products/my-squad" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/17.jpg?v=1509400690" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">Women's Health Magazine Cover</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="/collections/new-arrivals/products/my-squad"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/5.JPG?v=1509399849" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">InStyle Magazine</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="/collections/new-arrivals/products/my-squad"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/6.jpg?v=1509399976" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">InStyle Magazine</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/9.jpg?v=1509400446" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538">The Zoe Report</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/mini-me-date" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/10.jpg?v=1509400466" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">Pop Sugar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/13.JPG?v=1509400526" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538">The Zoe Report</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="/collections/new-arrivals/products/my-squad"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/14.JPG?v=1509400591" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">Cosmopolitan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/lock-it-up-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/15.jpg?v=1509400614" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">OK! Magazine</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="/collections/new-arrivals/products/my-squad"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/18.jpg?v=1509400712" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">New York Magazine</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/collections/new-arrivals/products/my-squad" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/w_forever_image_a14a5bd1-0662-4917-bcbe-45d83ddfe471.jpg?v=1510075209" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">US MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/collections/new-arrivals/products/my-squad" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/w_ice_box_press_a67b3df0-5a89-414d-9957-9889f1e70036.jpg?v=1510075220" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">US MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/copy-of-alter-ego-14k" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_ALTER_EGO_-_RG1A_ce2230be-d31e-4220-abf4-ebcc105e214e.jpg?v=1510075160" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">INSTYLE MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/mini-me-14k-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/OliviaMunnPeople_0b007e42-eee4-4c46-8d4f-807d3ea449fd.JPG?v=1510075124" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">PEOPLE MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/collections/new-arrivals/products/my-squad" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/BellaHadidIRLM_copy.jpg?v=1510075025" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">PEOPLE MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_ALTER_EGO_PEOPLE_61ee00d0-1000-452c-8546-7dde4608c0e3.jpg?v=1510075548" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538">PEOPLE MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/lock-it-up-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/w_lock_it_up_-_rg_press_f2207d88-29f6-49e0-91b7-f4507dea0830.jpg?v=1510075677" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">OK! MAGAZINE</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_MINI_ALTER_EGO_RG_-_1D_2aab3570-003e-4244-80b0-016f7a8d0cbd.jpg?v=1510075708" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538">US MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="/collections/new-arrivals/products/my-squad"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_COSMO_f8765887-7828-4113-8d2f-b8243d6f6290.JPG?v=1510075779" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">COSMOPOLITAN MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/mini-me-friendship" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_DAILY_MAIL_KENDALL_9eab15ba-bf68-4ba8-bb53-abd50ce1b528.jpg?v=1510075855" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">DAILY MAIL</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_EAR_CRAWLERS_10f79f0d-38d1-4c9f-bc72-7c96c45d27ef.JPG?v=1510075883" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">PEOPLE STYLE WATCH</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/mini-me-14k-1" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_ELLE_-_GIGI_3921839c-750b-46c7-b541-6bbe6934ce1e.jpg?v=1510075924" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">ELLE MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_FIRE_AND_ICE_37fff284-28b1-4ea2-8889-02da4f0e6221.JPG?v=1510075969" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">INSTYLE MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_INSTYLE_BRACELET_09ba0a69-d3e6-4c30-a1f4-8531f7108802.JPG?v=1510076357" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">INSTYLE MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_INSTYLE_BRACELETS2_0c192277-4ef4-45cc-abf4-ad72f3772950.jpg?v=1510076412" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">INSTYLE MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/collections/new-arrivals/products/my-squad" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_MINI_IN_STAR_de6a76b1-ffb5-4a2b-8cb8-9154c2e1c594.jpg?v=1510076507" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">STAR MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_NATURAL_HEALTH_6339e634-c622-4554-86a8-ee1ef9e5f01f.jpg?v=1510076562" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">NATURAL HEALTH MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_NEW_YORK_MAG_787ac469-b653-4631-80c0-e61a840f65f3.jpg?v=1510076614" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">NEW YORK MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_OCEAN_MAGAZINE_21d4af00-6e4c-4bca-92b7-3958b2a3b485.jpg?v=1510076709" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">OCEAN MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_OK_MAGAIZNE_YE_90b1373d-7baa-4724-bd49-2ae71c97bdab.JPG?v=1510076924" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">OK! STYLE WEEK</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_OK_MAGAZINE_bd3b5130-12b3-47fa-a5ce-f579b9c326da.jpg?v=1510076966" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538">OK! MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="/collections/new-arrivals/products/my-squad"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_PSW_NIKKI_REED_d1546eb9-d6b1-4062-8bfb-f9fe697e2d79.JPG?v=1510077379" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">PEOPLE STYLE WATCH</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_PSW_-_GIGI_5e9e407d-e085-4c15-855a-5d2fe8c9ff13.jpg?v=1510077125" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">PEOPLE STYLE WATCH</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_PSW_AGAIN_4c999317-8d6c-46ee-b897-62487f5f91f9.JPG?v=1510077200" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">PEOPLE STYLE WATCH</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_PSW_JESSICA_ALBA_6b26a22d-2ec9-4eb6-be77-f4161c29be9d.JPG?v=1510077232" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">PEOPLE STYLE WATCH</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_PSW_NECKLACE_d7a43d3c-a2e7-4091-ad83-b494c989cd28.JPG?v=1510077272" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">PEOPLE STYLE WATCH</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/products/alter-ego-2" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_PSW_NECKLACES_f4803797-b7e0-4f18-aa15-00fe0775f2ae.JPG?v=1510077325" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">PEOPLE STYLE WATCH</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_US_MAGAZINE_BRACELET_85bc528d-598e-4e14-80b6-297a12a4bad5.JPG?v=1510077638" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">US WEEKLY</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_STAR_MAGAZINE_f5204eaf-2c83-4f8e-8be3-297bc57049ae.jpg?v=1510077509" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538">STAR MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_THE_ZOE_REPORT_7b0cff9c-2c9a-464d-a415-6484a06f06d3.JPG?v=1510077537" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538">THE ZOE REPORT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="https://lolajamesjewelry.com/collections/shop/products/mini-me-14k-1?_pos=5&_sid=669d83d28&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_US_MAGAIZNE_b650aceb-75ec-46ce-92b7-f9428e4a70d2.jpg?v=1510077581" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="https://lolajamesjewelry.com/collections/shop/products/mini-me-14k-1?_pos=5&_sid=669d83d28&_ss=r">US WEEKLY</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_US_MAGAZINE_-_CHARMS_a0d11c75-27c7-4adb-9685-7d26dbc87b47.JPG?v=1510077608" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">US WEEKLY</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="https://lolajamesjewelry.com/collections/shop/products/mini-me-14k-1?_pos=5&_sid=669d83d28&_ss=r" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_VOGUE_0eb9e4ce-8ffe-41a0-a4db-a65c38fb810f.jpeg?v=1510077817" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="https://lolajamesjewelry.com/collections/shop/products/mini-me-14k-1?_pos=5&_sid=669d83d28&_ss=r">VOGUE MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_ZOE_REPORT_-_ALTER_4ba3cf22-11c5-4d50-ab70-e1152538eb07.jpg?v=1510077862" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538">THE ZOE REPORT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_ZOE_REPORT_ICE_BOX_d4cb5544-98ce-4be9-895c-435927db0256.jpg?v=1510077885" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="https://lolajamesjewelry.com/collections/shop/products/copy-of-alter-ego-14k?_pos=1&_sid=ca51abd25&_ss=r&variant=12958653546538">THE ZOE REPORT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+            <img src="//cdn.shopify.com/s/files/1/2283/3973/files/W_PRESS_-_KOURTNEY_50b8e72e-4932-40aa-bb35-844ae01bb564.JPG?v=1510081798" alt=""></div></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">US MAGAZINE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3 mt-4 text-center">
+    <div class="inner product-item  wow fadeIn">
+      <div class="inner-top">
+        <div class="product-top">
+          <div class="product-image mb-3">
+            <a href="/collections/new-arrivals/products/my-squad" class="product-grid-image" style="display:block;"><div class="embed-responsive embed-responsive-1by1"><div class="full-img">
+              <img src="//cdn.shopify.com/s/files/1/2283/3973/files/DailyMailBellaHadidSelfieNecklace_1.jpg?v=1510085543" alt=""></div></div>
+              <div class="hover"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <a class="product-title" href="/collections/new-arrivals/products/my-squad">DAILY MAIL</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+</div>
+</div>
+  </div></div>

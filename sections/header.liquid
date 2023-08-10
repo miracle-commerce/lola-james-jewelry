@@ -1,0 +1,235 @@
+<header class="header">
+  <div class="pre-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 d-none d-md-block align-self-center">
+          <form action="/search" method="get" role="search">
+            <input type="hidden" name="type" value="product">
+            <input type="text" class="form-control" placeholder="Search" name="q" id="Search-{{ section.id }}" value="{{ search.terms | escape }}" aria-label="{{ 'header.search.placeholder' | t }}" size="26">
+            <!--<input id="search_submit" value="Rechercher" type="submit">-->
+          </form>
+        </div>
+        <div class="col-md-4 col-sm-8 col-6 logo align-self-center">
+          <a href="{{ routes.root_url }}">
+            {% if section.settings.logo == blank %}
+            <h1>{{ shop.name }}</h1>
+            {% else %}
+            <img src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ section.settings.logo.alt | default: shop.name }}" />
+            {% endif %}
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-4 col-6 clearfix align-self-center">
+          <ul>
+            <li>
+              {% comment %}
+              <a href="/pages/wishlist" class="media"><i class="fas fa-heart"></i><span class="media-body">Wishlist</span></a>
+              {% endcomment %}
+              
+              {% capture the_snippet_fave_icon_menu %}{% render 'ssw-widget-faveicon-menu' with product.id %}{% endcapture %}
+              {% unless the_snippet_fave_icon_menu contains 'Liquid error' %}
+              {% if shop.customer_accounts_enabled %}
+              {% assign ssw_fave_enabled = 1 %}
+              {% if shop.metafields.ssw['fave_enabled'] %}
+              {% assign ssw_fave_enabled = shop.metafields.ssw['fave_enabled'] | plus: 0 %}
+              {% endif %}
+              {% if ssw_fave_enabled == 1 %}
+              <a class="ssw-link-fave-menu media ssw-link-fave-menu-hide-count" href="/pages/wishlist" aria-label="{{ shop.metafields.ssw.lang.my_faves }}">
+                <i class="ssw-icon-heart-o"></i>
+                <span class="ssw-counter-fave-menu" style="display: none">0</span>
+              </a>
+              <script defer>
+                var sswFaveCounterMenuLoaded = true;
+              </script>
+              {% endif %}
+              {% endif %}
+              {% endunless %}    
+            </li>
+            {%- if customer -%}
+            <li>
+              <a href="/account" class="media"><i class="fas fa-user"></i><span class="media-body">Account</span></a>
+            </li>
+            <li>
+              <a href="/account/logout" class="media"><i class="fas fa-lock"></i><span class="media-body">Log out</span></a>
+            </li>
+            {%- else -%}
+            <li>
+              <a href="/account" class="media"><i class="fas fa-user"></i><span class="media-body">Account</span></a>
+            </li>
+            {%- endif -%}
+            <li><a href="/cart" class="media"><i class="fas fa-shopping-cart"></i><span class="media-body"><span class="count">{{ cart.item_count }}</span>My Cart</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="post-header">
+    <div class="container clearfix">
+      <div class="mobile-search d-block d-md-none">
+        <form action="/search" method="get" role="search">
+          <input type="hidden" name="type" value="product">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="Search-{{ section.id }}" value="{{ search.terms | escape }}" aria-label="{{ 'header.search.placeholder' | t }}" size="26">
+          <!--<input id="search_submit" value="Rechercher" type="submit">-->
+        </form>
+      </div>
+      <!-- Mobile menu -->
+      <div class="d-block d-lg-none">    
+        <nav class="stellarnav">
+          <ul>
+            {% for link in linklists[section.settings.menu].links %}
+            {% if link.links == blank %}
+            <li class="{% if link.active %}active{% endif %}">
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+            {% else %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+              <ul>
+                {% for childlink in link.links %}
+                <li>
+                  <a href="{{ childlink.url }}">{{ childlink.title }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+      <!-- Desktop Menu -->
+      <nav class="desktop-nav d-none d-lg-block">
+        <ul>
+          {% for link in linklists[section.settings.menu].links %}
+          {% if link.links == blank %}
+          <li class="dropdown">
+            <a class="nav-item " href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+          {% else %}
+          <li class="dropdown expand">
+            <a class="nav-item " href="{{ link.url }}">{{ link.title }} <span class="nav-collapsible-plus"></span> </a>
+            <div class="subnav">
+              <div class="wrap">
+                {% for childlink in link.links %}
+                <ul>
+                  <li>
+                    <a href="{{ childlink.url }}">{{ childlink.title }}</a>
+                  </li>
+                </ul> 
+                {% endfor %}
+              </div>
+            </div>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
+
+
+    </div>
+  </div>
+
+</header>
+
+<div class="header-msg">
+  <div class="container">
+    {% if section.settings.announcement_enabled %}
+    {% if section.settings.announcement_homepage == false or template.name == 'index' %}
+    <p>{{ section.settings.announcement_text | escape }}</p>
+    {% endif %}
+    {% endif %}
+  </div>
+</div>
+{% schema %}
+{
+"name": "Header",
+"class": "site-header",
+"settings": [
+{
+"type": "header",
+"content": "Announcement bar"
+},
+{
+"type": "checkbox",
+"id": "announcement_enabled",
+"label": "Enable announcement bar",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "announcement_homepage",
+"label": "Show on home page only",
+"default": true
+},
+{
+"type": "text",
+"id": "announcement_text",
+"label": "Announcement text",
+"default": "Announce something important here"
+},
+{
+"type": "header",
+"content": "Logo"
+},
+{
+"type": "image_picker",
+"id": "logo",
+"label": "Logo"
+},
+{
+"type": "text",
+"id": "logo_height",
+"label": "Logo height (px)",
+"default": "30",
+"info": "Recommended is 30"
+},
+{
+"type": "header",
+"content": "Menu"
+},
+{
+"type": "link_list",
+"id": "menu",
+"label": "Menu",
+"default": "main-menu"
+}
+]
+}
+{% endschema %}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "{{ shop.name }}",
+  {% if section.settings.logo %}
+    "logo": "https:{{ section.settings.logo | img_url: 'master' }}",
+  {% endif %}
+  "sameAs": [
+    "{{ settings.social_twitter_link }}",
+    "{{ settings.social_facebook_link }}",
+    "{{ settings.social_pinterest_link }}",
+    "{{ settings.social_instagram_link }}",
+    "{{ settings.social_tumblr_link }}",
+    "{{ settings.social_snapchat_link }}",
+    "{{ settings.social_youtube_link }}",
+    "{{ settings.social_vimeo_link }}"
+  ],
+  "url": "{{ shop.url }}{{ page.url }}"
+}
+</script>
+{% if template.name == 'index' %}
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "{{ shop.name }}",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ shop.url }}/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "url": "{{ shop.url }}{{ page.url }}"
+    }
+</script>
+{% endif %}

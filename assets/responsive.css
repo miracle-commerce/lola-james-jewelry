@@ -1,0 +1,39 @@
+/* #Media Queries
+================================================== */
+/* END__ */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+} 
+/* END__ */
+
+@media (min-width: 768px) and (max-width: 991px) {
+} 
+/* END__ */
+
+@media only screen and (max-width: 767px) {
+body, .form-control, .btn , .dropdown-menu, .input-group-text, .popover-header, .form-control, input[type="text"], input[type="email"], input[type="tel"], input[type="file"], input[type="search"], textarea, select{ font-size:0.875rem;}
+h1, .h1 {font-size:1.875rem;}
+h2, .h2 {font-size:1.6875rem;}
+h3, .h3 {font-size:1.4375rem;}
+h4, .h4 {font-size:1.25rem;}
+h5, .h5 {font-size:1.125rem;}
+h6, .h6 {font-size:1rem;}
+.pre-header ul li a i{ font-size:18px;}
+.stellarnav{ float:right;}
+.post-header{ padding:10px 0; border-top:1px solid #d8d8d8;}
+.pre-header ul li{ font-size:12px;}
+.pre-header ul li + li{ margin-left:6px;}
+.pre-header .row, .category-list .row{ margin-left:-8px; margin-right:-8px;}
+.pre-header [class*=col-], .category-list [class*=col-]{ padding-left:8px; padding-right:8px;}
+.owl-next, .owl-prev{ left:auto; right:auto; margin:0 5px; display:inline-block; top:auto; position:relative;}
+.footer-block .menu li{ -ms-flex:0 0 50%; flex:0 0 50%; max-width:50%;}
+.footer-block .col-lg-4{ margin-top:25px;}
+.logo img, .footer-logo img{ width:135px;}
+
+} 
+/* END__ */
+
+@media (max-width: 480px) {
+} 
+/* END__ */
+

@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js" lang="{{ shop.locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="facebook-domain-verification" content="vjsli8n4kvi75sdmw0ylxfgr83owik" />
+
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  {%- if settings.favicon != blank -%}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+  {%- endif -%}
+
+  {%- capture seo_title -%}
+    {{ page_title }}
+    {%- if current_tags -%}
+      {%- assign meta_tags = current_tags | join: ', ' -%} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+    {%- endif -%}
+    {%- if current_page != 1 -%}
+      &ndash; {{ 'general.meta.page' | t: page: current_page }}
+    {%- endif -%}
+    {%- assign escaped_page_title = page_title | escape -%}
+    {%- unless escaped_page_title contains shop.name -%}
+      &ndash; {{ shop.name }}
+    {%- endunless -%}
+  {%- endcapture -%}
+  <title>{{ seo_title | strip }}</title>
+
+  {%- if page_description -%}
+    <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+
+  {% include 'social-meta-tags' %}
+
+  {% include 'css-variables' %}
+
+  <!--[if lt IE 9]>{{ 'html5shiv.min.js' | asset_url | script_tag }}<![endif]-->
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    {{ 'stylesheet.css' | asset_url | stylesheet_tag }}  
+    {{ 'stellarnav.css' | asset_url | stylesheet_tag }}
+  {{ 'jquery.fancybox.min.css' | asset_url | stylesheet_tag }}
+  {{ 'bootstrap.css' | asset_url | stylesheet_tag }}
+  {{ 'responsive.css' | asset_url | stylesheet_tag }}
+  {% include 'buddha-megamenu' %}
+  {{ content_for_header }}
+
+{% include 'hulkcode_common' %}{% if template contains 'product' or template contains 'cart' %}<script src='https://productoption.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>{% endif %}
+{% include 'globo.formbuilder.scripts' %}
+</head>
+<body id="{{ page_title | handle }}" class="template-{{ template.name | handle }} {{ settings.color_primary }}">
+        
+  {% section 'header' %}
+  
+  {{ content_for_layout }}
+
+  {% section 'footer' %}
+
+  {{ 'jquery-min.js' | asset_url | script_tag }}
+  {{ 'popper.min.js' | asset_url | script_tag }}
+  {{ 'bootstrap.min.js' | asset_url | script_tag }}
+  {{ 'api.jquery.js' | shopify_asset_url | script_tag }}
+  {{ 'option_selection.js' | shopify_asset_url | script_tag }}
+  {{ 'ie10-viewport-bug-workaround.js' | asset_url | script_tag }}
+  {{ 'ie-emulation-modes-warning.js' | asset_url | script_tag }}
+  {{ 'stellarnav.js' | asset_url | script_tag }}
+  {{ 'jquery.fancybox.min.js' | asset_url | script_tag }}
+  {{ 'owl.carousel.js' | asset_url | script_tag }}
+  {{ 'jquery.matchHeight-min.js' | asset_url | script_tag }}
+  {{ 'custom.js' | asset_url | script_tag }}
+
+   <script>
+         jQuery('.coleql_height').matchHeight();
+            jQuery(document).ready(function ($) {
+                jQuery('.stellarnav').stellarNav({
+                    theme: 'light',
+                    breakpoint: 991,
+                    position: 'right',
+                });
+            });
+  </script>
+  <script>
+    Shopify.money_format = {{ shop.money_format | json }}
+  </script>
+  <script>
+  jQuery(document).ready(function(){
+	//toggle the component with class accordion_body
+	jQuery(".accordion_head").click(function(){
+      	var tab = jQuery(this);
+		if (jQuery('.accordion_body').is(':visible')){
+			jQuery(".accordion_body").slideUp(300);
+			jQuery(".plusminus").text('+');
+		}
+        if( jQuery(this).next(".accordion_body").is(':visible')){
+            jQuery(this).next(".accordion_body").slideUp(300);
+            jQuery(this).children(".plusminus").text('+');
+        }else {
+            jQuery(this).next(".accordion_body").slideDown(300);
+            jQuery(this).children(".plusminus").text('-');
+        }
+		setTimeout(function() {
+			var tabposition = tab.offset();
+        	jQuery("html, body").animate({ scrollTop: tabposition.top }, 500);
+		},300);
+      	
+	});
+});
+</script>
+  
+  {% capture the_snippet_content %}{% render 'socialshopwave-helper' %}{% endcapture %}
+    {% unless the_snippet_content contains 'Liquid error' %}
+    {{ the_snippet_content }}
+    {% endunless %}
+  
+{% include "hurrify-snippet" %}</body>
+</html>

@@ -1,0 +1,106 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Lora James",
+    "theme_version": "0.1.0",
+    "theme_author": "Arnab",
+    "theme_documentation_url": "https:\/\/github.com\/wcsarnab\/lorajames",
+    "theme_support_url": "https:\/\/github.com\/wcsarnab\/lorajames\/issues"
+  },
+  {
+    "name": "Contact Information",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Informations"
+      },
+      {
+        "type": "textarea",
+        "id": "cont_addr",
+        "label": "Address"
+      },
+      {
+        "type": "text",
+        "id": "cont_mail",
+        "label": "Email"
+      },
+      {
+        "type": "text",
+        "id": "cont_tel",
+        "label": "Phone No."
+      }
+    ]
+  },
+  {
+    "name": "Social Media",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Facebook"
+      },
+      {
+        "type": "text",
+        "id": "social_icon_1",
+        "label": "Facebook Icon"
+      },
+      {
+        "type": "text",
+        "id": "social_link_1",
+        "label": "Facebook link"
+      },
+      {
+        "type": "header",
+        "content": "Twitter"
+      },
+      {
+        "type": "text",
+        "id": "social_icon_2",
+        "label": "Twitter Icon"
+      },
+      {
+        "type": "text",
+        "id": "social_link_2",
+        "label": "Twitter link"
+      },
+      {
+        "type": "header",
+        "content": "Instagram"
+      },
+      {
+        "type": "text",
+        "id": "social_icon_3",
+        "label": "Instagram Icon"
+      },
+      {
+        "type": "text",
+        "id": "social_link_3",
+        "label": "Instagram link"
+      },
+      {
+        "type": "header",
+        "content": "Pinterest"
+      },
+      {
+        "type": "text",
+        "id": "social_icon_4",
+        "label": "Pinterest Icon"
+      },
+      {
+        "type": "text",
+        "id": "social_link_4",
+        "label": "Pinterest link"
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon image",
+        "info": "Will be scaled down to 32x32"
+      }
+    ]
+  }
+]

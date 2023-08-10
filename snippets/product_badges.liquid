@@ -1,0 +1,23 @@
+{% unless product.available %}
+<div class="badge-overlay"><span class="top-left badge-label">{{ 'product.sold_out' | t }}</span></div>
+{% else %}
+  {% if product.compare_at_price > product.price %}
+<div class="badge-overlay"><span class="top-left badge-label">{{ 'product.on_sale' | t }}</span></div>
+  {% elsif product.tags contains 'preorder' %}
+<div class="badge-overlay"><span class="top-left badge-label">Pre Order</span></div>
+  {% elsif product.tags contains 'New' %}
+<div class="badge-overlay"><span class="top-left badge-label">New</span></div>
+  {% elsif product.tags contains 'Back In Stock' %}
+<div class="badge-overlay"><span class="top-left badge-label">Back In Stock</span></div>
+  {% elsif product.tags contains 'Only A Few Left' %}
+<div class="badge-overlay"><span class="top-left badge-label">Only A Few Left</span></div>
+{% elsif product.tags contains 'Special Promo' %}
+<div class="badge-overlay"><span class="top-left badge-label">Special Promo</span></div>
+{% elsif product.tags contains 'Sample Sale' %}
+<div class="badge-overlay"><span class="top-left badge-label">Sample Sale</span></div>
+{% elsif product.tags contains 'Just In' %}
+<div class="badge-overlay"><span class="top-left badge-label">Just In</span></div>
+{% elsif product.tags contains 'More Colors' %}
+<div class="badge-overlay"><span class="top-left badge-label">More Colors</span></div>
+  {% endif %}
+{% endunless %}

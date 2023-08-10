@@ -1,0 +1,156 @@
+<div class="section">
+  <div class="container">
+    <div class="section-block page-header">
+      <h1>{{ page.title }}</h1></div>
+
+    <div class="section-block">
+      <div class="klaviyo-form-XivSCq"></div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="form-response d-none">
+  <div class="ql-editor" data-gramm="false" contenteditable="false">
+    <p style="text-align: center;margin-bottom:10px;"><strong style="font-size: 24px;">Thank you for submitting your request.</strong></p>
+    <p style="text-align: center; margin-bottom: 40px;"><span style="font-size: 16px;">We will be in touch soon.</span></p>
+  </div>
+</div>
+{% form 'contact', class: 'd-none' %}
+
+{% if form.posted_successfully? %}
+<p class="form-success alert alert-success mb-4" role="alert">
+  {{ 'contact.form.post_success' | t }}
+</p>
+{% endif %}
+
+{{ form.errors | default_errors }}
+
+<div class="form-row">
+  
+  <div class="form-group col-md-4">
+    <input class="form-control" type="text" name="contact[Subject]" id="ContactFormSubject" value="Repairs">
+  </div>
+
+  <div class="form-group col-md-4">
+    <input class="form-control" type="text" name="contact[first_name]" id="ContactFormName" value="">
+  </div>
+
+  <div class="form-group col-md-4">
+    <input class="form-control" type="text" name="contact[last_name]" id="ContactFormLastName" value="">
+  </div>
+
+  <div class="form-group col-md-4">
+    <input class="form-control" type="email" name="contact[email]" id="ContactFormEmail" value="">
+  </div>
+
+  <div class="form-group col-md-4">
+    <input class="form-control" type="text" name="contact[phone]" id="ContactFormPhone" value="">
+  </div>
+  
+  <div class="form-group col-md-4">
+    <input class="form-control" type="text" name="contact[address_line_1]" id="ContactFormAddressLine1" value="">
+  </div>
+  
+  <div class="form-group col-md-4">
+    <input class="form-control" type="text" name="contact[address_line_2]" id="ContactFormAddressLine2" value="">
+  </div>
+  
+  <div class="form-group col-md-4">
+    <input class="form-control" type="text" name="contact[city]" id="ContactFormCity" value="">
+  </div>
+  
+  <div class="form-group col-md-4">
+    <input class="form-control" type="text" name="contact[state]" id="ContactFormState" value="">
+  </div>
+  
+  <div class="form-group col-md-4">
+    <input class="form-control" type="text" name="contact[zip]" id="ContactFormZIP" value="">
+  </div>
+  
+  <div class="form-group col-md-4">
+    <input class="form-control" type="text" name="contact[country]" id="ContactFormCountry" value="">
+  </div>
+  
+  <div class="form-group col-md-4">
+    <input class="form-control" type="tel" name="contact[order_number]" id="ContactFormOrderNumber" value="">
+  </div>
+  
+  <div class="form-group col-md-4">
+    <input class="form-control" type="text" name="contact[aproximate_purchase_date]" id="ContactFormAproxDate" value="">
+  </div>
+  
+  <div class="form-group col-md-4">
+    <input class="form-control" type="text" name="contact[product_name]" id="ContactFormProductName" value="">
+  </div>
+  
+  <div class="form-group col-md-4">
+    <input class="form-control" type="text" name="contact[repair_request_details]" id="ContactFormRepair" value="">
+  </div>
+
+  <div class="form-group col-md-4">
+    <input class="form-control" type="tel" name="contact[reason]" id="ContactFormReason" value="">
+  </div>
+
+</div>
+
+<input type="submit" class="btn btn-primary" value="{{ 'contact.form.send' | t }}">
+{% endform %}
+      
+        <div class="d-none">
+        [nerdy-form:13336]
+        </div>
+<script>
+  window.addEventListener("klaviyoForms", function(e) {
+    if(e.detail.formId == 'XivSCq'){
+      e.preventDefault();
+		console.log(e.detail)
+      if(e.detail.type == 'submit'){
+        /*
+        $('#ContactFormName').val(e.detail.metaData.$first_name);
+        $('#ContactFormLastName').val(e.detail.metaData.$last_name);
+        $('#ContactFormEmail').val(e.detail.metaData.$email);
+		$('#ContactFormPhone').val(e.detail.metaData.$phone_number);
+        $('#ContactFormAddressLine1').val(e.detail.metaData.$address1);
+        $('#ContactFormAddressLine2').val(e.detail.metaData.$address2);
+        $('#ContactFormCity').val(e.detail.metaData.$city );
+        $('#ContactFormState').val(e.detail.metaData['State'] );
+        $('#ContactFormZIP').val(e.detail.metaData.$zip);
+        $('#ContactFormCountry').val(e.detail.metaData.$country);
+        $('#ContactFormOrderNumber').val(e.detail.metaData['Order Number']);
+        $('#ContactFormAproxDate').val(e.detail.metaData['Approximate Purchase Date']);
+        $('#ContactFormProductName').val(e.detail.metaData['Product Name (Repair)']);
+        $('#ContactFormRepair').val(e.detail.metaData['Repair Request Details']);
+        $('#contact_form').submit();
+        */
+        
+        
+        $('[name="custom_612fe75806cc6"]').val(e.detail.metaData.$first_name);
+        $('[name="custom_612fe771498e1"]').val(e.detail.metaData.$last_name);
+		$('[name="custom_612fe7862bb2e"]').val(e.detail.metaData.$phone_number);
+        $('[name="custom_612fe79e68218"]').val(e.detail.metaData.$email);
+        $('[name="custom_612fe7af7f1ea"]').val(e.detail.metaData.$address1);
+        $('[name="custom_612fe7d078477"]').val(e.detail.metaData.$address2);
+        $('[name="custom_612fe804140b1"]').val(e.detail.metaData.$city );
+        $('[name="custom_612fe81c5946f"]').val(e.detail.metaData['State'] );
+        $('[name="custom_612fe83881dfd"]').val(e.detail.metaData.$zip);
+        $('[name="custom_612fe84e3f10a"]').val(e.detail.metaData.$country);
+        $('[name="custom_612fe86527108"]').val(e.detail.metaData['Order Number']);
+        $('[name="custom_612fe87b2c1ee"]').val(e.detail.metaData['Approximate Purchase Date']);
+        $('[name="custom_612fe893cc722"]').val(e.detail.metaData['Product Name (Repair)']);
+        $('[name="custom_612fe8a837038"]').val(e.detail.metaData['Repair Request Details']);
+        $('#nerdy-form-13336 [name="submit"]').trigger("click");
+        console.log("submit",e.detail.metaData,$('#nerdy-form-13336').serialize());
+        
+      }
+    }
+  });
+  var url_string = window.location.href;
+  var url = new URL(url_string);
+  var c = url.searchParams.get("contact_posted");
+  if (c == 'true'){
+    $('.form-response').removeClass('d-none').insertBefore('.page-header');
+    $('.container-klaviyo').addClass('d-none');
+  }
+</script>

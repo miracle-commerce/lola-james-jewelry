@@ -1,0 +1,78 @@
+ <div class="container">
+    <div class="row">
+      <div class="col-lg-6 full-img">
+        {% if section.settings.image != blank %}
+            <img
+              src="{{ section.settings.image | img_url: 'master'  }}"
+              alt="{{ section.settings.image.alt | escape }}"
+            >
+          {% else %}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg bg-light' }}
+          {% endif %}
+      </div>
+      <div class="col-lg-6 align-self-center">
+        {% if section.settings.heading != blank %}
+        <h2>{{ section.settings.heading }}</h2>
+      {% endif %}
+         {% if section.settings.content != blank %}
+        {{ section.settings.content }}
+      {% endif %}
+         {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+        <a href="{{ section.settings.button_link }}" class="btn btn-primary">
+          {{ section.settings.button_label | escape }}
+        </a>
+      {% endif %}
+      </div>
+    </div>
+  </div>
+   
+{% schema %}
+  {
+    "name": "Image with text",
+	"tag" : "div",
+    "class": "w3 section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Image settings"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "header",
+        "content": "Content settings"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Lorem Ipsum Dolor"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content",
+        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image with text",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}

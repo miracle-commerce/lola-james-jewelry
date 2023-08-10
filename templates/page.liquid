@@ -1,0 +1,95 @@
+<div class="section">
+  <div class="container">
+    <div class="section-block page-header">
+      <h1>{{ page.title }}</h1></div>
+
+    <div class="section-block">
+      {{ page.content }}
+      {% if page.content contains 'klaviyo-form-VRZwQf' %} 
+        <div class="form-response d-none">
+          <div class="ql-editor" data-gramm="false" contenteditable="false">
+            <p style="text-align: center;margin-bottom:10px;"><strong style="font-size: 24px;">Thank you for submitting your request.</strong></p>
+            <p style="text-align: center; margin-bottom: 40px;"><span style="font-size: 16px;">We will be in touch soon.</span></p>
+          </div>
+        </div>
+        {% form 'contact', class: 'd-none' %}
+
+          {% if form.posted_successfully? %}
+            <p class="form-success alert alert-success mb-4" role="alert">
+              {{ 'contact.form.post_success' | t }}
+            </p>
+          {% endif %}
+
+          {{ form.errors | default_errors }}
+
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <input class="form-control" type="text" name="contact[Subject]" id="ContactFormSubject" value="Returns and Exchanges">
+            </div>
+
+            <div class="form-group col-md-4">
+              <input class="form-control" type="text" name="contact[first_name]" id="ContactFormName" value="">
+            </div>
+            
+            <div class="form-group col-md-4">
+              <input class="form-control" type="text" name="contact[last_name]" id="ContactFormLastName" value="">
+            </div>
+
+            <div class="form-group col-md-4">
+              <input class="form-control" type="email" name="contact[email]" id="ContactFormEmail" value="">
+            </div>
+
+            <div class="form-group col-md-4">
+              <input class="form-control" type="tel" name="contact[order_number]" id="ContactFormOrderNumber" value="">
+            </div>
+            
+            <div class="form-group col-md-4">
+              <input class="form-control" type="tel" name="contact[reason]" id="ContactFormReason" value="">
+            </div>
+
+          </div>
+
+          <input type="submit" class="btn btn-primary" value="{{ 'contact.form.send' | t }}">
+        {% endform %}
+      
+        <div class="d-none">
+        [nerdy-form:13266]
+        </div>
+
+      	<script>
+      		window.addEventListener("klaviyoForms", function(e) {
+              if(e.detail.formId == 'VRZwQf'){
+                e.preventDefault();
+                
+                if(e.detail.type == 'submit'){
+                  /*
+                  $('#ContactFormName').val(e.detail.metaData.$first_name);
+                  $('#ContactFormLastName').val(e.detail.metaData.$last_name);
+                  $('#ContactFormEmail').val(e.detail.metaData.$email);
+                  $('#ContactFormOrderNumber').val(e.detail.metaData['Order Number']);
+                  $('#ContactFormReason').val(e.detail.metaData['Reason For Exchange']);
+                  $('#contact_form').submit();
+                  */
+                  
+                  $('[name="custom_6128eebb6da09"]').val(e.detail.metaData.$first_name);
+                  $('[name="custom_6128ef11ee632"]').val(e.detail.metaData.$last_name);
+                  $('[name="custom_6128f2cf4e06c"]').val(e.detail.metaData.$email);
+                  $('[name="custom_6128f3b5e7fcb"]').val(e.detail.metaData['Order Number']);
+                  $('[name="custom_6128f3d515b15"]').val(e.detail.metaData['Reason For Exchange']);
+                  $('#nerdy-form-13266 [name="submit"]').trigger("click");
+                  console.log("submit",e.detail.metaData,$('#nerdy-form-13266').serialize());
+                }
+              }
+            });
+          var url_string = window.location.href;
+          var url = new URL(url_string);
+          var c = url.searchParams.get("contact_posted");
+          if (c == 'true'){
+          	$('.form-response').removeClass('d-none').insertBefore('.page-header');
+            $('.container-klaviyo').addClass('d-none');
+          }
+      	</script>
+      {% endif %}
+    </div>
+  </div>
+</div>
