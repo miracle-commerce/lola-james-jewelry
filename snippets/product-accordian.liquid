@@ -8,8 +8,8 @@
               
 					{%- case block.type -%}
 						{% when 'descriptions' %}
-							{{blockTitle}}
-							<div class="accordion_body rte" style="display:none;">{{ product.description }}</div>
+							<div class="accordion_head">{{block.settings.title}}<span class="plusminus">-</span></div>
+							<div class="accordion_body rte">{{ product.description }}</div>
 						{% when 'review' %}
 							{{blockTitle}}
 							<div id="tab{{block.id}}" class="{{tabClass}} reviewtab"><div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div></div>

@@ -312,3 +312,77 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 .intIco { position:absolute; top:5px; left:5px; z-index:2; max-width:29px; background-color:#fff; border-radius:50%; }
 
 .agrInt { display:none; }
+
+/* =============================================
+Custom Styles
+Author: Miracle Commerce
+Publish Date: 10th Aug 2023
+================================================*/
+/* Hulk product options app */
+/* .hulkapps_option{
+    width: 100%;
+    display: block;
+    transition: 0.3s all;
+    padding-bottom: 0px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid #ebebeb;
+}
+.hulkapps_option_name{
+    display: block !important;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.hulkapps_option .hulkapps_option_value, .pn_render .hulkapps_option_child, .et_render .hulkapps_option_child, .tb_render .hulkapps_option_child, .ta_render .hulkapps_option_child, .fu_render .hulkapps_option_child, .dd_render .hulkapps_option_child, .dd_multi_render .hulkapps_option_child, .nf_render .hulkapps_option_child, .dp_render .hulkapps_option_child, .dt_render .hulkapps_option_child{
+display: block !important; 
+text-align: center !important;
+font-weight: 300 !important;
+}
+
+.hulkapps_option_value input, .hulkapps_option_value select {
+    border: 1px solid #dadada !important;
+    background-color: #fbfbfb;
+}
+
+.hulkapps_option.single_line .hulkapps_option_value .hulkapps_check_option{
+font-weight: 300 !important;
+}
+
+.hulkapps_swatch_option .hulkapps_option_child{
+border: none !important;
+}
+
+.hulkapps_swatch_option, .hulkapps_mswatch_option{
+margin-right: 0px !important; 
+} */
+
+/*  Product Template */
+/* .product-image-wrapper{
+  display: flex; 
+  flex-wrap: wrap; 
+  column-gap: 20px;
+}
+
+.product-image-wrapper .product-thumbnail-images{
+  flex: 1 1 100px; 
+  max-width: 100px;
+  display: flex; 
+  flex-wrap: wrap; 
+  margin: 0;
+  row-gap: 10px;
+}
+
+.product-thumbnail-images .product-thumnail-single-image{
+  width: 100%;
+  height: auto;
+  flex: 1 1 100%; 
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.product-main-image__wrapper{
+  flex: 1 1 calc(100% - 120px); 
+  max-width: calc(100% - 120px);
+} */

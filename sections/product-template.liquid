@@ -11,45 +11,41 @@
   {% assign modal_image_size = section.settings.modal_image_width | append: 'x' | append: section.settings.modal_image_height %}
 
   <div class="section-block">
-
     <div class="row">
-
       <div class="col-md-6">
         {% if product.metafields.my_fields.international %}
       	<div class="intIco"><img src="{{'airline.png' | asset_img_url: 'master'}}" /></div>
-      {% endif %}
-{% include 'product_badges' %}
-        <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
-          <!-- slides -->
-          <div class="carousel-inner">
-
-            {% for image in product.images %}
-            {%- assign imgNo = forloop.index0 -%}
-            <div class="carousel-item primgthumb {% if forloop.first == true %} active {% endif %}" data-index="{{imgNo}}" data-img="{{ image.src | img_url: "master" }}" data-size="{{image.width}}x{{image.height}}"> 
-              <img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" />
+        {% endif %}
+        {% include 'product_badges' %}
+        <div id="custCarousel" class="carousel product-image-wrapper slide" data-ride="carousel" align="center">
+          <div class="product-main-image__wrapper {% if product.images.size > 1 %}has-thumb{% endif %}">
+            <div class="carousel-inner">
+              {% for image in product.images %}
+              {%- assign imgNo = forloop.index0 -%}
+              <div class="carousel-item primgthumb {% if forloop.first == true %} active {% endif %}" data-index="{{imgNo}}" data-img="{{ image.src | img_url: "master" }}" data-size="{{image.width}}x{{image.height}}"> 
+                <img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" />
+              </div>
+              {% endfor %}
             </div>
-            {% endfor %}
-
+            <!-- Left right --> 
+            <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a>
+            <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> 
           </div>
-          <!-- Left right --> 
-          <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a>
-          <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> 
-
           <!-- Thumbnails -->
           {% if product.images.size > 1 %}
-          <ol class="carousel-indicators list-inline">
-            {% for image in product.images %}
-            <li class="list-inline-item {% if forloop.first == true %} active {% endif %}">
-              <a id="carousel-selector-{{ forloop.index0 }}" {% if forloop.first == true %}class="selected" {% endif %} data-slide-to="{{ forloop.index0 }}" data-target="#custCarousel"> 
-                <img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" class="img-fluid" />
-              </a> 
-            </li>
-            {% endfor %}
-          </ol>
+            <ol class="carousel-indicators list-inline product-thumbnail-images">
+              {% for image in product.images %}
+              <li class="list-inline-item {% if forloop.first == true %} active {% endif %} product-thumnail-single-image">
+                <a id="carousel-selector-{{ forloop.index0 }}" {% if forloop.first == true %}class="selected" {% endif %} data-slide-to="{{ forloop.index0 }}" data-target="#custCarousel"> 
+                  <img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" class="img-fluid" />
+                </a> 
+              </li>
+              {% endfor %}
+            </ol>
           {% endif %}
+          <!-- slides -->
         </div>
-<div>
-      <br><br><br><br><br></div>
+        <div><br><br><br><br><br></div>
       </div>
       <div class="col-md-6">
  
@@ -61,96 +57,106 @@
 
         {% form 'product', product, class: 'mb-3' %}
 
-        <div class="product-price mb-3" style="{{ settings.color_price | prepend: 'color: ' }}">
-          {% if product.compare_at_price_max > product.price %}
-          <span class="sr-only">{%if product.handle == 'add-on'%}from $110.00{%elsif product.handle == 'repair'%}from $20.00{%else%}{{ 'product.regular_price' | t }}{%endif%}</span>
-          {% if current_variant.compare_at_price > current_variant.price %}
-          <s class="text-muted opacity-75 mr-2">
-            {{ current_variant.compare_at_price | money }}
-          </s>
-          {% endif %}
-          {% endif %}
-          <span>
-            {%if product.handle == 'add-on'%}from $110.00{%elsif product.handle == 'repair'%}from $20.00{%else%}{{ current_variant.price | money }}{%endif%}
-          </span>
-        </div>
-            <div style="display:block;">
-            {{ form | payment_terms }}
-            </div>
-        <div class="py-3">
-          {%if product.options.size >= 1 %}
-          {% for product_option in product.options_with_values %}
-          {%unless product_option.name == 'Title' %}
-  <label style="width:100%;">
-    {{ product_option.name }}
-    <select style="margin-top:.5em;" class="single-option-selector" data-option="option{{product_option.position}}" id="product-page-variant-select-option-{{product_option.position }}">>
-      {% for value in product_option.values %}
-        <option {% if product_option.selected_value == value %}selected{% endif %}>{{ value | replace:"' '",'"'}}</option>
-      {% endfor %}
-    </select>
-  </label>
-          {%endunless%}
-{% endfor %}
-          {%endif%}
-          <select name="id" id="product-page-variant-select" class="custom-select mb-3 {% if product.has_only_default_variant %}d-none{% endif %}" style="display:none;">
-            {% for variant in product.variants %}
-            <option data-available="{{variant.available}}" data-price="{{variant.price}}" value="{{ variant.id }}">{{ variant.title | replace:"' '",'"'}}</option>
-            {% endfor %}
-          </select>
-
-          <hr class="mt-4 mb-3 {% if product.has_only_default_variant %}d-none{% endif %}">
-
-          <div class="d-flex">
-
-            <input type="number" class="form-control w-auto mr-2" style="max-width: 80px;" size="20" name="quantity" value="1" min="1" aria-label="{{ 'product.quantity' | t }}">
-            <button
-                    class="add-to-cart-btn btn btn-primary"
-                    type="submit"
-                    name="add"
-                    data-loading-text="{{ 'misc.loading' | t }}"
-                    data-add-to-cart-text="{{ 'product.add_to_cart' | t }}"
-                    data-view-cart-text="{{ 'product.view_cart' | t }}"
-                    aria-controls="cart-toast-wrapper"
-                    {%if current_variant.inventory_quantity <= 0 and current_variant.inventory_policy == 'deny' %}disabled{%endif%}>
-              <div class="d-none bs-spinner spinner-border spinner-border-sm mr-1" role="status" aria-hidden="true"></div>
-              <span>{%if current_variant.inventory_quantity <= 0 and current_variant.inventory_policy == 'deny' %}SOLD OUT{%else%}{{ 'product.add_to_cart' | t }}{%endif%}</span>
-            </button>
+          <div class="product-price mb-3" style="{{ settings.color_price | prepend: 'color: ' }}">
+            {% if product.compare_at_price_max > product.price %}
+            <span class="sr-only">{%if product.handle == 'add-on'%}from $110.00{%elsif product.handle == 'repair'%}from $20.00{%else%}{{ 'product.regular_price' | t }}{%endif%}</span>
+            {% if current_variant.compare_at_price > current_variant.price %}
+            <s class="text-muted opacity-75 mr-2">
+              {{ current_variant.compare_at_price | money }}
+            </s>
+            {% endif %}
+            {% endif %}
+            <span>
+              {%if product.handle == 'add-on'%}from $110.00{%elsif product.handle == 'repair'%}from $20.00{%else%}{{ current_variant.price | money }}{%endif%}
+            </span>
           </div>
-                                    {%if current_variant.inventory_quantity <= 0 and current_variant.inventory_policy == 'deny' %}
+          <div style="display:block;">
+          {{ form | payment_terms }}
+          </div>
+          <div class="py-3">
+            {% if product.options.size >= 1 %}
+              {% for product_option in product.options_with_values %}
+                {%unless product_option.name == 'Title' %}
+                  <label style="width:100%;">
+                    {{ product_option.name }}
+                    <select style="margin-top:.5em;" class="single-option-selector" data-option="option{{product_option.position}}" id="product-page-variant-select-option-{{product_option.position }}">>
+                      {% for value in product_option.values %}
+                        <option {% if product_option.selected_value == value %}selected{% endif %}>{{ value | replace:"' '",'"'}}</option>
+                      {% endfor %}
+                    </select>
+                  </label>
+                {%endunless%}
+              {% endfor %}
+            {% endif %}
+            <select name="id" id="product-page-variant-select" class="custom-select mb-3 {% if product.has_only_default_variant %}d-none{% endif %}" style="display:none;">
+              {% for variant in product.variants %}
+              <option data-available="{{variant.available}}" data-price="{{variant.price}}" value="{{ variant.id }}">{{ variant.title | replace:"' '",'"'}}</option>
+              {% endfor %}
+            </select>
+
+            <hr class="mt-4 mb-3 {% if product.has_only_default_variant %}d-none{% endif %}">
+
+            <div class="d-flex justify-content-center">
+              <input type="number" class="form-control w-auto mr-2" style="max-width: 80px;" size="20" name="quantity" value="1" min="1" aria-label="{{ 'product.quantity' | t }}">
+              <button
+                      class="add-to-cart-btn btn btn-primary"
+                      type="submit"
+                      name="add"
+                      data-loading-text="{{ 'misc.loading' | t }}"
+                      data-add-to-cart-text="{{ 'product.add_to_cart' | t }}"
+                      data-view-cart-text="{{ 'product.view_cart' | t }}"
+                      aria-controls="cart-toast-wrapper"
+                      {%if current_variant.inventory_quantity <= 0 and current_variant.inventory_policy == 'deny' %}disabled{%endif%}>
+                <div class="d-none bs-spinner spinner-border spinner-border-sm mr-1" role="status" aria-hidden="true"></div>
+                <span>{%if current_variant.inventory_quantity <= 0 and current_variant.inventory_policy == 'deny' %}SOLD OUT{%else%}{{ 'product.add_to_cart' | t }}{%endif%}</span>
+              </button>
+            </div>
+            {%if current_variant.inventory_quantity <= 0 and current_variant.inventory_policy == 'deny' %}
               <a class="btn btn-primary" style="display:block;margin-top:1em;max-width:280px;" id="BIS_trigger">JOIN WAITLIST</a>
-              {%endif%}
-          {% capture the_snippet_fave %}{% render 'socialshopwave-widget-fave' %}{% endcapture %}
-          {% unless the_snippet_fave contains 'Liquid error' %}
-          {{ the_snippet_fave }}
-          {% endunless %}  
-          
-                              <span style="display: block;
-    margin-top: 1em;" class="drophint-link"></span>
-        </div>
+            {%endif%}
+            <div class="d-flex justify-content-center">
+              {% capture the_snippet_fave %}{% render 'socialshopwave-widget-fave' %}{% endcapture %}
+              {% unless the_snippet_fave contains 'Liquid error' %}
+                {{ the_snippet_fave }}
+              {% endunless %}  
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="display: block; margin-top: 1em;" class="drophint-link"></span>
+            </div>
+            
+          </div>
         
         {% endform %}
         
         {% if section.settings.holidayMsg != blank %}
-        <p><a href="{{section.settings.holidayUrl}}" style="color:{{section.settings.holidaym-clr}}">{{section.settings.holidayMsg}}</a></p>
+          <p><a href="{{section.settings.holidayUrl}}" style="color:{{section.settings.holidaym-clr}}">{{section.settings.holidayMsg}}</a></p>
         {% endif %}
-        
-        <div><h6>Gift arriving late? We've got you covered!<br>  Print our <a href="https://cdn.shopify.com/s/files/1/2283/3973/files/LolaJames-Missing.pdf?v=1628702035" target="blank" style="background-color:#ffe6f1;">"Something Special"</a> card to let your recipient know that their Lola James gift is on its way! <h6> </div><br>
-
+      </div>
+    </div>
+  </div>
+  
+  <div class="section-block">
+    <div class="row">
+      <div class="col-md-12">
+        <div>
+          <h6>Gift arriving late? We've got you covered!<br>  Print our 
+            <a href="https://cdn.shopify.com/s/files/1/2283/3973/files/LolaJames-Missing.pdf?v=1628702035" target="blank" style="background-color:#ffe6f1;">"Something special"
+            </a> 
+            card to let your recipient know that their Lola James gift is on its way! 
+          <h6> 
+        </div>
+        <br>
         <div class="rte">         
           {% include 'product-accordian' %}
         </div>
 
         {% if section.settings.show_share_buttons %}
-        <hr class="mt-5">
-        {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: featured_image %}
+          <hr class="mt-5">
+          {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: featured_image %}
         {% endif %}
-
       </div>
-
     </div>
-
   </div>
-  
 </div>
 <script>
 window.addEventListener('DOMContentLoaded',function(){
