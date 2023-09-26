@@ -214,7 +214,7 @@
         "settings": {
           "announcement_enabled": true,
           "announcement_homepage": false,
-          "announcement_text": "New Styles Added To The Sale Section!",
+          "announcement_text": "",
           "logo": "shopify:\/\/shop_images\/logo_1.png",
           "logo_height": "30",
           "menu": "2021-menu"
@@ -232,8 +232,8 @@
       "16135618122a614c51": {
         "type": "image-block",
         "settings": {
-          "image": "shopify:\/\/shop_images\/Screenshot_2023-07-27_at_8.22.11_AM.png",
-          "image_link": "shopify:\/\/collections\/personalized-necklaces"
+          "image": "shopify:\/\/shop_images\/Screenshot_2023-09-05_at_8.01.25_PM.png",
+          "image_link": "shopify:\/\/collections\/fluted"
         }
       },
       "1613568042ad80ec84": {
@@ -527,8 +527,15 @@
           },
           "97994e29-05aa-498f-8edd-e4a5a91724f5": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "collection": "rings"
+            }
+          },
+          "b3a21231-d661-4b52-b85b-45ef98b50f96": {
+            "type": "collection",
+            "settings": {
+              "collection": "build-a-charm-necklace"
             }
           }
         },
@@ -536,11 +543,12 @@
           "72f57a08-7c5e-4771-8ec1-d7c7ddc1e4e1",
           "3ca892dc-4c8d-4fbf-b7f3-23cc65c7ad8b",
           "fc820af6-28f8-4ea8-9adb-d388c00f8d94",
-          "97994e29-05aa-498f-8edd-e4a5a91724f5"
+          "97994e29-05aa-498f-8edd-e4a5a91724f5",
+          "b3a21231-d661-4b52-b85b-45ef98b50f96"
         ],
         "settings": {
           "heading": "SHOP CATEGORIES",
-          "subheading": "<p><\/p>"
+          "subheading": ""
         }
       },
       "1617075174df6639e7": {
@@ -629,7 +637,7 @@
             "type": "faqs",
             "settings": {
               "title": "CAN I ADD A NAME\/LETTER\/SYMBOL\/DIAMOND TO A NECKLACE I ALREADY OWN FROM LOLA JAMES JEWELRY?",
-              "answer": "<p>Yes! Please click <a href=\"https:\/\/lolajamesjewelry.com\/collections\/add-to-an-existing-necklace-or-bracelet\" title=\"https:\/\/lolajamesjewelry.com\/collections\/add-to-an-existing-necklace-or-bracelet\"><b>here<\/b> and follow the directions listed to add to an existing necklace.<\/a><\/p>\n<p>International orders are excluded from add on's.<\/p>\n<p>Discount codes cannot be used on add on's.<\/p>"
+              "answer": "<p>Yes! Please click <a href=\"https:\/\/lolajamesjewelry.com\/collections\/add-to-an-existing-necklace-or-bracelet\" title=\"https:\/\/lolajamesjewelry.com\/collections\/add-to-an-existing-necklace-or-bracelet\"><b>here<\/b> and follow the directions listed to add to an existing necklace.<\/a><\/p>\n<p>Only certain styles can be added on to. This option is not available for every style.<\/p>\n<p>Discount codes cannot be used on add on's.<\/p>"
             }
           },
           "cf9156e6-f3a4-4879-89a5-3dfcf9cc4c48": {
@@ -720,13 +728,6 @@
               "answer": "Not at this time."
             }
           },
-          "3a2f2de9-d188-456c-b15d-f32e11f5a43b": {
-            "type": "faqs",
-            "settings": {
-              "title": "Important information regarding international shipping:",
-              "answer": "<p>For previous international orders - NO repairs, NO exchanges, NO returns will be allowed.  NO EXCEPTIONS.  If your item arrives and needs a repair you are responsible for it and the cost to repair it.  We are not responsible for lost packages, invalid addresses, or any shipping costs. <\/p>\n\n<p>Duties and import fees must be paid for by the customer.  <\/p>\n\n<p>If you refuse a shipment from us, you are responsible for the original shipping charges, any duties\/import fees that are incurred on the package, and the cost of returning the package to Lola James. This amount will be deducted from your merchandise credit.  <\/p>\n\n<p>We are not responsible for any delayed deliveries due to import issues. <\/p>\n\n<p><b>ALL SALES ARE FINAL.<\/b> <\/p>"
-            }
-          },
           "34a0c218-0650-4f13-b607-81896d52696c": {
             "type": "faqsection",
             "settings": {
@@ -763,7 +764,7 @@
             "type": "faqs",
             "settings": {
               "title": "WHAT IS YOUR REPAIR POLICY?",
-              "answer": "We offer complimentary repairs within the first 30 days of purchase.  <br><br>We only accept repairs for up to 6 months after the date of purchase. <br><br>We will repair only designs purchased through lolajamesjewelry.com.  \n<br><br>\nAll repairs require prior authorization. To submit a repair, please fill out this <a href=\"https:\/\/lolajamesjewelry.com\/pages\/repairs\"><b>form<\/b>.<\/a> <br><br>\nAfter receiving authorization, please click the following link to make the payment for the repair needed <a href=\"https:\/\/lolajamesjewelry.com\/products\/repair\"><b>here<\/b>.<\/a> <br><br>\nPlease note that any repair after 30 days will incur a fee based on the type of repair necessary.  Repairs typically start at $30. If we believe the items are intentionally damaged or misused, we reserve the right to refuse any repair requests.<br>\n<br>The customer is responsible to ship the item to us.  Lola James is not responsible if the package gets damaged, lost or stolen before it arrives to us. <br>\n<br>Please allow 4-6 weeks for all repairs.  All repairs are subject to shipping. We ship all repairs back via USPS mail. <br>\n<br> We do not accept repairs or responsibility for items that have been changed or worked on by any other jeweler. <br>\n<br>"
+              "answer": "We offer complimentary repairs within the first 30 days of purchase.  <br><br>We only accept repairs for up to 1 year after the date of purchase. We will repair the item one time only. No exceptions.<br><br>We will repair only designs purchased through lolajamesjewelry.com.  \n<br><br>\nAll repairs require prior authorization. To submit a repair, please fill out this <a href=\"https:\/\/lolajamesjewelry.com\/pages\/repairs\"><b>form<\/b>.<\/a> <br><br>\nAfter receiving authorization, please click the following link to make the payment for the repair needed <a href=\"https:\/\/lolajamesjewelry.com\/products\/repair\"><b>here<\/b>.<\/a> <br><br>\nPlease note that any repair after 30 days will incur a fee based on the type of repair necessary.  Repairs typically start at $30. If we believe the items are intentionally damaged or misused, we reserve the right to refuse any repair requests.<br>\n<br>The customer is responsible to ship the item to us.  Lola James is not responsible if the package gets damaged, lost or stolen before it arrives to us. <br>\n<br>Please allow 4-6 weeks for all repairs.  All repairs are subject to shipping. We ship all repairs back via USPS mail. <br>\n<br> We do not accept repairs or responsibility for items that have been changed or worked on by any other jeweler. <br>\n<br>"
             }
           },
           "774d1451-a1df-41d4-bcdd-edd5b7b12458": {
@@ -828,7 +829,6 @@
           "66eea499-47ea-4f19-9d5a-ca13440ea559",
           "7a3b5e0a-67e1-4774-8bf1-2c301646dc6f",
           "3c6826ec-8645-4c2e-a4fd-bb3199ce4f6c",
-          "3a2f2de9-d188-456c-b15d-f32e11f5a43b",
           "34a0c218-0650-4f13-b607-81896d52696c",
           "1348aeb9-3ed1-467e-bf80-d5b6ab08449a",
           "4732d235-4274-4b01-8c4d-0a6c306a0e68",
@@ -1953,14 +1953,14 @@
       "sswinstagram"
     ],
     "blocks": {
-      "558381514691908246": {
-        "type": "shopify:\/\/apps\/volumeboost-volume-discount\/blocks\/app-embed\/25745434-52e7-4378-88f1-890df18a0110",
-        "disabled": true,
+      "10042746950867549768": {
+        "type": "shopify:\/\/apps\/hulk-product-options\/blocks\/app-embed\/380168ef-9475-4244-a291-f66b189208b5",
+        "disabled": false,
         "settings": {
         }
       },
-      "10042746950867549768": {
-        "type": "shopify:\/\/apps\/hulk-product-options\/blocks\/app-embed\/380168ef-9475-4244-a291-f66b189208b5",
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }

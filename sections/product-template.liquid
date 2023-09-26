@@ -96,7 +96,7 @@
 
             <hr class="mt-4 mb-3 {% if product.has_only_default_variant %}d-none{% endif %}">
 
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center add-to-cart-button-wrapper">
               <input type="number" class="form-control w-auto mr-2" style="max-width: 80px;" size="20" name="quantity" value="1" min="1" aria-label="{{ 'product.quantity' | t }}">
               <button
                       class="add-to-cart-btn btn btn-primary"
@@ -174,26 +174,25 @@ window.addEventListener('DOMContentLoaded',function(){
       
       }
     });
-      // determine if in stock or not
      $('#product-page-variant-select option').each(function(i) {
         $(this).attr('selected',false);
-       var getText = $(this).text();
+        var getText = $(this).text();
        if (selected === getText) {
          $(this).attr('selected',true);
-       var available = $(this).attr('data-available');
+        var available = $(this).attr('data-available');
          if (available === 'false') {
           alert('This item is out of stock. Please make another selection');
           $('.add-to-cart-btn').text('SOLD OUT');
           $('.add-to-cart-btn').prop('disabled',true);
            var selectedVariant = $('select[name="id"] option:selected').attr('value');
            console.log($('#BIS_trigger').length);
-           if ($('#BIS_trigger').length) {
+           if ($('#BIS_trigger').length > 0) {
              $('#BIS_trigger').remove();
-                                       console.log('BIS already exist');
+              console.log('BIS already exist');
            }
            else {
                           console.log('I am trying to append');
-             $('<a data-variant-id="'+selectedVariant+'" class="btn btn-primary" style="display:block;margin-top:1em;max-width:280px;" id="BIS_trigger">JOIN WAITLIST</a>').insertAfter($('.d-flex'));
+             $('<a data-variant-id="'+selectedVariant+'" class="btn btn-primary" style="display:block;margin-top:1em;max-width:280px;" id="BIS_trigger">JOIN WAITLIST</a>').insertAfter($('.add-to-cart-button-wrapper'));
            }
          }
          else {

@@ -386,3 +386,7 @@ margin-right: 0px !important;
   flex: 1 1 calc(100% - 120px); 
   max-width: calc(100% - 120px);
 } */
+#BIS_trigger{
+  margin-left: auto; 
+  margin-right: auto;
+}
