@@ -231,8 +231,8 @@ window.addEventListener('DOMContentLoaded',function(){
 {% schema %}
   {
     "name": "Product pages",
-	"tag": "div",
-"class": "section",
+    "tag": "div",
+    "class": "section",
     "settings": [
       {
         "type": "header",
@@ -479,74 +479,82 @@ window.addEventListener('DOMContentLoaded',function(){
         "default": "#333"
       }
     ],
-  "blocks": [
-  {
-    "type": "descriptions",
-    "name": "Description",
-    "limit": 1,
-    "settings": [
-      { 
-      "type":"text",
-      "id":"title",
-      "label":"Title",
-      "default":"Product Details"
-      }
-    ]
-  },
-  {
-    "type": "review",
-    "name": "Review",
-    "limit": 1,
-    "settings": [
-      { 
-      "type":"text",
-      "id":"title",
-      "label":"Title",
-      "default":"Reviews"
-      }
-    ]
-  },
-  {
-    "type": "custom",
-    "name": "Global Text Block",
-    "limit": 5,
-    "settings": [
-      { 
-      "type":"text",
-      "id":"title",
-      "label":"Title",
-      "default":"Custom Text"
+    "blocks": [
+      {
+        "type": "descriptions",
+        "name": "Description",
+        "limit": 1,
+        "settings": [
+          { 
+          "type":"text",
+          "id":"title",
+          "label":"Title",
+          "default":"Product Details"
+          }
+        ]
       },
       {
-      "type": "textarea",
-      "id": "content",
-      "label": "Content"
-      }
-    ]
-  },
-  {
-    "type": "metafields",
-    "name": "Metafields Data",
-    "settings": [
-      { 
-      "type":"text",
-      "id":"title",
-      "label":"Title",
-      "default":"Metafields"
+        "type": "review",
+        "name": "Review",
+        "limit": 1,
+        "settings": [
+          { 
+          "type":"text",
+          "id":"title",
+          "label":"Title",
+          "default":"Reviews"
+          }
+        ]
       },
       {
-      "type": "text",
-      "id": "key",
-      "label": "Key Name"
+        "type": "custom",
+        "name": "Global Text Block",
+        "limit": 5,
+        "settings": [
+          { 
+          "type":"text",
+          "id":"title",
+          "label":"Title",
+          "default":"Custom Text"
+          },
+          {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content"
+          }
+        ]
       },
       {
-      "type": "textarea",
-      "id": "content",
-      "label": "Content",
-	  "info": "Use globle text here. Add content by metafeild when need to show different details to product."
+        "type": "metafields",
+        "name": "Metafields Data",
+        "settings": [
+          { 
+          "type":"text",
+          "id":"title",
+          "label":"Title",
+          "default":"Metafields"
+          },
+          {
+          "type": "text",
+          "id": "key",
+          "label": "Key Name"
+          },
+          {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content",
+        "info": "Use globle text here. Add content by metafeild when need to show different details to product."
+          }
+        ]
+      }
+    ],
+    "enabled_on": {
+      "templates": ["product"]
+    },
+    "presets":[
+      {
+        "name":"Product Pages"
       }
     ]
-  }
- ]
   }
 {% endschema %}

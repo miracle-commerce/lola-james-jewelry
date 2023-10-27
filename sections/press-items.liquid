@@ -1,0 +1,52 @@
+<section data-section-type="press-items" style="--style-background: {{section.settings.background_color}}">
+  <div class="container">
+    {%- if section.blocks.size > 0 -%}
+      <div class="press-items">
+        {% for block in section.blocks %}
+          <div class="pressItem">
+            <div class="pressItem__image">
+              <img src="{{block.settings.icon | image_url: width: 100}}" alt="">
+            </div>
+            <div class="pressItem__content">{{block.settings.content | escape}}</div>
+          </div>
+        {% endfor %}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+{% schema %}
+  {
+    "name":"Press Items",
+    "settings":[
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#ffe6f1"
+      }
+    ],
+    "blocks":[
+      {
+        "name":"Press Item",
+        "type":"image",
+        "settings":[
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+          },
+          {
+            "type": "textarea",
+            "id": "content",
+            "label": "Content"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Press Items"
+      }
+    ]
+  }
+{% endschema %}

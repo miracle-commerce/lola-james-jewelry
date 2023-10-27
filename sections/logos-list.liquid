@@ -1,0 +1,53 @@
+<section data-section-type="logos-list">
+  <div class="logosList__wrapper">
+    {%- if section.settings.title != blank -%}
+      <div class="section__heading">
+        <h3 class="section__title">{{section.settings.title | escape}}</h3>
+      </div>
+    {%- endif -%}
+    {%- if section.blocks.size > 0 -%}
+      <div class="section__logos">
+        {%- for block in section.blocks -%}
+          <div class="section__logo-item">
+            <a href="{{block.settings.link}}"><img src="{{block.settings.logo | image_url: width: 200}}" alt="{{block.settings.logo.alt}}"></a>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+{% schema %}
+  {
+    "name":"Logos list",
+    "settings":[
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }
+    ],
+    "blocks":[
+      {
+        "name":"logo",
+        "type":"image",
+        "settings":[
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Logos list"
+      }
+    ]
+  }
+{% endschema %}

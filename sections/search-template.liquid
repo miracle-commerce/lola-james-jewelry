@@ -195,9 +195,9 @@
 
 {% schema %}
 {
-"name": "Search page",
-"tag": "div",
-"class": "section",
+  "name": "Search page",
+  "tag": "div",
+  "class": "section",
   "settings": [
     {
       "type": "header",
@@ -816,6 +816,14 @@
       "step": 1,
       "default": 3,
       "info": "Spacing between products"
+    }
+  ],
+  "enabled_on": {
+    "templates": ["search"]
+  },
+  "presets":[
+    {
+      "name":"Search Page"
     }
   ]
 }

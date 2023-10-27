@@ -1,0 +1,20 @@
+{
+  "name":"Main Cart Page",
+  "sections":{
+    "main": {
+      "type": "cart-template",
+      "settings": {
+        "show_subtitle": true,
+        "note": true,
+        "show_vendor": true,
+        "show_quantity": true,
+        "sticky_summary": true,
+        "holiday": false,
+        "image_width": "160",
+        "image_height": "160",
+        "image_border": true
+      }
+    }
+  },
+  "order":["main"]
+}

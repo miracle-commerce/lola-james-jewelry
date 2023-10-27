@@ -1,47 +1,47 @@
 {% assign products_list = collections[section.settings.collection].products %}
-   <div class="container">
-    <div class="section-block">
+<div class="container">
+  <div class="section-block">
     {% if section.settings.heading != blank %}
     <div class="title text-center mb-5"><h2>{{ section.settings.heading | escape }}</h2></div>
     {% endif %}
-    <div class="owl-carousel owl-theme CarouselOwl">
-         {% for product in products_list limit: section.settings.limit %}
-        <div class="item">
-         <div class="product-box">
-           {% include 'product_badges' %}
-            <div class="embed-responsive embed-responsive-1by1">
-               <a href="{{ product.url }}"><img
-                src="{{ product.featured_image | img_url: 'master' }}"
-                alt="{{ product.featured_image.alt | escape }}"
-               >
-              </a>
-            </div>
-            <div class="pt-4">
-              <p><a href="{{ product.url }}">{{ product.title | escape }}</a></p>
-              <span>
-                {% if product.compare_at_price > product.price %}
-                  <s class="text-muted opacity-75 mr-1">{{ product.compare_at_price | money }}</s>
-                  {% if product.price_varies %}
-                    {%- assign sale_price = product.price | money -%}
-                    {{ 'product.on_sale_from_html' | t: price: sale_price }}
-                  {% else %}
-                    {{ 'product.on_sale' | t }}
-                    {{ product.price | money }}
-                  {% endif %}
+    <div class="owl-carousel owl-theme featuredCollectionCarousel">
+      {% for product in products_list limit: section.settings.limit %}
+      <div class="item">
+        <div class="product-box">
+          {% include 'product_badges' %}
+          <div class="embed-responsive embed-responsive-1by1">
+              <a href="{{ product.url }}"><img
+              src="{{ product.featured_image | img_url: 'master' }}"
+              alt="{{ product.featured_image.alt | escape }}"
+              >
+            </a>
+          </div>
+          <div class="pt-4">
+            <p><a href="{{ product.url }}">{{ product.title | escape }}</a></p>
+            <span>
+              {% if product.compare_at_price > product.price %}
+                <s class="text-muted opacity-75 mr-1">{{ product.compare_at_price | money }}</s>
+                {% if product.price_varies %}
+                  {%- assign sale_price = product.price | money -%}
+                  {{ 'product.on_sale_from_html' | t: price: sale_price }}
                 {% else %}
-                  {% if product.price_varies %}
-                    {%- assign price = product.price | money -%}
-                    {{ 'product.from_text_html' | t: price: price }}
-                  {% else %}
-                    {{ product.price | money }}
-                  {% endif %}
+                  {{ 'product.on_sale' | t }}
+                  {{ product.price | money }}
                 {% endif %}
-              </span>
-            </div>
+              {% else %}
+                {% if product.price_varies %}
+                  {%- assign price = product.price | money -%}
+                  {{ 'product.from_text_html' | t: price: price }}
+                {% else %}
+                  {{ product.price | money }}
+                {% endif %}
+              {% endif %}
+            </span>
           </div>
         </div>
-         {% endfor %}
       </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 

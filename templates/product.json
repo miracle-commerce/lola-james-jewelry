@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "product-template": {
+      "type": "product-template",
+      "blocks": {
+        "f3d3ab96-2805-4fc5-92ec-52c669800bfb": {
+          "type": "descriptions",
+          "settings": {
+            "title": "DESCRIPTION"
+          }
+        },
+        "9723db39-802c-4a67-8f94-6cd60db292ff": {
+          "type": "metafields",
+          "settings": {
+            "title": "LEAD TIME",
+            "key": "lead-time",
+            "content": "<p>Please allow up to 6 weeks for delivery of this style. \n<\/p>"
+          }
+        },
+        "6dd00d44-46b2-48c9-a3b6-456fe7819bbc": {
+          "type": "custom",
+          "settings": {
+            "title": "SHIPPING GUIDELINES",
+            "content": "<p>All personalized and custom orders can take up to 6-8 weeks to ship. All pieces have their lead time listed on the product page.  <\/p><p>At this time we do not offer rush orders.  \nIn stock items will ship within 1-2 business days. <\/p><p>\n<\/p><p>Lead time for custom\/personalized styles is NOT a guarantee. Rarely, but sometimes it can take longer than 6-8 weeks. Once you place your order, you are agreeing to the lead time and understand it could be longer than listed. <\/p>\nOrders placed on Friday after 1pm EST. will begin processing on the following Monday.  Once your item has shipped, we will email you with the tracking information.  Delivery time does not include Saturdays, Sundays or Holidays. <p>\n<\/p><p>For personalized\/custom orders, please note that the shipping method selected does NOT expedite your order's production time.  Shipping time and production time are completely separate from one another.  <\/p>\n<p>\nLola James Jewelry will contact you with a follow-up email if the merchandise you have selected is not currently in stock. <\/p>\n<p>\nThe font generator is not 100% accurate. It is just to give you an idea of what the personalized text will look like. Most of our jewelry is handmade and there can be some slight variations. <\/p>"
+          }
+        },
+        "dbee957f-7730-4aa4-835f-2048abc9f4e7": {
+          "type": "custom",
+          "settings": {
+            "title": "FINAL SALE POLICY",
+            "content": "<h5>ALL PURCHASES ARE FINAL<\/h5>\n<p>We offer exchange or STORE CREDIT within 7 days of shipment date.  We do not provide refunds. Store credit will be issued, provided that the jewelry has not been damaged, worn, or altered. If you need to cancel an in stock item, store credit will be issued.  <\/p><p>\nAll custom, personalized, special order and sale products (including single initials and custom sizes) are FINAL SALE and cannot be exchanged or returned for store credit. No exceptions. <\/p><p>\nItems that are marked final sale cannot be returned or exchanged. <\/p><p> \nCancellations are not allowed on personalized styles as they are made to order. Please ensure correct size\/chain length is selected. Charges will be applied to resize.<\/p><p>\nYour items must be returned in the original packaging, including any pouches or boxes that the jewelry was shipped in. Shipping and handling charges are non-refundable. Gift Card purchases cannot be refunded.<\/p><p>\nAll of our personalized jewelry is hand made. The font, text or engraving might not be perfect. Slight imperfections can occur during the manufacturing process.<\/p><p> Please make sure to read the descriptions for exact measurements. Some of our images are zoomed in to show as much detail as possible. Items may appear larger from the image.\n<\/p><p>Make sure to double check and read the measurements! If you have any questions about the measurements, please contact us BEFORE placing your order!\n<\/p><p>\n<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "f3d3ab96-2805-4fc5-92ec-52c669800bfb",
+        "9723db39-802c-4a67-8f94-6cd60db292ff",
+        "6dd00d44-46b2-48c9-a3b6-456fe7819bbc",
+        "dbee957f-7730-4aa4-835f-2048abc9f4e7"
+      ],
+      "settings": {
+        "container": true,
+        "show_discount_badge": true,
+        "show_vendor": false,
+        "show_share_buttons": true,
+        "image_width": "600",
+        "image_height": "600",
+        "gallery_image_width": "120",
+        "gallery_image_height": "120",
+        "gallery_row_cols": 4,
+        "images_alignment": "flex-row",
+        "image_border": true,
+        "image_circle": false,
+        "image_hover_effect": "image-hover-shine",
+        "modal_transition": "fade zoom-in",
+        "modal_center": true,
+        "modal_image_width": "2048",
+        "modal_image_height": "2048",
+        "modal_carousel_transition": "slide",
+        "modal_carousel_show_caption": true,
+        "interval": 5,
+        "breakpoint": "-sm",
+        "holidayMsg": "<!-- <b><u>Click here<\/u> for Mother's Day shipping guidelines and cutoff dates<\/b> -->",
+        "holidayUrl": "shopify:\/\/pages\/holiday-shipping-guidelines-1",
+        "holidaym-clr": "#e7428b"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "enable_product_reccomendations": true,
+        "heading": "You may also like",
+        "subheading": "<p>Write something catchy here.<\/p>",
+        "limit": 4,
+        "row": 2,
+        "row_sm": 2,
+        "row_md": 3,
+        "row_lg": 4,
+        "row_xl": 4,
+        "heading_size": "h2",
+        "heading_alignment": "text-center",
+        "container": true,
+        "align_center": true,
+        "show_product_title": true,
+        "show_price": true,
+        "show_discount_badge": true,
+        "show_quick_view_button": true,
+        "product_title_size": "h6",
+        "quick_view_button_style": "btn-outline-primary",
+        "quick_view_transition": "fade zoom-in",
+        "quick_view_heading_size": "h3",
+        "quick_view_desc_truncate": "200",
+        "quick_view_show_view_product_button": true,
+        "quick_view_view_product_button_style": "btn-outline-primary",
+        "quick_view_show_share_buttons": true,
+        "image_width": "360",
+        "image_height": "360",
+        "quick_view_image_width": "480",
+        "quick_view_image_height": "480",
+        "image_border": true,
+        "image_circle": false,
+        "image_hover_effect": "image-hover-shine",
+        "margin_top": 6,
+        "margin_bottom": 6,
+        "gutter_horizontal": 2,
+        "gutter_vertical": 3
+      }
+    }
+  },
+  "order": [
+    "product-template",
+    "product-recommendations"
+  ]
+}

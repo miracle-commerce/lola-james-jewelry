@@ -8,18 +8,32 @@ jQuery(this).siblings('.carousel-control-prev, .carousel-control-next, .carousel
 
 jQuery(document).ready(function() {
 var owl = jQuery('.CarouselOwl');
-owl.owlCarousel({
-margin: 10,
-nav: true,
-loop: false,
-responsive: {
-0: {items: 1},
-480: {items: 2},
-576: {items: 3},
-768: {items: 5},
-992: {items: 5},
-1200: {items: 5}
-}
+    owl.owlCarousel({
+    margin: 10,
+    nav: true,
+    loop: false,
+    responsive: {
+    0: {items: 1},
+    480: {items: 2},
+    576: {items: 3},
+    768: {items: 5},
+    992: {items: 5},
+    1200: {items: 5}
+    }
+})
+
+var featuredCollectionCarousel = jQuery('.featuredCollectionCarousel');
+featuredCollectionCarousel.owlCarousel({
+    margin: 10,
+    nav: true,
+    loop: false,
+    responsive: {
+        0: {items: 2},
+        576: {items: 3},
+        768: {items: 5},
+        992: {items: 5},
+        1200: {items: 5}
+    }
 })
 
 var owl = jQuery('.collectionCarousel');

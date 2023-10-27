@@ -1,0 +1,111 @@
+[data-section-type="logos-list"]{
+    padding: 40px 20px;
+}
+.logosList__wrapper{
+    max-width: 760px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 0 20px; 
+}
+.logosList__wrapper .section__heading{
+    margin-bottom: 40px;
+}
+.logosList__wrapper .section__title{
+    text-align: center;
+}
+
+.section__logos{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px; 
+    row-gap: 20px;
+}
+
+.section__logo-item{
+    flex: 1 1 calc(25% - 25px); 
+    max-width: calc(25% - 25px);
+    line-height: 0;
+    text-align: center;
+}
+
+.section__logo-item img{
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 640px){
+    .section__logo-item{
+        flex: 1 1 calc(100% / 3 - 80px / 3);
+        max-width: calc(100% / 3 - 80px / 3);
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .section__logo-item{
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Styles for press items section */
+[data-section-type="press-items"]{
+    background-color: var(--style-background);
+    padding: 60px 0;
+}
+.press-items{
+    display: flex; 
+    flex-wrap: wrap; 
+    column-gap: 30px; 
+    row-gap: 30px; 
+}
+
+.pressItem{
+    flex: 1 1 calc(100% / 3 - 30px); 
+    max-width: calc(100% / 3 - 30px);
+}
+
+.pressItem__image{
+    line-height: 0; 
+    margin-bottom: 10px;
+    text-align: center; 
+    width: 100%;
+}
+
+.pressItem__content{
+    text-align: center; 
+    line-height: 1.2; 
+    font-size: 16px; 
+    font-weight: 600;
+    width: 100%;
+}
+
+@media only screen and (max-width: 480px){
+    [data-section-type="press-items"]{
+        padding: 40px 0;
+    }
+    .press-items{
+        max-width: 320px; 
+        margin: 0 auto;
+    }
+
+    .pressItem{
+        display: flex; 
+        flex-wrap: wrap;
+        flex: 1 1 100%; 
+        max-width: 100%;
+        column-gap: 20px;
+        align-items: center;
+    }
+
+    .pressItem__image{
+        flex: 1 1 100px; 
+        max-width: 100px;
+    }
+
+    .pressItem__content{
+        flex: 1 1 calc(100% - 120px);
+        max-width: calc(100% - 120px);
+        text-align: left;
+    }
+}

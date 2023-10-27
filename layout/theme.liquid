@@ -50,9 +50,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {{ 'stylesheet.css' | asset_url | stylesheet_tag }}  
   	{{ 'custom-fonts.css' | asset_url | stylesheet_tag }}  
     {{ 'stellarnav.css' | asset_url | stylesheet_tag }}
-  {{ 'jquery.fancybox.min.css' | asset_url | stylesheet_tag }}
-  {{ 'bootstrap.css' | asset_url | stylesheet_tag }}
-  {{ 'responsive.css' | asset_url | stylesheet_tag }}
+    {{ 'jquery.fancybox.min.css' | asset_url | stylesheet_tag }}
+    {{ 'bootstrap.css' | asset_url | stylesheet_tag }}
+    {{ 'responsive.css' | asset_url | stylesheet_tag }}
+    {{'custom.css' | asset_url | stylesheet_tag}}
   {% include 'buddha-megamenu' %}
   {{ content_for_header }}
 

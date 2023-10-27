@@ -3,7 +3,7 @@
   <p class="mb-4">{{ '404.subtext_html' | t }}</p>
   <a href="/" class="btn btn-outline-primary">Go to homepage</a>
 </article>
-
+  
 <style>
   #site-main {
     flex: 1;
@@ -11,3 +11,18 @@
     align-items: center;
   }
 </style>
+
+{% schema %}
+  {
+    "name":"404 Page",
+    "enabled_on": {
+      "templates": ["404"]
+    },
+    "presets":[
+      {
+        "name":"404 page"
+      } 
+    ]
+  }
+{% endschema %}
+  

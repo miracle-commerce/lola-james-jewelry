@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "list-collections-template": {
+      "type": "list-collections-template",
+      "settings": {
+        "heading": "Collections",
+        "subheading": "<p>Write something catchy here<\/p>",
+        "heading_size": "h1",
+        "heading_alignment": "text-left",
+        "container": true,
+        "results_per_page": 20,
+        "removed_collections": "frontpage",
+        "row": 2,
+        "row_sm": 2,
+        "row_md": 3,
+        "row_lg": 4,
+        "row_xl": 4,
+        "align_center": true,
+        "show_collection_title": true,
+        "collection_title_size": "h6",
+        "show_collection_count": true,
+        "show_collection_desc": false,
+        "collection_desc_truncate": "200",
+        "image_width": "320",
+        "image_height": "320",
+        "image_border": false,
+        "image_circle": true,
+        "image_hover_effect": "image-hover-flashing",
+        "gutter_horizontal": 3,
+        "gutter_vertical": 3
+      }
+    }
+  },
+  "order": [
+    "list-collections-template"
+  ]
+}

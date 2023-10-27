@@ -1,0 +1,305 @@
+{
+  "sections": {
+    "16135618122a614c51": {
+      "type": "image-block",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-09-05_at_8.01.25_PM.png",
+        "image_link": "shopify:\/\/collections\/retro-fluted"
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Our most wanted pieces",
+        "subheading": "",
+        "collection": "best-sellers",
+        "limit": 15
+      }
+    },
+    "16168189909d1f85db": {
+      "type": "collection-list",
+      "blocks": {
+        "72f57a08-7c5e-4771-8ec1-d7c7ddc1e4e1": {
+          "type": "collection",
+          "settings": {
+            "collection": "necklaces"
+          }
+        },
+        "3ca892dc-4c8d-4fbf-b7f3-23cc65c7ad8b": {
+          "type": "collection",
+          "settings": {
+            "collection": "bracelets"
+          }
+        },
+        "fc820af6-28f8-4ea8-9adb-d388c00f8d94": {
+          "type": "collection",
+          "settings": {
+            "collection": "earrings"
+          }
+        },
+        "97994e29-05aa-498f-8edd-e4a5a91724f5": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "rings"
+          }
+        },
+        "b3a21231-d661-4b52-b85b-45ef98b50f96": {
+          "type": "collection",
+          "settings": {
+            "collection": "build-a-charm-necklace"
+          }
+        }
+      },
+      "block_order": [
+        "72f57a08-7c5e-4771-8ec1-d7c7ddc1e4e1",
+        "3ca892dc-4c8d-4fbf-b7f3-23cc65c7ad8b",
+        "fc820af6-28f8-4ea8-9adb-d388c00f8d94",
+        "97994e29-05aa-498f-8edd-e4a5a91724f5",
+        "b3a21231-d661-4b52-b85b-45ef98b50f96"
+      ],
+      "settings": {
+        "heading": "SHOP CATEGORIES",
+        "subheading": ""
+      }
+    },
+    "1613568042ad80ec84": {
+      "type": "ad-banner",
+      "blocks": {
+        "c423e300-ed72-41c2-ba28-5c01a1be44cb": {
+          "type": "select",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/B3A1678A_41851417-712e-4954-8e4a-bef3645c2cea.png",
+            "ad_url": "shopify:\/\/collections\/bracelets",
+            "ad_label": "Arm Party Favorites"
+          }
+        },
+        "5fac519f-afc7-4819-b3d2-92ce39387b85": {
+          "type": "select",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/B3A2138.jpg",
+            "ad_url": "shopify:\/\/collections\/diamond-names",
+            "ad_label": "Lovely Layers"
+          }
+        }
+      },
+      "block_order": [
+        "c423e300-ed72-41c2-ba28-5c01a1be44cb",
+        "5fac519f-afc7-4819-b3d2-92ce39387b85"
+      ],
+      "settings": {
+        "heading": "EXPLORE OUR FAVORITE STYLES"
+      }
+    },
+    "16199346117e17cf4b": {
+      "type": "collection-slider",
+      "blocks": {
+        "62d5723d-ea80-4a95-8e71-bbff71d6b951": {
+          "type": "collection",
+          "settings": {
+            "collection": "mini-me"
+          }
+        },
+        "b114f59b-02cb-49e9-9a27-cc2880a573c8": {
+          "type": "collection",
+          "settings": {
+            "collection": "enamel"
+          }
+        },
+        "a2260201-f5fd-44cc-8e68-2e25fe351834": {
+          "type": "collection",
+          "settings": {
+            "collection": "cuban-link"
+          }
+        },
+        "01406aa9-6416-4146-aeaf-f8dc1b99cb10": {
+          "type": "collection",
+          "settings": {
+            "collection": "squad-goals"
+          }
+        },
+        "b4285a68-2dae-4c27-93a0-dbae3b3de5de": {
+          "type": "collection",
+          "settings": {
+            "collection": "protection"
+          }
+        }
+      },
+      "block_order": [
+        "62d5723d-ea80-4a95-8e71-bbff71d6b951",
+        "b114f59b-02cb-49e9-9a27-cc2880a573c8",
+        "a2260201-f5fd-44cc-8e68-2e25fe351834",
+        "01406aa9-6416-4146-aeaf-f8dc1b99cb10",
+        "b4285a68-2dae-4c27-93a0-dbae3b3de5de"
+      ],
+      "settings": {
+        "heading": "Shop Collections",
+        "subheading": "<p>Write something catchy here<\/p>"
+      }
+    },
+    "1617075174df6639e7": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "heading": "SHOP COLLECTION",
+        "subheading": "<p><\/p>",
+        "collection": "necklaces",
+        "limit": 5
+      }
+    },
+    "image-with-text": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Facetune_12-04-2023-17-06-42_926eca3c-3d7d-45aa-bdb0-95b88ef80988.jpg",
+        "heading": "Shop Our Best Selling Retro Fluted Collection!",
+        "content": "<p>Create a stunning look with our array of beautiful options! Shop Now!<\/p>",
+        "button_label": "SHOP NOW!",
+        "button_link": "shopify:\/\/collections\/build-a-charm-necklace"
+      }
+    },
+    "6c3e65fa-8063-4c5c-8123-0b573c82b17d": {
+      "type": "logos-list",
+      "blocks": {
+        "66e1ca3b-cef6-4b56-88d8-b2a829ba5241": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/image0_ec167ed4-375d-40eb-b581-de6b600af667.png",
+            "link": ""
+          }
+        },
+        "e82762e4-7917-402b-99fd-62a2a1be1f58": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/01_elle.png",
+            "link": ""
+          }
+        },
+        "7a0790dd-8a4d-4610-88cc-bba39426ef20": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/02_us.png",
+            "link": ""
+          }
+        },
+        "85b90ee4-546c-4bea-bbae-2e963a3cd636": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/03_vogue.png",
+            "link": ""
+          }
+        },
+        "5d50c405-9503-4619-a3cc-d38d4aa27dc6": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/04_peoplestylewatch.png",
+            "link": ""
+          }
+        },
+        "e3eccdf4-310f-4967-a0cb-b556c75da769": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/05_instyle.png",
+            "link": ""
+          }
+        },
+        "15575e68-a67d-4e3a-b9d6-bed56d9be641": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/06_people.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "66e1ca3b-cef6-4b56-88d8-b2a829ba5241",
+        "e82762e4-7917-402b-99fd-62a2a1be1f58",
+        "7a0790dd-8a4d-4610-88cc-bba39426ef20",
+        "85b90ee4-546c-4bea-bbae-2e963a3cd636",
+        "5d50c405-9503-4619-a3cc-d38d4aa27dc6",
+        "e3eccdf4-310f-4967-a0cb-b556c75da769",
+        "15575e68-a67d-4e3a-b9d6-bed56d9be641"
+      ],
+      "settings": {
+        "title": "As Seen In"
+      }
+    },
+    "f1f28d09-e1e7-4e31-a2c4-3e5153e8ac76": {
+      "type": "press-items",
+      "blocks": {
+        "ecc3ae30-b80f-410f-819c-87cc671e5fe0": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/shipping_icon_d37f6bbc-b424-4f93-8bfe-74dc6601e3df.png",
+            "content": "Free 2 day shipping on orders over $150"
+          }
+        },
+        "eb6dd50e-59c9-4131-87e2-9549a7b63a7e": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/gift-icon.png",
+            "content": "Sign up for our newsletter to receive 10% off your first order"
+          }
+        },
+        "8343e1d7-789e-4245-b95d-8afacc690223": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/shoppay_icon_154f9e5c-b4f0-465c-9b9b-b91ec20326c1.png",
+            "content": "Enjoy 4 interest-free installments"
+          }
+        }
+      },
+      "block_order": [
+        "ecc3ae30-b80f-410f-819c-87cc671e5fe0",
+        "eb6dd50e-59c9-4131-87e2-9549a7b63a7e",
+        "8343e1d7-789e-4245-b95d-8afacc690223"
+      ],
+      "settings": {
+        "background_color": "#ffe6f1"
+      }
+    },
+    "1655240941487e879a": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "heading": "Talk about your brand",
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "container": true,
+        "heading_size": "h2",
+        "button_style": "btn-outline-primary",
+        "margin_top": 0,
+        "margin_bottom": 6
+      }
+    },
+    "1616011562282176a7": {
+      "type": "instafeed",
+      "settings": {
+        "heading_size": 30,
+        "feed_width": 100,
+        "html_area": ""
+      }
+    },
+    "sswinstagram": {
+      "type": "sswinstagram",
+      "disabled": true,
+      "settings": {
+        "option_galleries_id": "data-gallery_id=\"2\" data-widget=\"0\""
+      }
+    }
+  },
+  "order": [
+    "16135618122a614c51",
+    "featured-collection",
+    "16168189909d1f85db",
+    "1613568042ad80ec84",
+    "16199346117e17cf4b",
+    "1617075174df6639e7",
+    "image-with-text",
+    "6c3e65fa-8063-4c5c-8123-0b573c82b17d",
+    "f1f28d09-e1e7-4e31-a2c4-3e5153e8ac76",
+    "1655240941487e879a",
+    "1616011562282176a7",
+    "sswinstagram"
+  ]
+}
