@@ -52,7 +52,7 @@
         "image_border": true,
         "image_circle": false,
         "image_hover_effect": "image-hover-shine",
-        "modal_transition": "fade zoom-in",
+        "modal_transition": "fade zoom-out",
         "modal_center": true,
         "modal_image_width": "2048",
         "modal_image_height": "2048",
@@ -60,8 +60,8 @@
         "modal_carousel_show_caption": true,
         "interval": 5,
         "breakpoint": "-sm",
-        "holidayMsg": "<!-- <b><u>Click here<\/u> for Mother's Day shipping guidelines and cutoff dates<\/b> -->",
-        "holidayUrl": "shopify:\/\/pages\/holiday-shipping-guidelines-1",
+        "holidayMsg": "<b> Important: Holiday Shipping Guidelines and Cut Off Dates! <u><a href=\"https:\/\/lolajamesjewelry.com\/pages\/holiday-shipping-guidelines-cut-off-dates\">Click here<\/a><\/u><\/b>",
+        "holidayUrl": "shopify:\/\/pages\/holiday-shipping-guidelines-cut-off-dates",
         "holidaym-clr": "#e7428b"
       }
     },

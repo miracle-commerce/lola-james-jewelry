@@ -76,7 +76,6 @@
           "full_height": false
         }
       },
-
       "collection-list": {
         "type": "collection-list",
         "blocks": {
@@ -161,8 +160,8 @@
         "settings": {
           "announcement_enabled": true,
           "announcement_homepage": false,
-          "announcement_text": "",
-          "logo": "shopify:\/\/shop_images\/logo_1.png",
+          "announcement_text": "Free Shipping On All Orders over $150! Sign up for our newsletter to receive 10% off your first order!",
+          "logo": "shopify:\/\/shop_images\/LolaJames_Logo_2017_Black_v1.jpg",
           "logo_height": "30",
           "menu": "2021-menu"
         }
@@ -1473,6 +1472,9 @@
         }
       }
     },
+    "content_for_index": [
+
+    ],
     "blocks": {
       "10042746950867549768": {
         "type": "shopify:\/\/apps\/hulk-product-options\/blocks\/app-embed\/380168ef-9475-4244-a291-f66b189208b5",

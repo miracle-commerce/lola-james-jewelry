@@ -1,6 +1,5 @@
 {
-  "name":"Main Cart Page",
-  "sections":{
+  "sections": {
     "main": {
       "type": "cart-template",
       "settings": {
@@ -16,5 +15,7 @@
       }
     }
   },
-  "order":["main"]
+  "order": [
+    "main"
+  ]
 }
